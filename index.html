@@ -52,7 +52,7 @@ body{background:#050A14;font-family:'Inter',sans-serif;color:#e2e8f0;overflow-x:
 .feat-title{font-family:'Orbitron',monospace;font-size:16px;font-weight:700;line-height:1.4;margin-bottom:10px;color:#fff;}
 .feat-body{font-size:13px;color:#64748b;line-height:1.7;margin-bottom:14px;}
 .feat-meta{font-size:11px;color:#334155;display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
-.feat-btn{font-size:10px;color:var(--teal);background:none;border:0.5px solid var(--teal);border-radius:3px;padding:4px 10px;cursor:pointer;font-family:'Orbitron',monospace;}
+.feat-btn{font-size:10px;color:var(--teal);background:none;border:0.5px solid var(--teal);border-radius:3px;padding:4px 10px;cursor:pointer;font-family:'Orbitron',monospace;text-decoration:none;display:inline-block;}
 .sec-title{font-family:'Orbitron',monospace;font-size:11px;letter-spacing:0.1em;color:#334155;padding:0 1.5rem 0.75rem;text-transform:uppercase;}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;padding:0 1.5rem 2rem;}
 .card{background:var(--card);border:0.5px solid var(--border);border-radius:8px;padding:1.1rem 1.2rem;cursor:pointer;transition:all 0.2s;animation:fadeUp 0.4s ease both;}
@@ -69,7 +69,7 @@ body{background:#050A14;font-family:'Inter',sans-serif;color:#e2e8f0;overflow-x:
 .card-footer{display:flex;justify-content:space-between;align-items:center;}
 .card-source{font-size:10px;color:#334155;font-family:'Orbitron',monospace;}
 .card-btns{display:flex;gap:8px;}
-.card-btn{font-size:10px;color:var(--teal);border:none;background:none;cursor:pointer;font-family:'Orbitron',monospace;padding:0;}
+.card-btn{font-size:10px;color:var(--teal);border:none;background:none;cursor:pointer;font-family:'Orbitron',monospace;padding:0;text-decoration:none;display:inline-block;}
 .card-btn.shop{color:#fb7185;}
 .loading{text-align:center;padding:3rem;color:#475569;font-family:'Orbitron',monospace;font-size:12px;letter-spacing:0.1em;}
 .spinner{display:inline-block;width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--teal);border-radius:50%;animation:spin 0.7s linear infinite;margin-right:8px;vertical-align:middle;}
@@ -176,7 +176,6 @@ body.light .logo{color:#0a1628;}
     <button class="nav-btn" id="btn-about" onclick="showPage('about')">⬡ ABOUT</button>
   </div>
 
-  <!-- NEWS PAGE -->
   <div id="page-news">
     <div class="hero">
       <p class="hero-label">⬡ Live Intelligence Feed — Updated Every Hour</p>
@@ -213,7 +212,6 @@ body.light .logo{color:#0a1628;}
     </div>
   </div>
 
-  <!-- SHOP PAGE -->
   <div id="page-shop" class="hidden">
     <div class="hero" style="padding-bottom:1rem;">
       <p class="hero-label">⬡ Shop & Discover</p>
@@ -232,7 +230,6 @@ body.light .logo{color:#0a1628;}
     <div class="shop-grid" id="shop-grid"></div>
   </div>
 
-  <!-- ABOUT PAGE -->
   <div id="page-about" class="hidden">
     <div class="hero" style="padding-bottom:1rem;">
       <p class="hero-label">⬡ Our Mission</p>
@@ -270,32 +267,49 @@ body.light .logo{color:#0a1628;}
 </div>
 
 <script>
-const API_KEY = '4c4885a7602c4f08bd0c19e0677d6e8c';
+// RSS FEEDS via rss2json proxy (free, no API key needed)
+const RSS_PROXY = 'https://api.rss2json.com/v1/api.json?rss_url=';
 
-const QUERIES = {
-  all: 'artificial intelligence OR robotics OR biotech OR space technology OR gadgets',
-  ai: 'artificial intelligence OR machine learning OR ChatGPT OR OpenAI OR deepmind',
-  robotics: 'robotics OR humanoid robot OR Boston Dynamics OR robot technology',
-  biotech: 'biotech OR CRISPR OR gene editing OR medical breakthrough OR health technology',
-  space: 'space technology OR NASA OR SpaceX OR rocket OR satellite OR fusion energy',
-  gadgets: 'consumer gadgets OR new technology devices OR Apple OR Samsung technology'
+const FEEDS = {
+  ai: [
+    'https://techcrunch.com/feed/',
+    'https://venturebeat.com/feed/',
+  ],
+  robotics: [
+    'https://techcrunch.com/feed/',
+    'https://feeds.feedburner.com/TechRadar-All-Articles',
+  ],
+  biotech: [
+    'https://www.sciencedaily.com/rss/health_medicine.xml',
+    'https://www.sciencedaily.com/rss/matter_energy/biotechnology.xml',
+  ],
+  space: [
+    'https://www.sciencedaily.com/rss/space_time.xml',
+    'https://spacenews.com/feed/',
+  ],
+  gadgets: [
+    'https://www.theverge.com/rss/index.xml',
+    'https://feeds.feedburner.com/TechRadar-All-Articles',
+  ]
+};
+
+const KEYWORDS = {
+  ai: ['ai','artificial intelligence','machine learning','gpt','openai','deepmind','llm','neural','chatbot','claude','gemini'],
+  robotics: ['robot','robotic','humanoid','drone','automation','boston dynamics','unitree','mechanical','autonomous'],
+  biotech: ['biotech','crispr','gene','dna','medical','health','drug','cancer','clinical','genome','protein','therapy'],
+  space: ['space','nasa','spacex','rocket','satellite','mars','moon','orbit','launch','astronomy','fusion','solar'],
+  gadgets: ['gadget','iphone','samsung','apple','device','wearable','headset','smartphone','laptop','tablet','vr','ar']
 };
 
 const tl={ai:'AI & ML',robotics:'ROBOTICS',biotech:'BIOTECH',space:'SPACE',gadgets:'GADGETS'};
 const tc={ai:'tag-ai',robotics:'tag-robotics',biotech:'tag-biotech',space:'tag-space',gadgets:'tag-gadgets'};
 
-let allArticles = [];
-let currentCat = 'all';
-
-async function fetchNews(cat) {
-  const query = QUERIES[cat] || QUERIES.all;
-  const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&language=en&sortBy=publishedAt&pageSize=20&apiKey=${API_KEY}`;
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    if(data.status === 'ok') return data.articles.filter(a => a.title && a.description && a.title !== '[Removed]');
-    return [];
-  } catch(e) { return []; }
+function detectCat(title, desc) {
+  const text = (title + ' ' + (desc||'')).toLowerCase();
+  for(const [cat, words] of Object.entries(KEYWORDS)) {
+    if(words.some(w => text.includes(w))) return cat;
+  }
+  return 'ai';
 }
 
 function timeAgo(dateStr) {
@@ -305,43 +319,85 @@ function timeAgo(dateStr) {
   return Math.floor(diff/86400) + 'd ago';
 }
 
-function getCat(article) {
-  const text = (article.title + ' ' + (article.description||'')).toLowerCase();
-  if(text.match(/robot|robotics|humanoid|drone/)) return 'robotics';
-  if(text.match(/biotech|crispr|gene|medical|health|drug|cancer/)) return 'biotech';
-  if(text.match(/space|nasa|spacex|rocket|satellite|mars|moon|fusion/)) return 'space';
-  if(text.match(/gadget|iphone|samsung|apple|device|wearable|headset/)) return 'gadgets';
-  return 'ai';
+function stripHtml(html) {
+  const tmp = document.createElement('div');
+  tmp.innerHTML = html || '';
+  return tmp.textContent || tmp.innerText || '';
 }
 
-function renderFeatured(a) {
-  const cat = getCat(a);
+async function fetchFeed(url) {
+  try {
+    const res = await fetch(RSS_PROXY + encodeURIComponent(url) + '&count=20');
+    const data = await res.json();
+    if(data.status === 'ok') return data.items || [];
+    return [];
+  } catch(e) { return []; }
+}
+
+async function getArticles(cat) {
+  const feeds = cat === 'all'
+    ? [...FEEDS.ai, ...FEEDS.robotics, ...FEEDS.biotech, ...FEEDS.space, ...FEEDS.gadgets]
+    : FEEDS[cat] || FEEDS.ai;
+
+  const uniqueFeeds = [...new Set(feeds)];
+  const results = await Promise.all(uniqueFeeds.map(f => fetchFeed(f)));
+  let items = results.flat();
+
+  // Filter by category keywords if not 'all'
+  if(cat !== 'all') {
+    const filtered = items.filter(item => {
+      const text = (item.title + ' ' + stripHtml(item.description)).toLowerCase();
+      return KEYWORDS[cat].some(w => text.includes(w));
+    });
+    items = filtered.length > 3 ? filtered : items;
+  }
+
+  // Deduplicate by title
+  const seen = new Set();
+  items = items.filter(item => {
+    if(!item.title || seen.has(item.title)) return false;
+    seen.add(item.title);
+    return true;
+  });
+
+  // Sort by date
+  items.sort((a,b) => new Date(b.pubDate) - new Date(a.pubDate));
+  return items.slice(0, 20);
+}
+
+function renderFeatured(item, cat) {
+  const detectedCat = cat === 'all' ? detectCat(item.title, item.description) : cat;
+  const desc = stripHtml(item.description).substring(0, 200);
   document.getElementById('featured').innerHTML = `
     <p class="feat-label">⬡ FEATURED STORY</p>
-    <p class="feat-title">${a.title}</p>
-    <p class="feat-body">${a.description || ''}</p>
+    <p class="feat-title">${item.title}</p>
+    <p class="feat-body">${desc}...</p>
     <div class="feat-meta">
-      <span>${a.source.name} · ${timeAgo(a.publishedAt)}</span>
-      <a href="${a.url}" target="_blank" class="feat-btn">READ FULL STORY ↗</a>
+      <span>${item.author || 'Tech News'} · ${timeAgo(item.pubDate)}</span>
+      <a href="${item.link}" target="_blank" rel="noopener" class="feat-btn">READ FULL STORY ↗</a>
       <button class="feat-btn" onclick="showPage('shop')">🛒 SHOP RELATED ↗</button>
     </div>`;
 }
 
-function renderNews(articles) {
+function renderNews(items, cat) {
   const grid = document.getElementById('news-grid');
-  if(!articles.length){grid.innerHTML='<div class="loading">NO STORIES FOUND — TRY ANOTHER CATEGORY</div>';return;}
-  document.getElementById('art-count').textContent = articles.length;
-  grid.innerHTML = articles.map((a,i) => {
-    const cat = getCat(a);
+  if(!items.length){
+    grid.innerHTML='<div class="loading">NO STORIES FOUND — TRY ANOTHER CATEGORY</div>';
+    return;
+  }
+  document.getElementById('art-count').textContent = items.length;
+  grid.innerHTML = items.map((item, i) => {
+    const detectedCat = cat === 'all' ? detectCat(item.title, item.description) : cat;
+    const desc = stripHtml(item.description).substring(0, 120);
     return `<div class="card" style="animation-delay:${i*0.04}s">
-      <span class="card-tag ${tc[cat]}">${tl[cat]}</span>
-      <p class="card-title">${a.title}</p>
-      <p class="card-sum">${(a.description||'').substring(0,120)}...</p>
+      <span class="card-tag ${tc[detectedCat]}">${tl[detectedCat]}</span>
+      <p class="card-title">${item.title}</p>
+      <p class="card-sum">${desc}...</p>
       <div class="card-footer">
-        <span class="card-source">${a.source.name} · ${timeAgo(a.publishedAt)}</span>
+        <span class="card-source">${item.author || 'Tech News'} · ${timeAgo(item.pubDate)}</span>
         <div class="card-btns">
           <button class="card-btn shop" onclick="showPage('shop')">🛒 SHOP</button>
-          <a href="${a.url}" target="_blank" class="card-btn">READ ↗</a>
+          <a href="${item.link}" target="_blank" rel="noopener" class="card-btn">READ ↗</a>
         </div>
       </div>
     </div>`;
@@ -349,15 +405,14 @@ function renderNews(articles) {
 }
 
 async function setCat(cat, btn) {
-  currentCat = cat;
   document.querySelectorAll('#news-cats .cat').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   document.getElementById('sec-label').textContent = `⬡ ${cat==='all'?'TOP STORIES':tl[cat]+' NEWS'}`;
   document.getElementById('news-grid').innerHTML = '<div class="loading"><span class="spinner"></span>LOADING LIVE NEWS...</div>';
   document.getElementById('featured').innerHTML = '';
-  const articles = await fetchNews(cat);
-  if(articles.length) renderFeatured(articles[0]);
-  renderNews(articles.slice(1));
+  const items = await getArticles(cat);
+  if(items.length) renderFeatured(items[0], cat);
+  renderNews(items.slice(1), cat);
 }
 
 async function doSearch() {
@@ -365,13 +420,15 @@ async function doSearch() {
   if(!q) return;
   document.getElementById('news-grid').innerHTML = '<div class="loading"><span class="spinner"></span>SEARCHING...</div>';
   document.getElementById('featured').innerHTML = '';
-  const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(q)}&language=en&sortBy=publishedAt&pageSize=20&apiKey=${API_KEY}`;
   try {
+    const url = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://techcrunch.com/feed/')}&count=50`;
     const res = await fetch(url);
     const data = await res.json();
-    const articles = data.status==='ok' ? data.articles.filter(a=>a.title&&a.description&&a.title!=='[Removed]') : [];
-    if(articles.length) renderFeatured(articles[0]);
-    renderNews(articles.slice(1));
+    const items = (data.items||[]).filter(item =>
+      (item.title + ' ' + item.description).toLowerCase().includes(q.toLowerCase())
+    );
+    if(items.length) renderFeatured(items[0], 'all');
+    renderNews(items.slice(1), 'all');
   } catch(e) {
     document.getElementById('news-grid').innerHTML = '<div class="loading">SEARCH FAILED — PLEASE TRY AGAIN</div>';
   }
@@ -379,7 +436,7 @@ async function doSearch() {
 
 document.getElementById('srch').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch();});
 
-// SHOP DATA
+// SHOP
 const PRODUCTS=[
   {cat:'robotics',e:'🤖',name:'Unitree G1 Humanoid Robot',desc:'Bipedal home assistant with 43 joints, AI vision, and voice control.',rating:4.7,rev:1240,prices:[{s:'Amazon',p:'$16,999',b:true},{s:'Unitree',p:'$17,500'},{s:'B&H',p:'$17,200'}]},
   {cat:'gadgets',e:'🥽',name:'Apple Vision Pro 2',desc:'Spatial computing headset with 4K per eye and full hand tracking.',rating:4.5,rev:8900,prices:[{s:'Apple',p:'$2,999',b:true},{s:'Amazon',p:'$3,099'},{s:'Best Buy',p:'$3,049'}]},
