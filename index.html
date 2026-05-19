@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Explore2035 — The Future Is Closer Than You Think</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#050A14;font-family:'Inter',sans-serif;color:#e2e8f0;overflow-x:hidden;}
+:root{--teal:#00FFB2;--teal2:#00C896;--blue:#0af;--purple:#a78bfa;--dark:#050A14;--card:#0D1F3C;--border:rgba(0,255,178,0.15);}
+#bgc{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+
+/* INTRO */
+#intro{position:fixed;top:0;left:0;width:100%;height:100%;background:#050A14;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+#intro-svg{width:90%;max-width:800px;height:160px;}
+#skip-btn{margin-top:24px;font-family:'Orbitron',monospace;font-size:11px;color:#475569;background:none;border:0.5px solid #1a2a4a;border-radius:3px;padding:8px 20px;cursor:pointer;letter-spacing:0.05em;}
+#skip-btn:hover{color:#00FFB2;border-color:#00FFB2;}
+
+/* SITE */
+#site{display:none;position:relative;z-index:1;min-height:100vh;}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem 0.75rem;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:rgba(5,10,20,0.95);backdrop-filter:blur(10px);z-index:50;}
+.logo{font-family:'Orbitron',monospace;font-size:20px;font-weight:900;color:#fff;letter-spacing:2px;cursor:pointer;text-decoration:none;}
+.logo span{color:var(--teal);text-shadow:0 0 20px var(--teal);}
+.hdr-right{display:flex;align-items:center;gap:12px;}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 8px var(--teal);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.3;}}
+.theme-btn{background:rgba(0,255,178,0.05);border:0.5px solid var(--border);border-radius:20px;padding:5px 14px;color:var(--teal);font-size:11px;cursor:pointer;font-family:'Orbitron',monospace;}
+.theme-btn:hover{background:rgba(0,255,178,0.1);}
+.hdr-time{font-size:10px;color:#475569;font-family:'Orbitron',monospace;}
+
+/* NAV */
+.nav{display:flex;gap:4px;padding:0.75rem 1.5rem;border-bottom:0.5px solid var(--border);background:rgba(5,10,20,0.9);}
+.nav-btn{font-size:11px;padding:6px 16px;border:0.5px solid transparent;border-radius:4px;background:none;cursor:pointer;color:#64748b;font-family:'Orbitron',monospace;letter-spacing:0.05em;transition:all 0.2s;}
+.nav-btn:hover{color:var(--teal);}
+.nav-btn.active{color:var(--teal);border-color:var(--teal);background:rgba(0,255,178,0.05);}
+
+/* HERO */
+.hero{padding:3rem 1.5rem 2rem;text-align:center;}
+.hero-label{font-family:'Orbitron',monospace;font-size:9px;letter-spacing:0.2em;color:var(--teal);margin-bottom:14px;text-transform:uppercase;}
+.hero-title{font-family:'Orbitron',monospace;font-size:clamp(20px,4vw,36px);font-weight:900;line-height:1.2;margin-bottom:14px;color:#fff;}
+.hero-title span{color:var(--teal);text-shadow:0 0 30px var(--teal);}
+.hero-sub{font-size:14px;color:#64748b;line-height:1.7;max-width:540px;margin:0 auto 2rem;}
+.hero-search{display:flex;gap:8px;max-width:500px;margin:0 auto;}
+.hero-search input{flex:1;background:rgba(255,255,255,0.04);border:0.5px solid var(--border);border-radius:4px;padding:11px 16px;color:#e2e8f0;font-family:inherit;font-size:13px;}
+.hero-search input::placeholder{color:#334155;}
+.hero-search input:focus{outline:none;border-color:var(--teal);box-shadow:0 0 12px rgba(0,255,178,0.1);}
+.hero-search button{padding:11px 22px;background:var(--teal);color:#050A14;border:none;border-radius:4px;cursor:pointer;font-family:'Orbitron',monospace;font-size:11px;font-weight:700;letter-spacing:0.05em;}
+.hero-search button:hover{background:var(--teal2);box-shadow:0 0 20px rgba(0,255,178,0.3);}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 1.5rem 1.5rem;max-width:700px;margin:0 auto;}
+.stat{background:var(--card);border:0.5px solid var(--border);border-radius:8px;padding:0.85rem 1rem;text-align:center;}
+.stat:hover{border-color:var(--teal);}
+.stat-num{font-family:'Orbitron',monospace;font-size:22px;font-weight:700;color:var(--teal);text-shadow:0 0 12px rgba(0,255,178,0.3);}
+.stat-label{font-size:10px;color:#475569;letter-spacing:0.05em;text-transform:uppercase;margin-top:3px;}
+
+/* CATS */
+.cats{display:flex;gap:6px;flex-wrap:wrap;padding:0 1.5rem 1rem;}
+.cat{font-size:10px;padding:5px 14px;border-radius:3px;border:0.5px solid var(--border);background:transparent;cursor:pointer;color:#64748b;font-family:'Orbitron',monospace;letter-spacing:0.04em;transition:all 0.15s;}
+.cat:hover{border-color:var(--teal);color:var(--teal);}
+.cat.active{background:rgba(0,255,178,0.08);border-color:var(--teal);color:var(--teal);}
+
+/* FEATURED */
+.featured{margin:0 1.5rem 1.5rem;background:var(--card);border:0.5px solid var(--border);border-radius:10px;padding:1.5rem;position:relative;overflow:hidden;}
+.featured::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--teal),transparent);}
+.feat-label{font-family:'Orbitron',monospace;font-size:9px;letter-spacing:0.15em;color:var(--teal);margin-bottom:10px;}
+.feat-title{font-family:'Orbitron',monospace;font-size:16px;font-weight:700;line-height:1.4;margin-bottom:10px;color:#fff;}
+.feat-body{font-size:13px;color:#64748b;line-height:1.7;margin-bottom:14px;}
+.feat-meta{font-size:11px;color:#334155;display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+.feat-btn{font-size:10px;color:var(--teal);background:none;border:0.5px solid var(--teal);border-radius:3px;padding:4px 10px;cursor:pointer;font-family:'Orbitron',monospace;transition:all 0.2s;}
+.feat-btn:hover{background:rgba(0,255,178,0.1);}
+
+/* GRID */
+.sec-title{font-family:'Orbitron',monospace;font-size:11px;letter-spacing:0.1em;color:#334155;padding:0 1.5rem 0.75rem;text-transform:uppercase;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;padding:0 1.5rem 2rem;}
+.card{background:var(--card);border:0.5px solid var(--border);border-radius:8px;padding:1.1rem 1.2rem;cursor:pointer;transition:all 0.2s;animation:fadeUp 0.4s ease both;}
+.card:hover{border-color:rgba(0,255,178,0.4);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.card-tag{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;padding:3px 8px;border-radius:3px;display:inline-block;margin-bottom:8px;font-family:'Orbitron',monospace;}
+.tag-ai{background:rgba(0,255,178,0.08);color:var(--teal);border:0.5px solid rgba(0,255,178,0.25);}
+.tag-robotics{background:rgba(10,170,255,0.08);color:var(--blue);border:0.5px solid rgba(10,170,255,0.25);}
+.tag-biotech{background:rgba(251,191,36,0.08);color:#fbbf24;border:0.5px solid rgba(251,191,36,0.25);}
+.tag-space{background:rgba(167,139,250,0.08);color:var(--purple);border:0.5px solid rgba(167,139,250,0.25);}
+.tag-gadgets{background:rgba(251,113,133,0.08);color:#fb7185;border:0.5px solid rgba(251,113,133,0.25);}
+.card-title{font-size:14px;font-weight:500;line-height:1.45;margin-bottom:7px;color:#e2e8f0;}
+.card-sum{font-size:12px;color:#475569;line-height:1.6;margin-bottom:10px;}
+.card-footer{display:flex;justify-content:space-between;align-items:center;}
+.card-source{font-size:10px;color:#334155;font-family:'Orbitron',monospace;}
+.card-btns{display:flex;gap:8px;}
+.card-btn{font-size:10px;color:var(--teal);border:none;background:none;cursor:pointer;font-family:'Orbitron',monospace;padding:0;}
+.card-btn.shop{color:#fb7185;}
+
+/* SHOP */
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;padding:0 1.5rem 2rem;}
+.shop-card{background:var(--card);border:0.5px solid var(--border);border-radius:8px;overflow:hidden;transition:all 0.2s;animation:fadeUp 0.4s ease both;}
+.shop-card:hover{border-color:rgba(0,255,178,0.4);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3);}
+.shop-img{height:110px;display:flex;align-items:center;justify-content:center;font-size:44px;background:rgba(255,255,255,0.02);border-bottom:0.5px solid var(--border);position:relative;}
+.shop-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--teal),transparent);}
+.shop-body{padding:1rem 1.2rem;}
+.shop-name{font-size:14px;font-weight:500;margin-bottom:4px;color:#e2e8f0;}
+.shop-desc{font-size:11px;color:#475569;line-height:1.5;margin-bottom:8px;}
+.shop-rating{display:flex;align-items:center;gap:6px;margin-bottom:8px;}
+.stars{color:#fbbf24;font-size:12px;}
+.r-count{font-size:10px;color:#334155;}
+.prices{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;}
+.price-tag{font-size:11px;padding:3px 8px;border-radius:3px;border:0.5px solid var(--border);color:#64748b;}
+.price-best{border-color:var(--teal);color:var(--teal);background:rgba(0,255,178,0.05);}
+.shop-btns{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;}
+.sbtn{font-size:10px;padding:5px 10px;border-radius:3px;border:0.5px solid var(--border);cursor:pointer;background:none;color:#64748b;font-family:'Orbitron',monospace;letter-spacing:0.03em;transition:all 0.15s;}
+.sbtn:hover{border-color:var(--teal);color:var(--teal);}
+.sbtn.primary{background:var(--teal);color:#050A14;border-color:var(--teal);font-weight:700;}
+.sbtn.primary:hover{box-shadow:0 0 16px rgba(0,255,178,0.25);}
+.shop-extras{display:flex;gap:10px;}
+.sxbtn{font-size:10px;color:#334155;background:none;border:none;cursor:pointer;font-family:inherit;transition:color 0.15s;}
+.sxbtn:hover{color:var(--teal);}
+.filter-bar{display:flex;gap:6px;flex-wrap:wrap;padding:0 1.5rem 1rem;align-items:center;}
+.filter-label{font-size:10px;color:#334155;font-family:'Orbitron',monospace;letter-spacing:0.05em;}
+
+/* ABOUT */
+.about-wrap{padding:1.5rem;}
+.about-card{background:var(--card);border:0.5px solid var(--border);border-radius:10px;padding:1.5rem;margin-bottom:1rem;position:relative;overflow:hidden;}
+.about-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--teal),transparent);}
+.about-title{font-family:'Orbitron',monospace;font-size:12px;color:var(--teal);letter-spacing:0.1em;margin-bottom:10px;}
+.about-text{font-size:13px;color:#64748b;line-height:1.8;}
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:1rem;}
+.about-item{background:rgba(0,255,178,0.03);border:0.5px solid var(--border);border-radius:6px;padding:1rem;text-align:center;}
+.about-icon{font-size:28px;margin-bottom:8px;}
+.about-item-title{font-family:'Orbitron',monospace;font-size:10px;color:var(--teal);margin-bottom:4px;}
+.about-item-text{font-size:11px;color:#475569;line-height:1.5;}
+
+/* NEWSLETTER */
+.newsletter{margin:0 1.5rem 2rem;background:var(--card);border:0.5px solid var(--border);border-radius:10px;padding:1.5rem;text-align:center;position:relative;overflow:hidden;}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--teal),transparent);}
+.nl-title{font-family:'Orbitron',monospace;font-size:14px;color:#fff;margin-bottom:6px;}
+.nl-sub{font-size:12px;color:#475569;margin-bottom:14px;}
+.nl-form{display:flex;gap:8px;max-width:420px;margin:0 auto;}
+.nl-form input{flex:1;background:rgba(255,255,255,0.04);border:0.5px solid var(--border);border-radius:4px;padding:9px 14px;color:#e2e8f0;font-family:inherit;font-size:12px;}
+.nl-form input::placeholder{color:#334155;}
+.nl-form button{padding:9px 18px;background:var(--teal);color:#050A14;border:none;border-radius:4px;cursor:pointer;font-family:'Orbitron',monospace;font-size:10px;font-weight:700;white-space:nowrap;}
+
+/* FOOTER */
+.footer{border-top:0.5px solid var(--border);padding:2rem 1.5rem;text-align:center;}
+.footer-logo{font-family:'Orbitron',monospace;font-size:18px;font-weight:900;color:#fff;margin-bottom:8px;}
+.footer-logo span{color:var(--teal);}
+.footer-text{font-size:11px;color:#334155;margin-bottom:12px;}
+.footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+.footer-link{font-size:10px;color:#475569;font-family:'Orbitron',monospace;cursor:pointer;letter-spacing:0.05em;}
+.footer-link:hover{color:var(--teal);}
+
+/* LIGHT MODE */
+body.light{background:#f0f4ff;color:#0a1628;}
+body.light #bgc{opacity:0.15;}
+body.light .hdr{background:rgba(240,244,255,0.95);}
+body.light .card,body.light .featured,body.light .shop-card,body.light .about-card,body.light .newsletter,body.light .stat{background:#fff;border-color:rgba(0,150,100,0.2);}
+body.light .card-title,body.light .shop-name,body.light .feat-title{color:#0a1628;}
+body.light .card-sum,body.light .shop-desc,body.light .feat-body,body.light .about-text,body.light .hero-sub{color:#475569;}
+body.light .logo{color:#0a1628;}
+
+.hidden{display:none;}
+</style>
+</head>
+<body>
+
+<canvas id="bgc"></canvas>
+
+<!-- SLINKY INTRO -->
+<div id="intro">
+  <svg id="intro-svg" viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="gl"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="gl2"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="gl3"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <g id="scg" filter="url(#gl)"></g>
+    <circle id="sc0" cx="400" cy="80" r="64" fill="none" stroke="#00FFB2" stroke-width="1" opacity="0" filter="url(#gl2)"/>
+    <circle id="sc1" cx="400" cy="80" r="58" fill="none" stroke="#00FFB2" stroke-width="2.5" opacity="0" filter="url(#gl2)"/>
+    <circle id="sc2" cx="400" cy="80" r="49" fill="none" stroke="#00FFB2" stroke-width="1" stroke-dasharray="4,5" opacity="0"/>
+    <circle id="sc3" cx="400" cy="80" r="42" fill="rgba(0,255,178,0.04)" opacity="0"/>
+    <path id="sa1" d="M 342 80 A 58 58 0 0 1 400 22" fill="none" stroke="#00FFB2" stroke-width="1.5" stroke-dasharray="3,7" opacity="0"/>
+    <path id="sa2" d="M 458 80 A 58 58 0 0 1 400 138" fill="none" stroke="#00FFB2" stroke-width="1.5" stroke-dasharray="3,7" opacity="0"/>
+    <circle id="sd1" cx="400" cy="22" r="3" fill="#00FFB2" opacity="0"/>
+    <circle id="sd2" cx="458" cy="80" r="3" fill="#00FFB2" opacity="0"/>
+    <circle id="sd3" cx="400" cy="138" r="3" fill="#00FFB2" opacity="0"/>
+    <circle id="sd4" cx="342" cy="80" r="3" fill="#00FFB2" opacity="0"/>
+    <text id="st1" font-family="Orbitron,monospace" font-size="16" font-weight="900" fill="#fff" text-anchor="middle" x="400" y="72" opacity="0" letter-spacing="2">EXPLORE</text>
+    <text id="st2" font-family="Orbitron,monospace" font-size="20" font-weight="900" fill="#00FFB2" text-anchor="middle" x="400" y="94" opacity="0" letter-spacing="2" filter="url(#gl3)">2035</text>
+    <text id="st3" font-family="Orbitron,monospace" font-size="7.5" fill="#475569" text-anchor="middle" x="400" y="110" opacity="0" letter-spacing="3">THE FUTURE IS CLOSER THAN YOU THINK</text>
+  </svg>
+  <button id="skip-btn" onclick="skipIntro()">SKIP INTRO ↓</button>
+</div>
+
+<!-- MAIN SITE -->
+<div id="site">
+  <div class="hdr">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div class="live-dot"></div>
+      <a class="logo" onclick="showPage('news')">EXPLORE<span>2035</span></a>
+    </div>
+    <div class="hdr-right">
+      <span class="hdr-time" id="tn-time"></span>
+      <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">☀ LIGHT</button>
+    </div>
+  </div>
+
+  <div class="nav">
+    <button class="nav-btn active" id="btn-news" onclick="showPage('news')">⬡ NEWS</button>
+    <button class="nav-btn" id="btn-shop" onclick="showPage('shop')">⬡ SHOP</button>
+    <button class="nav-btn" id="btn-about" onclick="showPage('about')">⬡ ABOUT</button>
+  </div>
+
+  <!-- NEWS PAGE -->
+  <div id="page-news">
+    <div class="hero">
+      <p class="hero-label">⬡ Live Intelligence Feed — Updated Every Hour</p>
+      <h1 class="hero-title">Exploring the <span>Future</span><br>One Breakthrough at a Time</h1>
+      <p class="hero-sub">AI, robotics, biotech, space exploration and cutting-edge gadgets — all in one place, updated 24/7.</p>
+      <div class="hero-search">
+        <input type="text" id="srch" placeholder="Search any technology or invention..."/>
+        <button onclick="doSearch()">SEARCH</button>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Categories</div></div>
+      <div class="stat"><div class="stat-num">10</div><div class="stat-label">Stories Today</div></div>
+      <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Live Updates</div></div>
+    </div>
+    <div class="cats" id="news-cats">
+      <button class="cat active" onclick="setCat('all',this)">ALL</button>
+      <button class="cat" onclick="setCat('ai',this)">AI & ML</button>
+      <button class="cat" onclick="setCat('robotics',this)">ROBOTICS</button>
+      <button class="cat" onclick="setCat('biotech',this)">BIOTECH</button>
+      <button class="cat" onclick="setCat('space',this)">SPACE & ENERGY</button>
+      <button class="cat" onclick="setCat('gadgets',this)">GADGETS</button>
+    </div>
+    <div class="featured" id="featured"></div>
+    <p class="sec-title" id="sec-label">⬡ TOP STORIES</p>
+    <div class="grid" id="news-grid"></div>
+    <div class="newsletter">
+      <p class="nl-title">⬡ STAY AHEAD OF THE FUTURE</p>
+      <p class="nl-sub">Get the top 5 breakthroughs delivered to your inbox every week. Free forever.</p>
+      <div class="nl-form">
+        <input type="email" placeholder="your@email.com"/>
+        <button onclick="alert('Newsletter coming soon!')">SUBSCRIBE ↗</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHOP PAGE -->
+  <div id="page-shop" class="hidden">
+    <div class="hero" style="padding-bottom:1rem;">
+      <p class="hero-label">⬡ Shop & Discover</p>
+      <h1 class="hero-title">The <span>Latest</span> Tech<br>Products of 2035</h1>
+      <p class="hero-sub">Compare prices, read reviews, watch demos, and get full setup guides — all in one place.</p>
+    </div>
+    <div class="filter-bar" id="shop-cats">
+      <span class="filter-label">FILTER:</span>
+      <button class="cat active" onclick="setShopCat('all',this)">ALL</button>
+      <button class="cat" onclick="setShopCat('robotics',this)">ROBOTICS</button>
+      <button class="cat" onclick="setShopCat('gadgets',this)">GADGETS</button>
+      <button class="cat" onclick="setShopCat('biotech',this)">BIOTECH</button>
+      <button class="cat" onclick="setShopCat('space',this)">SPACE</button>
+      <button class="cat" onclick="setShopCat('ai',this)">AI & ML</button>
+    </div>
+    <div class="shop-grid" id="shop-grid"></div>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div id="page-about" class="hidden">
+    <div class="hero" style="padding-bottom:1rem;">
+      <p class="hero-label">⬡ Our Mission</p>
+      <h1 class="hero-title">Built for the <span>Curious</span><br>Minds of Tomorrow</h1>
+      <p class="hero-sub">Explore2035 exists to make the future accessible to everyone — not just scientists and engineers.</p>
+    </div>
+    <div class="about-wrap">
+      <div class="about-card">
+        <p class="about-title">⬡ WHAT IS EXPLORE2035?</p>
+        <p class="about-text">Explore2035 is a real-time technology discovery platform covering the five most transformative fields shaping our world — Artificial Intelligence, Robotics, Biotech & Health, Space & Energy, and Consumer Gadgets. We track the breakthroughs, inventions, and products that will define the next decade.</p>
+        <div class="about-grid">
+          <div class="about-item"><div class="about-icon">🤖</div><div class="about-item-title">ROBOTICS</div><div class="about-item-text">From humanoid helpers to surgical assistants</div></div>
+          <div class="about-item"><div class="about-icon">🧠</div><div class="about-item-title">AI & ML</div><div class="about-item-text">The models and breakthroughs changing everything</div></div>
+          <div class="about-item"><div class="about-icon">🧬</div><div class="about-item-title">BIOTECH</div><div class="about-item-text">Gene editing, longevity, and medical miracles</div></div>
+          <div class="about-item"><div class="about-icon">🚀</div><div class="about-item-title">SPACE</div><div class="about-item-text">Mars missions, clean energy, and beyond</div></div>
+          <div class="about-item"><div class="about-icon">📱</div><div class="about-item-title">GADGETS</div><div class="about-item-text">The devices arriving in your hands soon</div></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <p class="about-title">⬡ WHY EXPLORE2035?</p>
+        <p class="about-text">Most tech news is written for insiders. We write for everyone. Whether you're a student, entrepreneur, investor, or just someone fascinated by what's coming — Explore2035 is your window into the future. Plain language, real sources, zero hype.</p>
+      </div>
+      <div class="about-card">
+        <p class="about-title">⬡ CONTACT & PARTNERSHIPS</p>
+        <p class="about-text">Interested in partnering, advertising, or contributing to Explore2035? We'd love to hear from you.</p>
+        <br>
+        <button class="feat-btn" onclick="alert('Contact form coming soon!')">GET IN TOUCH ↗</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="footer-logo">EXPLORE<span>2035</span></p>
+    <p class="footer-text">© 2035 Explore2035.com — The future is closer than you think</p>
+    <div class="footer-links">
+      <span class="footer-link" onclick="showPage('news')">NEWS</span>
+      <span class="footer-link" onclick="showPage('shop')">SHOP</span>
+      <span class="footer-link" onclick="showPage('about')">ABOUT</span>
+      <span class="footer-link" onclick="alert('Privacy policy coming soon')">PRIVACY</span>
+      <span class="footer-link" onclick="alert('Terms coming soon')">TERMS</span>
+    </div>
+  </div>
+</div>
+
+<script>
+const ARTICLES=[
+  {cat:'ai',title:'GPT-5 Achieves Near-Human Reasoning on Complex Math Benchmarks',sum:'OpenAI\'s latest model scores 92% on AIME, surpassing most human mathematicians and marking a new milestone in formal reasoning.',src:'MIT Tech Review',age:'2h ago'},
+  {cat:'robotics',title:'Boston Dynamics Atlas Robot Can Now Assist in Delicate Surgery',sum:'The humanoid robot demonstrated sub-millimeter precision in handing surgical tools, opening doors to robot-assisted operating rooms.',src:'TechCrunch',age:'4h ago'},
+  {cat:'biotech',title:'CRISPR Breakthrough Reverses Hearing Loss in Adults for First Time',sum:'Harvard researchers restored hearing in 11 adult patients using targeted gene-editing, with results lasting over 18 months.',src:'ScienceDaily',age:'6h ago'},
+  {cat:'space',title:'NASA Fusion-Powered Thruster Cuts Mars Travel Time to 45 Days',sum:'A compact fusion drive prototype demonstrated sustained thrust in vacuum, potentially revolutionizing deep-space exploration.',src:'Space.com',age:'8h ago'},
+  {cat:'gadgets',title:'Apple Smart Glasses Offer Real-Time Translation in 40 Languages',sum:'The wearable translates 40 languages with under 200ms latency, displayed directly in the user\'s field of view.',src:'The Verge',age:'3h ago'},
+  {cat:'ai',title:'AlphaFold 4 Predicts Protein Interactions at Atomic Scale',sum:'DeepMind\'s new model handles multi-protein complexes and small-molecule binding, accelerating drug discovery.',src:'Nature',age:'10h ago'},
+  {cat:'robotics',title:'Startup Deploys 10,000 Warehouse Robots Overnight Using Swarm AI',sum:'A new coordination algorithm allowed a robot fleet to self-organize across a 2M sq ft facility without human intervention.',src:'Reuters',age:'5h ago'},
+  {cat:'biotech',title:'AI-Designed Antibiotic Defeats All Known Drug-Resistant Superbugs',sum:'A machine-learning model screened 100M compounds to identify a novel antibiotic class with zero resistance in trials.',src:'Wired',age:'12h ago'},
+  {cat:'space',title:'SpaceX Starship Completes First Commercial Lunar Cargo Delivery',sum:'Scientific instruments and a small rover reached the lunar surface in a landmark commercial space logistics mission.',src:'Ars Technica',age:'1d ago'},
+  {cat:'gadgets',title:'Samsung Galaxy Roll Hits Mass Production — Ships This Fall',sum:'The rollable phone features a screen expanding from 5" to 8", with a hinge mechanism rated for 500,000 cycles.',src:'9to5Google',age:'7h ago'},
+];
+const PRODUCTS=[
+  {cat:'robotics',e:'🤖',name:'Unitree G1 Humanoid Robot',desc:'Bipedal home assistant with 43 joints, AI vision, and voice control.',rating:4.7,rev:1240,prices:[{s:'Amazon',p:'$16,999',b:true},{s:'Unitree',p:'$17,500'},{s:'B&H',p:'$17,200'}]},
+  {cat:'gadgets',e:'🥽',name:'Apple Vision Pro 2',desc:'Spatial computing headset with 4K per eye and full hand tracking.',rating:4.5,rev:8900,prices:[{s:'Apple',p:'$2,999',b:true},{s:'Amazon',p:'$3,099'},{s:'Best Buy',p:'$3,049'}]},
+  {cat:'biotech',e:'🩺',name:'Withings Body Scan Scale',desc:'Medical-grade station measuring body composition, heart health & nerve activity.',rating:4.6,rev:3200,prices:[{s:'Withings',p:'$399',b:true},{s:'Amazon',p:'$419'},{s:'Best Buy',p:'$409'}]},
+  {cat:'space',e:'☀️',name:'EcoFlow DELTA Pro 3',desc:'3,600Wh portable power with 2,600W solar input. Whole-home backup.',rating:4.8,rev:5600,prices:[{s:'EcoFlow',p:'$3,199',b:true},{s:'Amazon',p:'$3,299'},{s:'Costco',p:'$3,150'}]},
+  {cat:'ai',e:'🧠',name:'Rabbit R2 AI Device',desc:'Pocket AI companion with natural language control of any app.',rating:4.2,rev:2100,prices:[{s:'Rabbit',p:'$199',b:true},{s:'Amazon',p:'$219'},{s:'Best Buy',p:'$209'}]},
+  {cat:'gadgets',e:'📡',name:'Starlink Mini Kit',desc:'Portable satellite dish delivering 100Mbps+ anywhere on Earth.',rating:4.9,rev:12000,prices:[{s:'Starlink',p:'$599',b:true},{s:'Amazon',p:'$649'},{s:'REI',p:'$629'}]},
+  {cat:'robotics',e:'🌀',name:'Dyson 360 Vis Nav Robot',desc:'360-degree vision robot vacuum with full-length brush and 2,800Pa suction.',rating:4.5,rev:4400,prices:[{s:'Dyson',p:'$1,199',b:true},{s:'Amazon',p:'$1,249'},{s:'Best Buy',p:'$1,229'}]},
+  {cat:'biotech',e:'💍',name:'Oura Ring Gen 4',desc:'Health ring monitoring sleep, HRV, temperature, and readiness.',rating:4.7,rev:22000,prices:[{s:'Oura',p:'$349',b:true},{s:'Amazon',p:'$359'},{s:'Best Buy',p:'$349'}]},
+];
+const tl={ai:'AI & ML',robotics:'ROBOTICS',biotech:'BIOTECH',space:'SPACE',gadgets:'GADGETS'};
+const tc={ai:'tag-ai',robotics:'tag-robotics',biotech:'tag-biotech',space:'tag-space',gadgets:'tag-gadgets'};
+
+function sop(id,v){document.getElementById(id).setAttribute('opacity',v);}
+function cop(id,v){document.getElementById(id).style.opacity=v;}
+
+// SLINKY
+const scg=document.getElementById('scg');
+const N=18,CY=80,COL='#00FFB2';
+let raf=null,ph=0,sp1=0,sp2=0,sp3=0;
+function eio(t){return t<0.5?2*t*t:-1+(4-2*t)*t;}
+function eo(t){return 1-Math.pow(1-t,3);}
+function lr(a,b,t){return a+(b-a)*t;}
+function scirc(v){sop('sc0',v*0.5);sop('sc1',v);sop('sc2',v*0.7);sop('sc3',v);sop('sa1',v*0.5);sop('sa2',v*0.5);sop('sd1',v*0.8);sop('sd2',v*0.8);sop('sd3',v*0.8);sop('sd4',v*0.8);}
+function sdraw(pos,ry,af){
+  scg.innerHTML='';
+  for(let i=0;i<pos.length-1;i++){
+    const x1=pos[i],x2=pos[i+1],cx=(x1+x2)/2,rx=Math.abs(x2-x1)/2;
+    if(rx<1)continue;
+    const a=af(i/N),ib=i%2===1,ns='http://www.w3.org/2000/svg';
+    const eb=document.createElementNS(ns,'ellipse');
+    eb.setAttribute('cx',cx);eb.setAttribute('cy',CY);eb.setAttribute('rx',rx);eb.setAttribute('ry',ry);
+    eb.setAttribute('fill','none');eb.setAttribute('stroke',COL);eb.setAttribute('stroke-width','1.5');
+    eb.setAttribute('stroke-dasharray',`${Math.PI*rx} ${Math.PI*rx}`);
+    eb.setAttribute('stroke-dashoffset',ib?Math.PI*rx:0);eb.setAttribute('opacity',a*0.25);
+    scg.appendChild(eb);
+    const ef=document.createElementNS(ns,'ellipse');
+    ef.setAttribute('cx',cx);ef.setAttribute('cy',CY);ef.setAttribute('rx',rx);ef.setAttribute('ry',ry);
+    ef.setAttribute('fill','none');ef.setAttribute('stroke',COL);ef.setAttribute('stroke-width','2.5');
+    ef.setAttribute('stroke-dasharray',`${Math.PI*rx} ${Math.PI*rx}`);ef.setAttribute('stroke-dashoffset','0');ef.setAttribute('opacity',a*0.9);
+    scg.appendChild(ef);
+    const d=document.createElementNS(ns,'circle');
+    d.setAttribute('cx',x2);d.setAttribute('cy',CY);d.setAttribute('r','2.5');d.setAttribute('fill',COL);d.setAttribute('opacity',a*0.8);
+    scg.appendChild(d);
+  }
+}
+function slither(prog,dir){
+  const hx=lr(dir===1?60:740,dir===1?740:60,eio(prog));
+  const spread=lr(16,44,Math.sin(prog*Math.PI));
+  const pos=[];
+  for(let i=0;i<=N;i++){
+    const bh=Math.max(0,(i/N)-prog);
+    pos.push(Math.max(50,Math.min(750,hx-dir*(i*spread)+dir*bh*130)));
+  }
+  return pos;
+}
+function coilPos(prog){
+  const pos=[];
+  for(let i=0;i<=N;i++){
+    const f=i/N,angle=f*Math.PI*2*eo(prog),r=lr(44,0,eo(prog)*f);
+    pos.push(400+Math.cos(angle+Math.PI)*lr(44,r,eo(prog)));
+  }
+  return pos;
+}
+function sticker(){
+  const spd=0.007;
+  if(ph===0){sp1=Math.min(1,sp1+spd);sdraw(slither(sp1,1),lr(32,22,sp1),f=>1);scirc(0);cop('st1',0);cop('st2',0);cop('st3',0);if(sp1>=1)ph=1;}
+  else if(ph===1){sp2=Math.min(1,sp2+spd);sdraw(slither(sp2,-1),lr(22,32,sp2),f=>1);scirc(0);cop('st1',0);cop('st2',0);cop('st3',0);if(sp2>=1)ph=2;}
+  else if(ph===2){
+    sp3=Math.min(1,sp3+spd*0.7);
+    sdraw(coilPos(sp3),lr(28,58,eo(sp3)),f=>lr(1,0,eo(sp3)*f));
+    scirc(eo(sp3));
+    cop('st1',sp3>0.6?(sp3-0.6)/0.4:0);
+    cop('st2',sp3>0.72?(sp3-0.72)/0.28:0);
+    cop('st3',sp3>0.85?(sp3-0.85)/0.15:0);
+    if(sp3>=1){scg.innerHTML='';setTimeout(showSite,600);return;}
+  }else return;
+  raf=requestAnimationFrame(sticker);
+}
+function showSite(){document.getElementById('intro').style.display='none';document.getElementById('site').style.display='block';initParticles();animParticles();}
+function skipIntro(){if(raf)cancelAnimationFrame(raf);showSite();}
+
+// NEWS
+function renderFeatured(a){
+  document.getElementById('featured').innerHTML=`
+    <p class="feat-label">⬡ FEATURED STORY</p>
+    <p class="feat-title">${a.title}</p>
+    <p class="feat-body">${a.sum} This story is generating significant discussion across research and industry circles globally.</p>
+    <div class="feat-meta"><span>${a.src} · ${a.age}</span>
+    <button class="feat-btn" onclick="showPage('shop')">🛒 SHOP RELATED ↗</button></div>`;
+}
+function renderNews(articles){
+  document.getElementById('news-grid').innerHTML=articles.map((a,i)=>`
+    <div class="card" style="animation-delay:${i*0.05}s">
+      <span class="card-tag ${tc[a.cat]}">${tl[a.cat]}</span>
+      <p class="card-title">${a.title}</p>
+      <p class="card-sum">${a.sum}</p>
+      <div class="card-footer">
+        <span class="card-source">${a.src} · ${a.age}</span>
+        <div class="card-btns">
+          <button class="card-btn shop" onclick="showPage('shop')">🛒 SHOP</button>
+          <button class="card-btn" onclick="alert('Full article coming soon!')">READ ↗</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+function setCat(cat,btn){
+  document.querySelectorAll('#news-cats .cat').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const f=cat==='all'?ARTICLES:ARTICLES.filter(a=>a.cat===cat);
+  document.getElementById('sec-label').textContent=`⬡ ${cat==='all'?'TOP STORIES':tl[cat]+' NEWS'}`;
+  if(f.length)renderFeatured(f[0]);
+  renderNews(f.slice(cat==='all'?1:0));
+}
+function renderShop(cat){
+  const f=cat==='all'?PRODUCTS:PRODUCTS.filter(p=>p.cat===cat);
+  document.getElementById('shop-grid').innerHTML=f.map((p,i)=>`
+    <div class="shop-card" style="animation-delay:${i*0.05}s">
+      <div class="shop-img">${p.e}</div>
+      <div class="shop-body">
+        <span class="card-tag ${tc[p.cat]}">${tl[p.cat]}</span>
+        <p class="shop-name">${p.name}</p>
+        <p class="shop-desc">${p.desc}</p>
+        <div class="shop-rating">
+          <span class="stars">${'★'.repeat(Math.floor(p.rating))}${'☆'.repeat(5-Math.floor(p.rating))}</span>
+          <span style="font-size:12px;font-weight:500;">${p.rating}</span>
+          <span class="r-count">(${p.rev.toLocaleString()})</span>
+        </div>
+        <div class="prices">${p.prices.map(pr=>`<span class="price-tag ${pr.b?'price-best':''}">${pr.s} ${pr.p}${pr.b?' ★':''}</span>`).join('')}</div>
+        <div class="shop-btns">
+          <button class="sbtn primary" onclick="alert('Redirecting to best deal for ${p.name}!')">BEST DEAL ↗</button>
+          <button class="sbtn" onclick="alert('Setup guide for ${p.name} coming soon!')">HOW-TO</button>
+          <button class="sbtn" onclick="alert('Video demos for ${p.name} coming soon!')">▶ DEMO</button>
+        </div>
+        <div class="shop-extras">
+          <button class="sxbtn" onclick="alert('Comparison for ${p.name} coming soon!')">⇄ COMPARE</button>
+          <button class="sxbtn" onclick="alert('Reviews for ${p.name} coming soon!')">✦ REVIEWS</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+function setShopCat(cat,btn){
+  document.querySelectorAll('#shop-cats .cat').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');renderShop(cat);
+}
+function showPage(page){
+  ['news','shop','about'].forEach(p=>{document.getElementById('page-'+p).classList.toggle('hidden',p!==page);});
+  ['news','shop','about'].forEach(p=>{document.getElementById('btn-'+p).classList.toggle('active',p===page);});
+  window.scrollTo(0,0);
+}
+let light=false;
+function toggleTheme(){light=!light;document.body.classList.toggle('light',light);document.getElementById('theme-btn').textContent=light?'◑ DARK':'☀ LIGHT';}
+function doSearch(){const q=document.getElementById('srch').value.trim();if(q)alert('Search for: '+q+'\n\nLive search coming soon!');}
+document.getElementById('srch').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch();});
+document.getElementById('tn-time').textContent=new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+
+// PARTICLES
+const canvas=document.getElementById('bgc');
+const ctx=canvas.getContext('2d');
+let W,H,particles=[];
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
+function Particle(){this.x=Math.random()*W;this.y=Math.random()*H;this.r=Math.random()*1.2+0.3;this.vx=(Math.random()-0.5)*0.25;this.vy=(Math.random()-0.5)*0.25;this.a=Math.random()*0.4+0.1;}
+function initParticles(){resize();particles=[];for(let i=0;i<70;i++)particles.push(new Particle());}
+function animParticles(){
+  ctx.clearRect(0,0,W,H);
+  particles.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(0,255,178,${p.a})`;ctx.fill();});
+  particles.forEach((p,i)=>{for(let j=i+1;j<particles.length;j++){const dx=p.x-particles[j].x,dy=p.y-particles[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<90){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle=`rgba(0,255,178,${0.05*(1-d/90)})`;ctx.lineWidth=0.5;ctx.stroke();}}});
+  requestAnimationFrame(animParticles);
+}
+window.addEventListener('resize',()=>{if(particles.length)initParticles();});
+
+// INIT
+setCat('all',document.querySelector('#news-cats .cat'));
+renderShop('all');
+sticker();
+</script>
+</body>
+</html>
