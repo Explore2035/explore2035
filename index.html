@@ -2282,7 +2282,6 @@ function showPage(page){
   ['news','shop','archive','about'].forEach(p=>{document.getElementById('page-'+p).classList.toggle('hidden',p!==page);});
   ['news','shop','archive','about'].forEach(p=>{document.getElementById('btn-'+p).classList.toggle('active',p===page);});
   window.scrollTo(0,0);
-  if(page==='archive')renderArchive(ARCHIVE);
 }
 
 let light=false;
