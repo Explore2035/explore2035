@@ -5,6 +5,431 @@
       "title": "OpenAI barrels towards IPO that may happen in September",
       "sum": "A day after Elon Musk lost his lawsuit that threatened OpenAI's structure, leadership and finances, OpenAI is reportedly back to prepping for its IPO.",
       "src": "techcrunch.com",
+      "age": "1h ago",
+      "url": "https://techcrunch.com/2026/05/20/openai-barrels-towards-ipo-that-may-happen-in-september/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "ai",
+      "title": "\u2018Ask YouTube\u2019 brings AI-powered conversational search to video, adds Gemini Omni to Shorts",
+      "sum": "Google is completely revamping its search experience, and that doesn't stop at YouTube.",
+      "src": "techcrunch.com",
+      "age": "12h ago",
+      "url": "https://techcrunch.com/2026/05/19/ask-youtube-brings-ai-powered-conversational-search-to-video-adds-gemini-omni-to-shorts/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "ai",
+      "title": "You can now talk to your Gmail inbox, as seen at Google IO 2026",
+      "sum": "Google expands Gmail\u2019s AI Inbox with conversational voice search, letting users ask Gemini to find buried email details.",
+      "src": "techcrunch.com",
+      "age": "21h ago",
+      "url": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "ai",
+      "title": "Corti's new Symphony for Speech-to-Text model beats OpenAI at medical terminology accuracy, highlighting the value of specialized AI",
+      "sum": "Today, Copenhagen-based healthcare AI  Corti  is launching Symphony for Speech-to-Text, a new generation of clinical-grade speech recognition models engineered specifically for real-time dictation, co",
+      "src": "venturebeat.com",
+      "age": "8h ago",
+      "url": "https://venturebeat.com/technology/cortis-new-symphony-for-speech-to-text-model-beats-openai-at-medical-terminology-accuracy-highlighting-the-value-of-specialized-ai",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "ai",
+      "title": "AWS nabs white hot gen AI media creation startup fal, becoming its preferred cloud provider",
+      "sum": "Generative AI\u2019s rapid transition from text-based chatbots to high-fidelity media\u2014spanning images, video, spatial 3D, and audio\u2014has exposed a glaring bottleneck in the modern tech stack: infrastructure",
+      "src": "venturebeat.com",
+      "age": "18h ago",
+      "url": "https://venturebeat.com/infrastructure/aws-nabs-white-hot-gen-ai-media-creation-startup-fal-becoming-its-preferred-cloud-provider",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "This simple change stops robot swarms from getting stuck",
+      "sum": "In crowded environments, more robots don\u2019t always mean faster results\u2014in fact, too many can bring everything to a standstill. Harvard researchers discovered a surprising fix: adding a bit of randomnes",
+      "src": "sciencedaily.com",
+      "age": "35d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260414075639.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "DNA robots could deliver drugs and hunt viruses inside your body",
+      "sum": "DNA robots are emerging as tiny programmable machines that could one day deliver drugs, hunt viruses, and build molecular-scale devices. By borrowing ideas from traditional robotics and combining them",
+      "src": "sciencedaily.com",
+      "age": "50d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/03/260331001104.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "AI-powered robot learns how to harvest tomatoes more efficiently",
+      "sum": "A new tomato-picking robot is learning to think before it acts. Instead of simply identifying ripe fruit, it predicts how easy each tomato will be to harvest and adjusts its approach accordingly. This",
+      "src": "sciencedaily.com",
+      "age": "63d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/03/260317064512.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "The breakthrough that makes robot faces feel less creepy",
+      "sum": "Humans pay enormous attention to lips during conversation, and robots have struggled badly to keep up. A new robot developed at Columbia Engineering learned realistic lip movements by watching its own",
+      "src": "sciencedaily.com",
+      "age": "124d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260116035308.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "Scientists create robots smaller than a grain of salt that can think",
+      "sum": "Researchers have created microscopic robots so small they\u2019re barely visible, yet smart enough to sense, decide, and move completely on their own. Powered by light and equipped with tiny computers, the",
+      "src": "sciencedaily.com",
+      "age": "134d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260105165815.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Eating grapes daily could unlock powerful skin protection",
+      "sum": "Scientists discovered that eating grapes can actually change how your skin behaves at the genetic level. After just two weeks of daily grape consumption, volunteers showed signs of improved skin prote",
+      "src": "sciencedaily.com",
+      "age": "1d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260517211427.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists reversed memory loss by recharging the brain\u2019s tiny engines",
+      "sum": "Researchers have shown for the first time that malfunctioning mitochondria \u2014 the cell\u2019s energy generators \u2014 may directly cause cognitive decline in neurodegenerative diseases. By creating a new tool t",
+      "src": "sciencedaily.com",
+      "age": "4d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260515234803.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "A grad student\u2019s wild idea sparks a major aging breakthrough",
+      "sum": "A casual conversation between graduate students helped spark a breakthrough in aging research at Mayo Clinic. Researchers discovered that tiny synthetic DNA molecules called aptamers can selectively a",
+      "src": "sciencedaily.com",
+      "age": "5d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260515001733.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists say a daily multivitamin may help slow aging",
+      "sum": "A daily multivitamin may help slow biological aging, according to researchers studying older adults in a large clinical trial. After two years, participants taking multivitamins showed slower aging in",
+      "src": "sciencedaily.com",
+      "age": "6d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260512202345.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists make old blood stem cells young again in major anti-aging breakthrough",
+      "sum": "As blood stem cells age, their lysosomes become overactive and damaged, triggering inflammation and weakening the body\u2019s ability to regenerate healthy blood and immune cells. By calming this cellular ",
+      "src": "sciencedaily.com",
+      "age": "7d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260511213204.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "NASA\u2019s powerful Roman Space Telescope is about to transform astronomy",
+      "sum": "NASA\u2019s Nancy Grace Roman Space Telescope is now aiming for an earlier launch in September 2026. Designed to explore dark matter, dark energy, and distant exoplanets, the telescope will capture massive",
+      "src": "sciencedaily.com",
+      "age": "1d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260518041345.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "Mars may have once had an ocean and this chaotic valley is a big clue",
+      "sum": "A colossal valley near Mars\u2019s equator is revealing dramatic clues about the Red Planet\u2019s watery and volcanic past. Stretching roughly 1,300 kilometers, Shalbatana Vallis was carved billions of years a",
+      "src": "sciencedaily.com",
+      "age": "5d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260515002137.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "NASA\u2019s new AI space chip could let spacecraft think for themselves",
+      "sum": "NASA is testing a next-generation space computer chip that could give spacecraft the ability to operate far more independently in deep space. The radiation-hardened processor is showing performance le",
+      "src": "sciencedaily.com",
+      "age": "5d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260515002134.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "NASA\u2019s Roman Space Telescope could reveal millions of invisible neutron stars",
+      "sum": "NASA\u2019s Roman Space Telescope could expose a vast hidden population of neutron stars lurking unseen across the Milky Way. By detecting subtle shifts in starlight caused by gravity, the mission may iden",
+      "src": "sciencedaily.com",
+      "age": "5d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260515002130.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "NASA\u2019s Hubble  reveals a giant chaotic planet nursery unlike anything seen before",
+      "sum": "Hubble has revealed a giant planet-forming disk unlike anything astronomers have seen before. Nicknamed \u201cDracula\u2019s Chivito,\u201d the enormous structure appears turbulent and oddly lopsided, with towering ",
+      "src": "sciencedaily.com",
+      "age": "8d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260511213151.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "gadgets",
+      "title": "Samsung has a tentative deal with workers to avoid a memory chip strike",
+      "sum": "More than 47,000 Samsung Electronics workers were gearing up for an 18-day strike after bonus payment negotiations between the company and its union collapsed. The strike was set to start on Thursday ",
+      "src": "theverge.com",
+      "age": "recently",
+      "url": "https://www.theverge.com/tech/934432/samsung-electronics-strike-memory-chip-supply",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "gadgets",
+      "title": "Anker\u2019s travel-friendly Laptop Power Bank has returned to its best price of the year",
+      "sum": "Whether you\u2019re heading out for a quick Memorial Day getaway or preparing for summer travel, a reliable power bank can come in handy when there\u2019s no outlet in sight. Fortunately, Anker\u2019s Laptop Power B",
+      "src": "theverge.com",
+      "age": "recently",
+      "url": "https://www.theverge.com/gadgets/934288/anker-laptop-power-bank-soundcore-sleep-a20-earbuds-deal-sale",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Tesla can\u2019t seem to figure out the power of its new cheap Model 3",
+      "sum": "Tesla has changed the 0-100 km/h acceleration spec on its new $39,490 CAD Model 3 Premium RWD in Canada for a second in less than three weeks. The car now lists a 6.2-second sprint \u2014 two full seconds ",
+      "src": "electrek.co",
+      "age": "1h ago",
+      "url": "https://electrek.co/2026/05/20/tesla-model-3-canada-acceleration-changed-three-times-one-month/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Tesla launches FSD in second European country",
+      "sum": "Tesla\u2019s \u201cFull Self-Driving\u201d (Supervised) driver assistance software is now rolling out in Lithuania, making it the second European country to allow the system on public roads. \n\n\n\n The Lithuanian Tran",
+      "src": "electrek.co",
+      "age": "4h ago",
+      "url": "https://electrek.co/2026/05/20/tesla-fsd-lithuania-second-european-country/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Tesla (TSLA) officially abandons India factory after years of broken promises",
+      "sum": "Tesla has officially confirmed it will not build a manufacturing facility in India, ending nearly a decade of negotiations, false starts, and broken promises with the Indian government. \n\n\n\n India\u2019s M",
+      "src": "electrek.co",
+      "age": "5h ago",
+      "url": "https://electrek.co/2026/05/20/tesla-officially-abandons-india-factory-plans-after-years-of-broken-promises/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Elon promises FSD by year\u2019s end, but Einride has L4 autonomy for big trucks TODAY",
+      "sum": "It\u2019s a question of who is actually delivering product and who is just delivering promises on today\u2019s delivery-heavy episode of\u00a0  Quick Charge  ! Is the tenth time a charm for Elon\u2019s FSD, or will Einri",
+      "src": "electrek.co",
+      "age": "20h ago",
+      "url": "https://electrek.co/2026/05/19/elon-promises-fsd-by-years-end-but-einride-has-l4-autonomy-for-big-trucks-today/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Volvo\u2019s new EV costs the same to lease as a Tesla Model Y Premium, but here\u2019s the catch",
+      "sum": "Volvo\u2019s  new \u201cgame-changing\u201d midsize electric SUV, the 2027 EX60, is now on sale, but is it worth it to lease? \n\n\n\n  more\u2026",
+      "src": "electrek.co",
+      "age": "21h ago",
+      "url": "https://electrek.co/2026/05/19/volvos-new-ev-costs-same-to-lease-as-tesla-model-y-premium/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "The Protocol: Ethereum Foundation's high-profile departures spark fresh debate",
+      "sum": "Also: Citi on quantum computing and bitcoin, Jump Crypto\u2019s Firedancer, and Vitalik Buterin on AI verification",
+      "src": "coindesk.com",
+      "age": "2h ago",
+      "url": "https://www.coindesk.com/tech/2026/05/20/the-protocol-ethereum-foundation-s-high-profile-departures-spark-fresh-debate",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Why Trump's bitcoin ETF plans likely collapsed before getting off the ground",
+      "sum": "Trump Media withdrew its bitcoin ETF filing as analysts pointed to fee pressure, weak demand and fierce competition in the crowded spot bitcoin ETF market.",
+      "src": "coindesk.com",
+      "age": "2h ago",
+      "url": "https://www.coindesk.com/markets/2026/05/20/why-trump-s-bitcoin-etf-plans-likely-collapsed-before-even-getting-off-the-ground",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Crypto Long & Short: Bitcoin-backed loans belong in the cost-of-capital conversation",
+      "sum": "In this week\u2019s Crypto Long & Short Newsletter, Alec Beckman on why BTC-backed lending is not a crypto story, but a capital efficiency story. Then, Serena Sebastiani on how stablecoins aren\u2019t a crypto ",
+      "src": "coindesk.com",
+      "age": "2h ago",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/05/20/crypto-long-and-short-bitcoin-backed-loans-belong-in-the-cost-of-capital-conversation",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Live markets: Crypto prices buoyed by Trump's 'final stages' remark",
+      "sum": "Bitcoin is lower by more than 4% over the past week, but has remained in a very tight range around $77,000 for the last three days.",
+      "src": "coindesk.com",
+      "age": "4h ago",
+      "url": "https://www.coindesk.com/markets/2026/05/20/live-markets-crypto-prices-remain-flat-ahead-of-fomc-minutes-nvidia-earnings",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Vitalik Buterin outlines Ethereum's privacy measures. Here is what it means for the network and ETH",
+      "sum": "Privacy is widely seen as a necessary feature for the widespread adoption of blockchain technology. Ethereum is taking steps in that direction.",
+      "src": "coindesk.com",
+      "age": "4h ago",
+      "url": "https://www.coindesk.com/tech/2026/05/20/vitalik-buterin-outlines-ethereum-s-privacy-measures-here-is-what-it-means-for-the-network-and-eth",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Scientists discover massive natural hydrogen source beneath Canada",
+      "sum": "Scientists in Canada have discovered that ancient underground rocks are naturally producing hydrogen gas \u2014 and lots of it. Measurements from mine boreholes in Ontario show the gas can flow continuousl",
+      "src": "sciencedaily.com",
+      "age": "5h ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260519224317.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Scientists warn that the world\u2019s rivers are running out of oxygen",
+      "sum": "Rivers around the world are quietly running out of oxygen \u2014 and climate change is emerging as the main culprit. A sweeping global analysis of more than 21,000 river systems found that nearly 80% have ",
+      "src": "sciencedaily.com",
+      "age": "3d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260515233327.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Deadly \u201cred sky\u201d solar storm from 800 years ago discovered in ancient trees",
+      "sum": "Researchers in Japan traced a hidden medieval solar storm using ancient tree rings and centuries-old sky observations. The team linked reports of eerie red auroras with spikes of carbon-14 trapped in ",
+      "src": "sciencedaily.com",
+      "age": "6d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260513221818.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Scientists discover the strange way CO2 cools part of Earth\u2019s atmosphere",
+      "sum": "Scientists have finally cracked the mystery behind one of climate change\u2019s strangest fingerprints: while Earth\u2019s surface heats up, the upper atmosphere is rapidly cooling. Researchers at Columbia Univ",
+      "src": "sciencedaily.com",
+      "age": "6d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260513221759.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Scientists discover the Southern Ocean is \u201csweating\u201d more as climate change intensifies",
+      "sum": "A remote island between Australia and Antarctica is showing signs of a dramatic climate transformation. Scientists found storms over Macquarie Island now unleash much heavier rainfall than they did de",
+      "src": "sciencedaily.com",
+      "age": "7d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260512202337.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "gaming",
+      "title": "Xbox hires game industry analyst Matthew Ball to lead strategy",
+      "sum": "Microsoft has recruited game industry analyst Matthew Ball as Xbox chief strategy officer. Ball publishes an annual state of video gaming report, which is a popular read across the game industry, and ",
+      "src": "theverge.com",
+      "age": "recently",
+      "url": "https://www.theverge.com/report/934687/xbox-matthew-ball-strategy-officer-hire",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Cybercriminal Twins Caught After They Forgot to Turn Off Microsoft Teams Recording",
+      "sum": "Plus: Instructure\u2019s Canvas ransomware debacle comes to a close, an alleged dark net market kingpin gets arrested, OpenAI workers fall victim to a supply chain attack, and more.",
+      "src": "wired.com",
+      "age": "4d ago",
+      "url": "https://www.wired.com/story/security-news-this-week-cybercriminal-twins-caught-after-they-forgot-to-turn-off-microsoft-teams-recording/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Your iPhone Gets Stolen. Then the Hacking Begins",
+      "sum": "A bustling underground ecosystem is providing criminals with the tools to unlock iPhones\u2014and wage phishing attacks against their contacts to access bank accounts and more.",
+      "src": "wired.com",
+      "age": "6d ago",
+      "url": "https://www.wired.com/story/your-iphone-gets-stolen-then-the-hacking-begins/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Foxconn Ransomware Attack Shows Nothing Is Safe Forever",
+      "sum": "Famous for helping build Apple\u2019s iPhones, Foxconn just suffered another cyberattack, highlighting the perils of warehousing some of the world\u2019s most valuable data.",
+      "src": "wired.com",
+      "age": "7d ago",
+      "url": "https://www.wired.com/story/foxconn-ransomware-attack-shows-nothing-is-safe-forever/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Hackable Robot Lawn Mower Unlocks a New Nightmare",
+      "sum": "Plus: Meta officially kills encrypted Instagram DMs, the Trump administration targets \u201cviolent left wing extremists,\u201d leaked documents reveal Russia's school for elite hackers, and more.",
+      "src": "wired.com",
+      "age": "11d ago",
+      "url": "https://www.wired.com/story/security-news-this-week-hackable-robot-lawnmower-unlocks-a-new-nightmare/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "The Canvas Hack Is a New Kind of Ransomware Debacle",
+      "sum": "Thousands of schools around the US were paralyzed on Thursday after education tech firm Instructure shut down access to its Canvas platform following a breach by hackers going by the name ShinyHunters",
+      "src": "wired.com",
+      "age": "12d ago",
+      "url": "https://www.wired.com/story/canvas-hack-shinyhunters-ransomware-instructure/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "smarthome",
+      "title": "Do Camera Sensor Sizes Matter?",
+      "sum": "Image sensors for phones and digital cameras come in a wide variety of sizes. But does that matter?",
+      "src": "cnet.com",
+      "age": "4h ago",
+      "url": "https://www.cnet.com/tech/computing/do-camera-sensor-sizes-matter/",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "longevity",
+      "title": "Breakthrough drug reverses aging in skin and dramatically speeds healing",
+      "sum": "Scientists have discovered that a topical anti-aging drug called ABT-263 can dramatically improve wound healing in older skin. The treatment works by removing damaged \u201csenescent\u201d cells that accumulate",
+      "src": "sciencedaily.com",
+      "age": "17h ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260519003215.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "longevity",
+      "title": "Scientists successfully transfer longevity gene and extend lifespan",
+      "sum": "Scientists at the University of Rochester pulled off a remarkable experiment: they transferred a longevity-related gene from the famously long-lived naked mole rat into mice, and the mice ended up hea",
+      "src": "sciencedaily.com",
+      "age": "10d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260510030948.htm",
+      "date": "May 20, 2026"
+    },
+    {
+      "cat": "hair",
+      "title": "Doctors warn this popular vitamin may quietly disrupt cancer care",
+      "sum": "Many cancer patients turn to biotin supplements hoping to restore hair lost during treatment, but experts warn the popular vitamin may do more harm than good. While biotin is often marketed for strong",
+      "src": "sciencedaily.com",
+      "age": "12d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260506225551.htm",
+      "date": "May 20, 2026"
+    }
+  ],
+  "archive": [
+    {
+      "cat": "ai",
+      "title": "OpenAI barrels towards IPO that may happen in September",
+      "sum": "A day after Elon Musk lost his lawsuit that threatened OpenAI's structure, leadership and finances, OpenAI is reportedly back to prepping for its IPO.",
+      "src": "techcrunch.com",
       "age": "52m ago",
       "url": "https://techcrunch.com/2026/05/20/openai-barrels-towards-ipo-that-may-happen-in-september/",
       "date": "May 20, 2026"
@@ -422,431 +847,6 @@
       "age": "12d ago",
       "url": "https://www.sciencedaily.com/releases/2026/05/260506225551.htm",
       "date": "May 20, 2026"
-    }
-  ],
-  "archive": [
-    {
-      "cat": "ai",
-      "title": "OpenAI barrels towards IPO that may happen in September",
-      "sum": "A day after Elon Musk lost his lawsuit that threatened OpenAI's structure, leadership and finances, OpenAI is reportedly back to prepping for its IPO.",
-      "src": "techcrunch.com",
-      "age": "35m ago",
-      "url": "https://techcrunch.com/2026/05/20/openai-barrels-towards-ipo-that-may-happen-in-september/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "ai",
-      "title": "\u2018Ask YouTube\u2019 brings AI-powered conversational search to video, adds Gemini Omni to Shorts",
-      "sum": "Google is completely revamping its search experience, and that doesn't stop at YouTube.",
-      "src": "techcrunch.com",
-      "age": "12h ago",
-      "url": "https://techcrunch.com/2026/05/19/ask-youtube-brings-ai-powered-conversational-search-to-video-adds-gemini-omni-to-shorts/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "ai",
-      "title": "You can now talk to your Gmail inbox, as seen at Google IO 2026",
-      "sum": "Google expands Gmail\u2019s AI Inbox with conversational voice search, letting users ask Gemini to find buried email details.",
-      "src": "techcrunch.com",
-      "age": "20h ago",
-      "url": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "ai",
-      "title": "Corti's new Symphony for Speech-to-Text model beats OpenAI at medical terminology accuracy, highlighting the value of specialized AI",
-      "sum": "Today, Copenhagen-based healthcare AI  Corti  is launching Symphony for Speech-to-Text, a new generation of clinical-grade speech recognition models engineered specifically for real-time dictation, co",
-      "src": "venturebeat.com",
-      "age": "7h ago",
-      "url": "https://venturebeat.com/technology/cortis-new-symphony-for-speech-to-text-model-beats-openai-at-medical-terminology-accuracy-highlighting-the-value-of-specialized-ai",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "ai",
-      "title": "AWS nabs white hot gen AI media creation startup fal, becoming its preferred cloud provider",
-      "sum": "Generative AI\u2019s rapid transition from text-based chatbots to high-fidelity media\u2014spanning images, video, spatial 3D, and audio\u2014has exposed a glaring bottleneck in the modern tech stack: infrastructure",
-      "src": "venturebeat.com",
-      "age": "17h ago",
-      "url": "https://venturebeat.com/infrastructure/aws-nabs-white-hot-gen-ai-media-creation-startup-fal-becoming-its-preferred-cloud-provider",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "This simple change stops robot swarms from getting stuck",
-      "sum": "In crowded environments, more robots don\u2019t always mean faster results\u2014in fact, too many can bring everything to a standstill. Harvard researchers discovered a surprising fix: adding a bit of randomnes",
-      "src": "sciencedaily.com",
-      "age": "35d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/04/260414075639.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "DNA robots could deliver drugs and hunt viruses inside your body",
-      "sum": "DNA robots are emerging as tiny programmable machines that could one day deliver drugs, hunt viruses, and build molecular-scale devices. By borrowing ideas from traditional robotics and combining them",
-      "src": "sciencedaily.com",
-      "age": "50d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/03/260331001104.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "AI-powered robot learns how to harvest tomatoes more efficiently",
-      "sum": "A new tomato-picking robot is learning to think before it acts. Instead of simply identifying ripe fruit, it predicts how easy each tomato will be to harvest and adjusts its approach accordingly. This",
-      "src": "sciencedaily.com",
-      "age": "63d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/03/260317064512.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "The breakthrough that makes robot faces feel less creepy",
-      "sum": "Humans pay enormous attention to lips during conversation, and robots have struggled badly to keep up. A new robot developed at Columbia Engineering learned realistic lip movements by watching its own",
-      "src": "sciencedaily.com",
-      "age": "124d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/01/260116035308.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "Scientists create robots smaller than a grain of salt that can think",
-      "sum": "Researchers have created microscopic robots so small they\u2019re barely visible, yet smart enough to sense, decide, and move completely on their own. Powered by light and equipped with tiny computers, the",
-      "src": "sciencedaily.com",
-      "age": "134d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/01/260105165815.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Eating grapes daily could unlock powerful skin protection",
-      "sum": "Scientists discovered that eating grapes can actually change how your skin behaves at the genetic level. After just two weeks of daily grape consumption, volunteers showed signs of improved skin prote",
-      "src": "sciencedaily.com",
-      "age": "1d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260517211427.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Scientists reversed memory loss by recharging the brain\u2019s tiny engines",
-      "sum": "Researchers have shown for the first time that malfunctioning mitochondria \u2014 the cell\u2019s energy generators \u2014 may directly cause cognitive decline in neurodegenerative diseases. By creating a new tool t",
-      "src": "sciencedaily.com",
-      "age": "4d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260515234803.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "A grad student\u2019s wild idea sparks a major aging breakthrough",
-      "sum": "A casual conversation between graduate students helped spark a breakthrough in aging research at Mayo Clinic. Researchers discovered that tiny synthetic DNA molecules called aptamers can selectively a",
-      "src": "sciencedaily.com",
-      "age": "5d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260515001733.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Scientists say a daily multivitamin may help slow aging",
-      "sum": "A daily multivitamin may help slow biological aging, according to researchers studying older adults in a large clinical trial. After two years, participants taking multivitamins showed slower aging in",
-      "src": "sciencedaily.com",
-      "age": "6d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260512202345.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Scientists make old blood stem cells young again in major anti-aging breakthrough",
-      "sum": "As blood stem cells age, their lysosomes become overactive and damaged, triggering inflammation and weakening the body\u2019s ability to regenerate healthy blood and immune cells. By calming this cellular ",
-      "src": "sciencedaily.com",
-      "age": "7d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260511213204.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "NASA\u2019s powerful Roman Space Telescope is about to transform astronomy",
-      "sum": "NASA\u2019s Nancy Grace Roman Space Telescope is now aiming for an earlier launch in September 2026. Designed to explore dark matter, dark energy, and distant exoplanets, the telescope will capture massive",
-      "src": "sciencedaily.com",
-      "age": "1d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260518041345.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "Mars may have once had an ocean and this chaotic valley is a big clue",
-      "sum": "A colossal valley near Mars\u2019s equator is revealing dramatic clues about the Red Planet\u2019s watery and volcanic past. Stretching roughly 1,300 kilometers, Shalbatana Vallis was carved billions of years a",
-      "src": "sciencedaily.com",
-      "age": "5d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260515002137.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "NASA\u2019s new AI space chip could let spacecraft think for themselves",
-      "sum": "NASA is testing a next-generation space computer chip that could give spacecraft the ability to operate far more independently in deep space. The radiation-hardened processor is showing performance le",
-      "src": "sciencedaily.com",
-      "age": "5d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260515002134.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "NASA\u2019s Roman Space Telescope could reveal millions of invisible neutron stars",
-      "sum": "NASA\u2019s Roman Space Telescope could expose a vast hidden population of neutron stars lurking unseen across the Milky Way. By detecting subtle shifts in starlight caused by gravity, the mission may iden",
-      "src": "sciencedaily.com",
-      "age": "5d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260515002130.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "NASA\u2019s Hubble  reveals a giant chaotic planet nursery unlike anything seen before",
-      "sum": "Hubble has revealed a giant planet-forming disk unlike anything astronomers have seen before. Nicknamed \u201cDracula\u2019s Chivito,\u201d the enormous structure appears turbulent and oddly lopsided, with towering ",
-      "src": "sciencedaily.com",
-      "age": "8d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260511213151.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "gadgets",
-      "title": "Samsung has a tentative deal with workers to avoid a memory chip strike",
-      "sum": "More than 47,000 Samsung Electronics workers were gearing up for an 18-day strike after bonus payment negotiations between the company and its union collapsed. The strike was set to start on Thursday ",
-      "src": "theverge.com",
-      "age": "recently",
-      "url": "https://www.theverge.com/tech/934432/samsung-electronics-strike-memory-chip-supply",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "gadgets",
-      "title": "Anker\u2019s travel-friendly Laptop Power Bank has returned to its best price of the year",
-      "sum": "Whether you\u2019re heading out for a quick Memorial Day getaway or preparing for summer travel, a reliable power bank can come in handy when there\u2019s no outlet in sight. Fortunately, Anker\u2019s Laptop Power B",
-      "src": "theverge.com",
-      "age": "recently",
-      "url": "https://www.theverge.com/gadgets/934288/anker-laptop-power-bank-soundcore-sleep-a20-earbuds-deal-sale",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "ev",
-      "title": "Tesla can\u2019t seem to figure out the power of its new cheap Model 3",
-      "sum": "Tesla has changed the 0-100 km/h acceleration spec on its new $39,490 CAD Model 3 Premium RWD in Canada for a second in less than three weeks. The car now lists a 6.2-second sprint \u2014 two full seconds ",
-      "src": "electrek.co",
-      "age": "1h ago",
-      "url": "https://electrek.co/2026/05/20/tesla-model-3-canada-acceleration-changed-three-times-one-month/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "ev",
-      "title": "Tesla launches FSD in second European country",
-      "sum": "Tesla\u2019s \u201cFull Self-Driving\u201d (Supervised) driver assistance software is now rolling out in Lithuania, making it the second European country to allow the system on public roads. \n\n\n\n The Lithuanian Tran",
-      "src": "electrek.co",
-      "age": "3h ago",
-      "url": "https://electrek.co/2026/05/20/tesla-fsd-lithuania-second-european-country/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "ev",
-      "title": "Tesla (TSLA) officially abandons India factory after years of broken promises",
-      "sum": "Tesla has officially confirmed it will not build a manufacturing facility in India, ending nearly a decade of negotiations, false starts, and broken promises with the Indian government. \n\n\n\n India\u2019s M",
-      "src": "electrek.co",
-      "age": "4h ago",
-      "url": "https://electrek.co/2026/05/20/tesla-officially-abandons-india-factory-plans-after-years-of-broken-promises/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "ev",
-      "title": "Elon promises FSD by year\u2019s end, but Einride has L4 autonomy for big trucks TODAY",
-      "sum": "It\u2019s a question of who is actually delivering product and who is just delivering promises on today\u2019s delivery-heavy episode of\u00a0  Quick Charge  ! Is the tenth time a charm for Elon\u2019s FSD, or will Einri",
-      "src": "electrek.co",
-      "age": "20h ago",
-      "url": "https://electrek.co/2026/05/19/elon-promises-fsd-by-years-end-but-einride-has-l4-autonomy-for-big-trucks-today/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "ev",
-      "title": "Volvo\u2019s new EV costs the same to lease as a Tesla Model Y Premium, but here\u2019s the catch",
-      "sum": "Volvo\u2019s  new \u201cgame-changing\u201d midsize electric SUV, the 2027 EX60, is now on sale, but is it worth it to lease? \n\n\n\n  more\u2026",
-      "src": "electrek.co",
-      "age": "20h ago",
-      "url": "https://electrek.co/2026/05/19/volvos-new-ev-costs-same-to-lease-as-tesla-model-y-premium/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "The Protocol: Ethereum Foundation's high-profile departures spark fresh debate",
-      "sum": "Also: Citi on quantum computing and bitcoin, Jump Crypto\u2019s Firedancer, and Vitalik Buterin on AI verification",
-      "src": "coindesk.com",
-      "age": "1h ago",
-      "url": "https://www.coindesk.com/tech/2026/05/20/the-protocol-ethereum-foundation-s-high-profile-departures-spark-fresh-debate",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "Why Trump's bitcoin ETF plans likely collapsed before getting off the ground",
-      "sum": "Trump Media withdrew its bitcoin ETF filing as analysts pointed to fee pressure, weak demand and fierce competition in the crowded spot bitcoin ETF market.",
-      "src": "coindesk.com",
-      "age": "1h ago",
-      "url": "https://www.coindesk.com/markets/2026/05/20/why-trump-s-bitcoin-etf-plans-likely-collapsed-before-even-getting-off-the-ground",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "Crypto Long & Short: Bitcoin-backed loans belong in the cost-of-capital conversation",
-      "sum": "In this week\u2019s Crypto Long & Short Newsletter, Alec Beckman on why BTC-backed lending is not a crypto story, but a capital efficiency story. Then, Serena Sebastiani on how stablecoins aren\u2019t a crypto ",
-      "src": "coindesk.com",
-      "age": "1h ago",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/05/20/crypto-long-and-short-bitcoin-backed-loans-belong-in-the-cost-of-capital-conversation",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "Live markets: Crypto prices buoyed by Trump's 'final stages' remark",
-      "sum": "Bitcoin is lower by more than 4% over the past week, but has remained in a very tight range around $77,000 for the last three days.",
-      "src": "coindesk.com",
-      "age": "3h ago",
-      "url": "https://www.coindesk.com/markets/2026/05/20/live-markets-crypto-prices-remain-flat-ahead-of-fomc-minutes-nvidia-earnings",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "Vitalik Buterin outlines Ethereum's privacy measures. Here is what it means for the network and ETH",
-      "sum": "Privacy is widely seen as a necessary feature for the widespread adoption of blockchain technology. Ethereum is taking steps in that direction.",
-      "src": "coindesk.com",
-      "age": "3h ago",
-      "url": "https://www.coindesk.com/tech/2026/05/20/vitalik-buterin-outlines-ethereum-s-privacy-measures-here-is-what-it-means-for-the-network-and-eth",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "Scientists discover massive natural hydrogen source beneath Canada",
-      "sum": "Scientists in Canada have discovered that ancient underground rocks are naturally producing hydrogen gas \u2014 and lots of it. Measurements from mine boreholes in Ontario show the gas can flow continuousl",
-      "src": "sciencedaily.com",
-      "age": "5h ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260519224317.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "Scientists warn that the world\u2019s rivers are running out of oxygen",
-      "sum": "Rivers around the world are quietly running out of oxygen \u2014 and climate change is emerging as the main culprit. A sweeping global analysis of more than 21,000 river systems found that nearly 80% have ",
-      "src": "sciencedaily.com",
-      "age": "3d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260515233327.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "Deadly \u201cred sky\u201d solar storm from 800 years ago discovered in ancient trees",
-      "sum": "Researchers in Japan traced a hidden medieval solar storm using ancient tree rings and centuries-old sky observations. The team linked reports of eerie red auroras with spikes of carbon-14 trapped in ",
-      "src": "sciencedaily.com",
-      "age": "6d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260513221818.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "Scientists discover the strange way CO2 cools part of Earth\u2019s atmosphere",
-      "sum": "Scientists have finally cracked the mystery behind one of climate change\u2019s strangest fingerprints: while Earth\u2019s surface heats up, the upper atmosphere is rapidly cooling. Researchers at Columbia Univ",
-      "src": "sciencedaily.com",
-      "age": "6d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260513221759.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "Scientists discover the Southern Ocean is \u201csweating\u201d more as climate change intensifies",
-      "sum": "A remote island between Australia and Antarctica is showing signs of a dramatic climate transformation. Scientists found storms over Macquarie Island now unleash much heavier rainfall than they did de",
-      "src": "sciencedaily.com",
-      "age": "7d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260512202337.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "gaming",
-      "title": "Xbox hires game industry analyst Matthew Ball to lead strategy",
-      "sum": "Microsoft has recruited game industry analyst Matthew Ball as Xbox chief strategy officer. Ball publishes an annual state of video gaming report, which is a popular read across the game industry, and ",
-      "src": "theverge.com",
-      "age": "recently",
-      "url": "https://www.theverge.com/report/934687/xbox-matthew-ball-strategy-officer-hire",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Cybercriminal Twins Caught After They Forgot to Turn Off Microsoft Teams Recording",
-      "sum": "Plus: Instructure\u2019s Canvas ransomware debacle comes to a close, an alleged dark net market kingpin gets arrested, OpenAI workers fall victim to a supply chain attack, and more.",
-      "src": "wired.com",
-      "age": "4d ago",
-      "url": "https://www.wired.com/story/security-news-this-week-cybercriminal-twins-caught-after-they-forgot-to-turn-off-microsoft-teams-recording/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Your iPhone Gets Stolen. Then the Hacking Begins",
-      "sum": "A bustling underground ecosystem is providing criminals with the tools to unlock iPhones\u2014and wage phishing attacks against their contacts to access bank accounts and more.",
-      "src": "wired.com",
-      "age": "6d ago",
-      "url": "https://www.wired.com/story/your-iphone-gets-stolen-then-the-hacking-begins/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Foxconn Ransomware Attack Shows Nothing Is Safe Forever",
-      "sum": "Famous for helping build Apple\u2019s iPhones, Foxconn just suffered another cyberattack, highlighting the perils of warehousing some of the world\u2019s most valuable data.",
-      "src": "wired.com",
-      "age": "7d ago",
-      "url": "https://www.wired.com/story/foxconn-ransomware-attack-shows-nothing-is-safe-forever/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Hackable Robot Lawn Mower Unlocks a New Nightmare",
-      "sum": "Plus: Meta officially kills encrypted Instagram DMs, the Trump administration targets \u201cviolent left wing extremists,\u201d leaked documents reveal Russia's school for elite hackers, and more.",
-      "src": "wired.com",
-      "age": "11d ago",
-      "url": "https://www.wired.com/story/security-news-this-week-hackable-robot-lawnmower-unlocks-a-new-nightmare/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "The Canvas Hack Is a New Kind of Ransomware Debacle",
-      "sum": "Thousands of schools around the US were paralyzed on Thursday after education tech firm Instructure shut down access to its Canvas platform following a breach by hackers going by the name ShinyHunters",
-      "src": "wired.com",
-      "age": "12d ago",
-      "url": "https://www.wired.com/story/canvas-hack-shinyhunters-ransomware-instructure/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "smarthome",
-      "title": "Do Camera Sensor Sizes Matter?",
-      "sum": "Image sensors for phones and digital cameras come in a wide variety of sizes. But does that matter?",
-      "src": "cnet.com",
-      "age": "3h ago",
-      "url": "https://www.cnet.com/tech/computing/do-camera-sensor-sizes-matter/",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "longevity",
-      "title": "Breakthrough drug reverses aging in skin and dramatically speeds healing",
-      "sum": "Scientists have discovered that a topical anti-aging drug called ABT-263 can dramatically improve wound healing in older skin. The treatment works by removing damaged \u201csenescent\u201d cells that accumulate",
-      "src": "sciencedaily.com",
-      "age": "16h ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260519003215.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "longevity",
-      "title": "Scientists successfully transfer longevity gene and extend lifespan",
-      "sum": "Scientists at the University of Rochester pulled off a remarkable experiment: they transferred a longevity-related gene from the famously long-lived naked mole rat into mice, and the mice ended up hea",
-      "src": "sciencedaily.com",
-      "age": "10d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260510030948.htm",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "hair",
-      "title": "Doctors warn this popular vitamin may quietly disrupt cancer care",
-      "sum": "Many cancer patients turn to biotin supplements hoping to restore hair lost during treatment, but experts warn the popular vitamin may do more harm than good. While biotin is often marketed for strong",
-      "src": "sciencedaily.com",
-      "age": "12d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260506225551.htm",
-      "date": "May 20, 2026"
     },
     {
       "cat": "ai",
@@ -1074,5 +1074,5 @@
       "date": "May 20, 2026"
     }
   ],
-  "updated": "2026-05-20T18:17:35.603741"
+  "updated": "2026-05-20T18:41:02.816202"
 }
