@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Explore2035 — The Future Is Closer Than You Think</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#050A14;font-family:'Inter',sans-serif;color:#e2e8f0;overflow-x:hidden;}
+:root{--teal:#00FFB2;--teal2:#00C896;--blue:#0af;--purple:#a78bfa;--dark:#050A14;--card:#0D1F3C;--border:rgba(0,255,178,0.15);}
+#bgc{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+#intro{position:fixed;top:0;left:0;width:100%;height:100%;background:#050A14;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+#intro-svg{width:96%;max-width:1000px;height:260px;}
+#skip-btn{margin-top:32px;font-family:'Orbitron',monospace;font-size:12px;color:#475569;background:none;border:0.5px solid #1a2a4a;border-radius:3px;padding:10px 28px;cursor:pointer;letter-spacing:0.08em;}
+#skip-btn:hover{color:#00FFB2;border-color:#00FFB2;}
+.intro-tagline{font-family:'Orbitron',monospace;font-size:11px;color:#334155;letter-spacing:0.2em;margin-top:16px;text-transform:uppercase;}
+#site{display:none;position:relative;z-index:1;min-height:100vh;}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem 0.75rem;border-bottom:0.5px solid var(--border);position:sticky;top:0;background:rgba(5,10,20,0.95);backdrop-filter:blur(10px);z-index:50;}
+.logo{font-family:'Orbitron',monospace;font-size:20px;font-weight:900;color:#fff;letter-spacing:2px;cursor:pointer;text-decoration:none;}
+.logo span{color:var(--teal);text-shadow:0 0 20px var(--teal);}
+.hdr-right{display:flex;align-items:center;gap:12px;}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 8px var(--teal);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.3;}}
+.theme-btn{background:rgba(0,255,178,0.05);border:0.5px solid var(--border);border-radius:20px;padding:5px 14px;color:var(--teal);font-size:11px;cursor:pointer;font-family:'Orbitron',monospace;}
+.hdr-time{font-size:10px;color:#475569;font-family:'Orbitron',monospace;}
+.nav{display:flex;gap:4px;padding:0.75rem 1.5rem;border-bottom:0.5px solid var(--border);background:rgba(5,10,20,0.9);flex-wrap:wrap;}
+.nav-btn{font-size:11px;padding:6px 14px;border:0.5px solid transparent;border-radius:4px;background:none;cursor:pointer;color:#64748b;font-family:'Orbitron',monospace;letter-spacing:0.04em;transition:all 0.2s;}
+.nav-btn:hover{color:var(--teal);}
+.nav-btn.active{color:var(--teal);border-color:var(--teal);background:rgba(0,255,178,0.05);}
+.hero{padding:3rem 1.5rem 2rem;text-align:center;}
+.hero-label{font-family:'Orbitron',monospace;font-size:9px;letter-spacing:0.2em;color:var(--teal);margin-bottom:14px;text-transform:uppercase;}
+.hero-title{font-family:'Orbitron',monospace;font-size:clamp(20px,4vw,36px);font-weight:900;line-height:1.2;margin-bottom:14px;color:#fff;}
+.hero-title span{color:var(--teal);text-shadow:0 0 30px var(--teal);}
+.hero-sub{font-size:14px;color:#64748b;line-height:1.7;max-width:540px;margin:0 auto 2rem;}
+.hero-search{display:flex;gap:8px;max-width:500px;margin:0 auto;}
+.hero-search input{flex:1;background:rgba(255,255,255,0.04);border:0.5px solid var(--border);border-radius:4px;padding:11px 16px;color:#e2e8f0;font-family:inherit;font-size:13px;}
+.hero-search input::placeholder{color:#334155;}
+.hero-search input:focus{outline:none;border-color:var(--teal);}
+.hero-search button{padding:11px 22px;background:var(--teal);color:#050A14;border:none;border-radius:4px;cursor:pointer;font-family:'Orbitron',monospace;font-size:11px;font-weight:700;}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:0 1.5rem 1.5rem;max-width:800px;margin:0 auto;}
+.stat{background:var(--card);border:0.5px solid var(--border);border-radius:8px;padding:0.85rem 1rem;text-align:center;}
+.stat:hover{border-color:var(--teal);}
+.stat-num{font-family:'Orbitron',monospace;font-size:22px;font-weight:700;color:var(--teal);}
+.stat-label{font-size:10px;color:#475569;letter-spacing:0.05em;text-transform:uppercase;margin-top:3px;}
+.cats{display:flex;gap:6px;flex-wrap:wrap;padding:0 1.5rem 1rem;}
+.cat{font-size:10px;padding:5px 12px;border-radius:3px;border:0.5px solid var(--border);background:transparent;cursor:pointer;color:#64748b;font-family:'Orbitron',monospace;letter-spacing:0.03em;transition:all 0.15s;}
+.cat:hover{border-color:var(--teal);color:var(--teal);}
+.cat.active{background:rgba(0,255,178,0.08);border-color:var(--teal);color:var(--teal);}
+.featured{margin:0 1.5rem 1.5rem;background:var(--card);border:0.5px solid var(--border);border-radius:10px;padding:1.5rem;position:relative;overflow:hidden;}
+.featured::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--teal),transparent);}
+.feat-label{font-family:'Orbitron',monospace;font-size:9px;letter-spacing:0.15em;color:var(--teal);margin-bottom:10px;}
+.feat-title{font-family:'Orbitron',monospace;font-size:16px;font-weight:700;line-height:1.4;margin-bottom:10px;color:#fff;}
+.feat-body{font-size:13px;color:#64748b;line-height:1.7;margin-bottom:14px;}
+.feat-meta{font-size:11px;color:#334155;display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+.feat-btn{font-size:10px;color:var(--teal);background:none;border:0.5px solid var(--teal);border-radius:3px;padding:4px 10px;cursor:pointer;font-family:'Orbitron',monospace;text-decoration:none;display:inline-block;}
+.sec-title{font-family:'Orbitron',monospace;font-size:11px;letter-spacing:0.1em;color:#334155;padding:0 1.5rem 0.75rem;text-transform:uppercase;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;padding:0 1.5rem 2rem;}
+.card{background:var(--card);border:0.5px solid var(--border);border-radius:8px;padding:1.1rem 1.2rem;cursor:pointer;transition:all 0.2s;animation:fadeUp 0.4s ease both;}
+.card:hover{border-color:rgba(0,255,178,0.4);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.card-tag{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;padding:3px 8px;border-radius:3px;display:inline-block;margin-bottom:8px;font-family:'Orbitron',monospace;}
+.tag-ai{background:rgba(0,255,178,0.08);color:#00FFB2;border:0.5px solid rgba(0,255,178,0.25);}
+.tag-robotics{background:rgba(10,170,255,0.08);color:#0af;border:0.5px solid rgba(10,170,255,0.25);}
+.tag-biotech{background:rgba(251,191,36,0.08);color:#fbbf24;border:0.5px solid rgba(251,191,36,0.25);}
+.tag-space{background:rgba(167,139,250,0.08);color:#a78bfa;border:0.5px solid rgba(167,139,250,0.25);}
+.tag-gadgets{background:rgba(251,113,133,0.08);color:#fb7185;border:0.5px solid rgba(251,113,133,0.25);}
+.tag-ev{background:rgba(52,211,153,0.08);color:#34d399;border:0.5px solid rgba(52,211,153,0.25);}
+.tag-fintech{background:rgba(251,191,36,0.08);color:#f59e0b;border:0.5px solid rgba(251,191,36,0.25);}
+.tag-climate{background:rgba(16,185,129,0.08);color:#10b981;border:0.5px solid rgba(16,185,129,0.25);}
+.tag-gaming{background:rgba(139,92,246,0.08);color:#8b5cf6;border:0.5px solid rgba(139,92,246,0.25);}
+.tag-cyber{background:rgba(239,68,68,0.08);color:#ef4444;border:0.5px solid rgba(239,68,68,0.25);}
+.tag-smarthome{background:rgba(6,182,212,0.08);color:#06b6d4;border:0.5px solid rgba(6,182,212,0.25);}
+.tag-drones{background:rgba(245,158,11,0.08);color:#f59e0b;border:0.5px solid rgba(245,158,11,0.25);}
+.tag-longevity{background:rgba(236,72,153,0.08);color:#ec4899;border:0.5px solid rgba(236,72,153,0.25);}
+.tag-hair{background:rgba(168,85,247,0.08);color:#a855f7;border:0.5px solid rgba(168,85,247,0.25);}
+.card-title{font-size:14px;font-weight:500;line-height:1.45;margin-bottom:7px;color:#e2e8f0;}
+.card-sum{font-size:12px;color:#475569;line-height:1.6;margin-bottom:10px;}
+.card-footer{display:flex;justify-content:space-between;align-items:center;}
+.card-source{font-size:10px;color:#334155;font-family:'Orbitron',monospace;}
+.card-btns{display:flex;gap:8px;}
+.card-btn{font-size:10px;color:var(--teal);border:none;background:none;cursor:pointer;font-family:'Orbitron',monospace;padding:0;text-decoration:none;display:inline-block;}
+.card-btn.shop{color:#fb7185;}
+.loading{text-align:center;padding:3rem;color:#475569;font-family:'Orbitron',monospace;font-size:12px;letter-spacing:0.1em;}
+.spinner{display:inline-block;width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--teal);border-radius:50%;animation:spin 0.7s linear infinite;margin-right:8px;vertical-align:middle;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.archive-section{padding:0 1.5rem 2rem;}
+.archive-title{font-family:'Orbitron',monospace;font-size:11px;letter-spacing:0.1em;color:#334155;margin-bottom:1rem;text-transform:uppercase;border-top:0.5px solid var(--border);padding-top:1.5rem;}
+.archive-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-bottom:1rem;}
+.archive-card{background:rgba(13,31,60,0.5);border:0.5px solid rgba(0,255,178,0.08);border-radius:8px;padding:0.85rem 1rem;transition:all 0.2s;}
+.archive-card:hover{border-color:rgba(0,255,178,0.3);}
+.archive-card-title{font-size:13px;font-weight:500;color:#94a3b8;margin-bottom:6px;line-height:1.4;}
+.archive-card-meta{font-size:10px;color:#334155;font-family:'Orbitron',monospace;display:flex;justify-content:space-between;align-items:center;}
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;padding:0 1.5rem 2rem;}
+.shop-card{background:var(--card);border:0.5px solid var(--border);border-radius:8px;overflow:hidden;transition:all 0.2s;animation:fadeUp 0.4s ease both;}
+.shop-card:hover{border-color:rgba(0,255,178,0.4);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3);}
+.shop-img{height:110px;display:flex;align-items:center;justify-content:center;font-size:44px;background:rgba(255,255,255,0.02);border-bottom:0.5px solid var(--border);position:relative;}
+.shop-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--teal),transparent);}
+.shop-body{padding:1rem 1.2rem;}
+.shop-name{font-size:14px;font-weight:500;margin-bottom:4px;color:#e2e8f0;}
+.shop-desc{font-size:11px;color:#475569;line-height:1.5;margin-bottom:8px;}
+.shop-rating{display:flex;align-items:center;gap:6px;margin-bottom:8px;}
+.stars{color:#fbbf24;font-size:12px;}
+.r-count{font-size:10px;color:#334155;}
+.prices{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;}
+.price-tag{font-size:11px;padding:3px 8px;border-radius:3px;border:0.5px solid var(--border);color:#64748b;}
+.price-best{border-color:var(--teal);color:var(--teal);background:rgba(0,255,178,0.05);}
+.shop-btns{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;}
+.sbtn{font-size:10px;padding:5px 10px;border-radius:3px;border:0.5px solid var(--border);cursor:pointer;background:none;color:#64748b;font-family:'Orbitron',monospace;transition:all 0.15s;}
+.sbtn:hover{border-color:var(--teal);color:var(--teal);}
+.sbtn.primary{background:var(--teal);color:#050A14;border-color:var(--teal);font-weight:700;}
+.shop-extras{display:flex;gap:10px;}
+.sxbtn{font-size:10px;color:#334155;background:none;border:none;cursor:pointer;font-family:inherit;}
+.sxbtn:hover{color:var(--teal);}
+.filter-bar{display:flex;gap:6px;flex-wrap:wrap;padding:0 1.5rem 1rem;align-items:center;}
+.filter-label{font-size:10px;color:#334155;font-family:'Orbitron',monospace;letter-spacing:0.05em;}
+.about-wrap{padding:1.5rem;}
+.about-card{background:var(--card);border:0.5px solid var(--border);border-radius:10px;padding:1.5rem;margin-bottom:1rem;position:relative;overflow:hidden;}
+.about-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--teal),transparent);}
+.about-title{font-family:'Orbitron',monospace;font-size:12px;color:var(--teal);letter-spacing:0.1em;margin-bottom:10px;}
+.about-text{font-size:13px;color:#64748b;line-height:1.8;}
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:1rem;}
+.about-item{background:rgba(0,255,178,0.03);border:0.5px solid var(--border);border-radius:6px;padding:0.85rem;text-align:center;}
+.about-icon{font-size:24px;margin-bottom:6px;}
+.about-item-title{font-family:'Orbitron',monospace;font-size:9px;color:var(--teal);margin-bottom:3px;}
+.about-item-text{font-size:10px;color:#475569;line-height:1.4;}
+.newsletter{margin:0 1.5rem 2rem;background:var(--card);border:0.5px solid var(--border);border-radius:10px;padding:1.5rem;text-align:center;position:relative;overflow:hidden;}
+.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--teal),transparent);}
+.nl-title{font-family:'Orbitron',monospace;font-size:14px;color:#fff;margin-bottom:6px;}
+.nl-sub{font-size:12px;color:#475569;margin-bottom:14px;}
+.nl-form{display:flex;gap:8px;max-width:420px;margin:0 auto;}
+.nl-form input{flex:1;background:rgba(255,255,255,0.04);border:0.5px solid var(--border);border-radius:4px;padding:9px 14px;color:#e2e8f0;font-family:inherit;font-size:12px;}
+.nl-form input::placeholder{color:#334155;}
+.nl-form button{padding:9px 18px;background:var(--teal);color:#050A14;border:none;border-radius:4px;cursor:pointer;font-family:'Orbitron',monospace;font-size:10px;font-weight:700;white-space:nowrap;}
+.footer{border-top:0.5px solid var(--border);padding:2rem 1.5rem;text-align:center;}
+.footer-logo{font-family:'Orbitron',monospace;font-size:18px;font-weight:900;color:#fff;margin-bottom:8px;}
+.footer-logo span{color:var(--teal);}
+.footer-text{font-size:11px;color:#334155;margin-bottom:12px;}
+.footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+.footer-link{font-size:10px;color:#475569;font-family:'Orbitron',monospace;cursor:pointer;letter-spacing:0.05em;}
+.footer-link:hover{color:var(--teal);}
+body.light{background:#f0f4ff;color:#0a1628;}
+body.light #bgc{opacity:0.15;}
+body.light .hdr{background:rgba(240,244,255,0.95);}
+body.light .card,body.light .featured,body.light .shop-card,body.light .about-card,body.light .newsletter,body.light .stat{background:#fff;border-color:rgba(0,150,100,0.2);}
+body.light .card-title,body.light .shop-name,body.light .feat-title{color:#0a1628;}
+body.light .card-sum,body.light .shop-desc,body.light .feat-body,body.light .about-text,body.light .hero-sub{color:#475569;}
+body.light .logo{color:#0a1628;}
+body.light .archive-card{background:rgba(255,255,255,0.8);}
+body.light .archive-card-title{color:#334155;}
+.hidden{display:none;}
+</style>
+</head>
+<body>
+<canvas id="bgc"></canvas>
+
+<div id="intro">
+  <svg id="intro-svg" viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="gl"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="gl2"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="gl3"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <g id="scg" filter="url(#gl)"></g>
+    <circle id="sc0" cx="500" cy="130" r="100" fill="none" stroke="#00FFB2" stroke-width="1.5" opacity="0" filter="url(#gl2)"/>
+    <circle id="sc1" cx="500" cy="130" r="90" fill="none" stroke="#00FFB2" stroke-width="3" opacity="0" filter="url(#gl2)"/>
+    <circle id="sc2" cx="500" cy="130" r="76" fill="none" stroke="#00FFB2" stroke-width="1.5" stroke-dasharray="5,6" opacity="0"/>
+    <circle id="sc3" cx="500" cy="130" r="62" fill="rgba(0,255,178,0.04)" opacity="0"/>
+    <path id="sa1" d="M 410 130 A 90 90 0 0 1 500 40" fill="none" stroke="#00FFB2" stroke-width="2" stroke-dasharray="4,8" opacity="0"/>
+    <path id="sa2" d="M 590 130 A 90 90 0 0 1 500 220" fill="none" stroke="#00FFB2" stroke-width="2" stroke-dasharray="4,8" opacity="0"/>
+    <circle id="sd1" cx="500" cy="40" r="5" fill="#00FFB2" opacity="0"/>
+    <circle id="sd2" cx="590" cy="130" r="5" fill="#00FFB2" opacity="0"/>
+    <circle id="sd3" cx="500" cy="220" r="5" fill="#00FFB2" opacity="0"/>
+    <circle id="sd4" cx="410" cy="130" r="5" fill="#00FFB2" opacity="0"/>
+    <text id="st1" font-family="Orbitron,monospace" font-size="28" font-weight="900" fill="#fff" text-anchor="middle" x="500" y="118" opacity="0" letter-spacing="4">EXPLORE</text>
+    <text id="st2" font-family="Orbitron,monospace" font-size="34" font-weight="900" fill="#00FFB2" text-anchor="middle" x="500" y="156" opacity="0" letter-spacing="4" filter="url(#gl3)">2035</text>
+    <text id="st3" font-family="Orbitron,monospace" font-size="10" fill="#475569" text-anchor="middle" x="500" y="178" opacity="0" letter-spacing="4">THE FUTURE IS CLOSER THAN YOU THINK</text>
+  </svg>
+  <button id="skip-btn" onclick="skipIntro()">SKIP INTRO ↓</button>
+  <p class="intro-tagline">Explore2035.com</p>
+</div>
+
+<div id="site">
+  <div class="hdr">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <div class="live-dot"></div>
+      <a class="logo" onclick="showPage('news')">EXPLORE<span>2035</span></a>
+    </div>
+    <div class="hdr-right">
+      <span class="hdr-time" id="tn-time"></span>
+      <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">☀ LIGHT</button>
+    </div>
+  </div>
+  <div class="nav">
+    <button class="nav-btn active" id="btn-news" onclick="showPage('news')">⬡ NEWS</button>
+    <button class="nav-btn" id="btn-shop" onclick="showPage('shop')">⬡ SHOP</button>
+    <button class="nav-btn" id="btn-archive" onclick="showPage('archive')">⬡ ARCHIVE</button>
+    <button class="nav-btn" id="btn-about" onclick="showPage('about')">⬡ ABOUT</button>
+  </div>
+
+  <div id="page-news">
+    <div class="hero">
+      <p class="hero-label">⬡ Live Intelligence Feed — Updated Daily at 6AM</p>
+      <h1 class="hero-title">Exploring the <span>Future</span><br>One Breakthrough at a Time</h1>
+      <p class="hero-sub">AI, robotics, biotech, space, gadgets, EVs, climate, longevity and more — 14 categories, powered by AI, updated every 24 hours.</p>
+      <div class="hero-search">
+        <input type="text" id="srch" placeholder="Search any technology, invention or topic..."/>
+        <button onclick="doSearch()">SEARCH</button>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-num">14</div><div class="stat-label">Categories</div></div>
+      <div class="stat"><div class="stat-num" id="art-count">--</div><div class="stat-label">Live Stories</div></div>
+      <div class="stat"><div class="stat-num">24H</div><div class="stat-label">Update Cycle</div></div>
+      <div class="stat"><div class="stat-num" id="archive-count">--</div><div class="stat-label">Archived</div></div>
+    </div>
+    <div class="cats" id="news-cats">
+      <button class="cat active" onclick="setCat('all',this)">ALL</button>
+      <button class="cat" onclick="setCat('ai',this)">🧠 AI & ML</button>
+      <button class="cat" onclick="setCat('robotics',this)">🤖 ROBOTICS</button>
+      <button class="cat" onclick="setCat('biotech',this)">🧬 BIOTECH</button>
+      <button class="cat" onclick="setCat('space',this)">🚀 SPACE</button>
+      <button class="cat" onclick="setCat('gadgets',this)">📱 GADGETS</button>
+      <button class="cat" onclick="setCat('ev',this)">🚗 EV & TRANSPORT</button>
+      <button class="cat" onclick="setCat('fintech',this)">💰 FINTECH</button>
+      <button class="cat" onclick="setCat('climate',this)">🌱 CLIMATE</button>
+      <button class="cat" onclick="setCat('gaming',this)">🎮 GAMING</button>
+      <button class="cat" onclick="setCat('cyber',this)">🔒 CYBERSECURITY</button>
+      <button class="cat" onclick="setCat('smarthome',this)">🏠 SMART HOME</button>
+      <button class="cat" onclick="setCat('drones',this)">✈️ DRONES</button>
+      <button class="cat" onclick="setCat('longevity',this)">⏳ LONGEVITY</button>
+      <button class="cat" onclick="setCat('hair',this)">💈 HAIR & RESTORATION</button>
+    </div>
+    <div class="featured" id="featured"></div>
+    <p class="sec-title" id="sec-label">⬡ TODAY'S TOP STORIES</p>
+    <div class="grid" id="news-grid"><div class="loading"><span class="spinner"></span>LOADING LIVE NEWS...</div></div>
+    <div class="newsletter">
+      <p class="nl-title">⬡ STAY AHEAD OF THE FUTURE</p>
+      <p class="nl-sub">Get the top breakthroughs across all 14 categories delivered to your inbox every morning. Free forever.</p>
+      <div class="nl-form">
+        <input type="email" placeholder="your@email.com"/>
+        <button onclick="alert('Newsletter coming soon!')">SUBSCRIBE ↗</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-shop" class="hidden">
+    <div class="hero" style="padding-bottom:1rem;">
+      <p class="hero-label">⬡ Shop & Discover</p>
+      <h1 class="hero-title">The <span>Latest</span> Tech<br>Products of 2035</h1>
+      <p class="hero-sub">Compare prices, read reviews, watch demos, and get full setup guides.</p>
+    </div>
+    <div class="filter-bar" id="shop-cats">
+      <span class="filter-label">FILTER:</span>
+      <button class="cat active" onclick="setShopCat('all',this)">ALL</button>
+      <button class="cat" onclick="setShopCat('robotics',this)">ROBOTICS</button>
+      <button class="cat" onclick="setShopCat('gadgets',this)">GADGETS</button>
+      <button class="cat" onclick="setShopCat('biotech',this)">BIOTECH</button>
+      <button class="cat" onclick="setShopCat('space',this)">SPACE</button>
+      <button class="cat" onclick="setShopCat('ai',this)">AI</button>
+      <button class="cat" onclick="setShopCat('ev',this)">EV</button>
+      <button class="cat" onclick="setShopCat('smarthome',this)">SMART HOME</button>
+      <button class="cat" onclick="setShopCat('hair',this)">HAIR</button>
+    </div>
+    <div class="shop-grid" id="shop-grid"></div>
+  </div>
+
+  <div id="page-archive" class="hidden">
+    <div class="hero" style="padding-bottom:1rem;">
+      <p class="hero-label">⬡ Story Archive</p>
+      <h1 class="hero-title">Every Story <span>Ever</span><br>Published Here</h1>
+      <p class="hero-sub">Our complete library of AI-curated technology breakthroughs — searchable, categorized, always accessible.</p>
+      <div class="hero-search" style="margin-top:1rem;">
+        <input type="text" id="archive-srch" placeholder="Search the full archive..."/>
+        <button onclick="doArchiveSearch()">SEARCH</button>
+      </div>
+    </div>
+    <div class="archive-section" id="archive-section"><div class="loading"><span class="spinner"></span>LOADING ARCHIVE...</div></div>
+  </div>
+
+  <div id="page-about" class="hidden">
+    <div class="hero" style="padding-bottom:1rem;">
+      <p class="hero-label">⬡ Our Mission</p>
+      <h1 class="hero-title">Built for the <span>Curious</span><br>Minds of Tomorrow</h1>
+      <p class="hero-sub">Explore2035 exists to make the future accessible to everyone.</p>
+    </div>
+    <div class="about-wrap">
+      <div class="about-card">
+        <p class="about-title">⬡ WHAT IS EXPLORE2035?</p>
+        <p class="about-text">Explore2035 is a fully automated AI-powered technology discovery platform. Every 24 hours our pipeline fetches breaking news from trusted sources, uses Claude AI to write clear summaries, and publishes fresh stories across 14 categories. Every article is permanently archived and searchable.</p>
+        <div class="about-grid">
+          <div class="about-item"><div class="about-icon">🧠</div><div class="about-item-title">AI & ML</div><div class="about-item-text">Models changing everything</div></div>
+          <div class="about-item"><div class="about-icon">🤖</div><div class="about-item-title">ROBOTICS</div><div class="about-item-text">Humanoids & automation</div></div>
+          <div class="about-item"><div class="about-icon">🧬</div><div class="about-item-title">BIOTECH</div><div class="about-item-text">Gene editing & medicine</div></div>
+          <div class="about-item"><div class="about-icon">🚀</div><div class="about-item-title">SPACE</div><div class="about-item-text">Mars & beyond</div></div>
+          <div class="about-item"><div class="about-icon">📱</div><div class="about-item-title">GADGETS</div><div class="about-item-text">Next-gen devices</div></div>
+          <div class="about-item"><div class="about-icon">🚗</div><div class="about-item-title">EV & TRANSPORT</div><div class="about-item-text">Electric future</div></div>
+          <div class="about-item"><div class="about-icon">💰</div><div class="about-item-title">FINTECH</div><div class="about-item-text">Money & crypto</div></div>
+          <div class="about-item"><div class="about-icon">🌱</div><div class="about-item-title">CLIMATE</div><div class="about-item-text">Clean energy</div></div>
+          <div class="about-item"><div class="about-icon">🎮</div><div class="about-item-title">GAMING</div><div class="about-item-text">Metaverse & VR</div></div>
+          <div class="about-item"><div class="about-icon">🔒</div><div class="about-item-title">CYBERSECURITY</div><div class="about-item-text">Digital protection</div></div>
+          <div class="about-item"><div class="about-icon">🏠</div><div class="about-item-title">SMART HOME</div><div class="about-item-text">Connected living</div></div>
+          <div class="about-item"><div class="about-icon">✈️</div><div class="about-item-title">DRONES</div><div class="about-item-text">Aerial innovation</div></div>
+          <div class="about-item"><div class="about-icon">⏳</div><div class="about-item-title">LONGEVITY</div><div class="about-item-text">Anti-aging science</div></div>
+          <div class="about-item"><div class="about-icon">💈</div><div class="about-item-title">HAIR & RESTORATION</div><div class="about-item-text">Regrowth breakthroughs</div></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <p class="about-title">⬡ HOW IT WORKS</p>
+        <p class="about-text">Every day at 6AM our AI pipeline automatically fetches the latest tech news from 28 trusted RSS feeds, uses Claude AI to write clear plain-English summaries, categorizes each story, and publishes them here. Old stories are permanently archived. Zero human involvement required.</p>
+      </div>
+      <div class="about-card">
+        <p class="about-title">⬡ CONTACT & PARTNERSHIPS</p>
+        <p class="about-text">Interested in partnering, advertising, or contributing to Explore2035? Visit explore2035.com or reach out through our social channels.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="footer-logo">EXPLORE<span>2035</span></p>
+    <p class="footer-text">© 2035 Explore2035.com — The future is closer than you think</p>
+    <div class="footer-links">
+      <span class="footer-link" onclick="showPage('news')">NEWS</span>
+      <span class="footer-link" onclick="showPage('shop')">SHOP</span>
+      <span class="footer-link" onclick="showPage('archive')">ARCHIVE</span>
+      <span class="footer-link" onclick="showPage('about')">ABOUT</span>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── GITHUB RAW URL for articles.json ─────────────────────────────────────────
+// Articles injected by pipeline daily — fallback to fetch if not available
+// window.__ARTICLES__ and window.__ARCHIVE__ are set by pipeline
+
+const tl={ai:'AI & ML',robotics:'ROBOTICS',biotech:'BIOTECH',space:'SPACE',gadgets:'GADGETS',ev:'EV & TRANSPORT',fintech:'FINTECH',climate:'CLIMATE',gaming:'GAMING',cyber:'CYBERSECURITY',smarthome:'SMART HOME',drones:'DRONES',longevity:'LONGEVITY',hair:'HAIR & RESTORATION'};
+const tc={ai:'tag-ai',robotics:'tag-robotics',biotech:'tag-biotech',space:'tag-space',gadgets:'tag-gadgets',ev:'tag-ev',fintech:'tag-fintech',climate:'tag-climate',gaming:'tag-gaming',cyber:'tag-cyber',smarthome:'tag-smarthome',drones:'tag-drones',longevity:'tag-longevity',hair:'tag-hair'};
+
+let ALL_ARTICLES = [];
+let ARCHIVE = [];
+
+// Load articles from GitHub
+async function loadArticles() {
+  try {
+    // Use articles injected directly by the pipeline (most reliable)
+    if(window.__ARTICLES__ && window.__ARTICLES__.length > 0) {
+      ALL_ARTICLES = window.__ARTICLES__;
+      ARCHIVE = window.__ARCHIVE__ || [];
+    } else {
+      // Fallback: fetch from jsDelivr CDN (no CORS issues)
+      const res = await fetch('https://cdn.jsdelivr.net/gh/Explore2035/explore2035@main/articles.json?t=' + Date.now());
+      const data = await res.json();
+      ALL_ARTICLES = data.today || [];
+      ARCHIVE = data.archive || [];
+    }
+    document.getElementById('art-count').textContent = ALL_ARTICLES.length;
+    document.getElementById('archive-count').textContent = ARCHIVE.length;
+    setCat('all', document.querySelector('#news-cats .cat'));
+  } catch(e) {
+    console.error('Failed to load articles:', e);
+    document.getElementById('news-grid').innerHTML = '<div class="loading">⚠ Pipeline runs at 6AM UTC — fresh articles coming soon!</div>';
+  }
+}
+
+function setCat(cat, btn) {
+  document.querySelectorAll('#news-cats .cat').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const filtered = cat === 'all' ? ALL_ARTICLES : ALL_ARTICLES.filter(a => a.cat === cat);
+  document.getElementById('sec-label').textContent = `⬡ ${cat==='all'?'TODAY\'S TOP STORIES':tl[cat]+' — TODAY\'S STORIES'}`;
+  if(filtered.length) renderFeatured(filtered[0]);
+  else document.getElementById('featured').innerHTML = '';
+  renderNews(filtered.slice(cat==='all'?1:0));
+}
+
+function renderFeatured(a) {
+  document.getElementById('featured').innerHTML = `
+    <p class="feat-label">⬡ FEATURED STORY</p>
+    <p class="feat-title">${a.title}</p>
+    <p class="feat-body">${a.sum}</p>
+    <div class="feat-meta">
+      <span>${a.src} · ${a.age}</span>
+      <a href="${a.url}" target="_blank" rel="noopener" class="feat-btn">READ MORE ↗</a>
+      <button class="feat-btn" onclick="showPage('shop')">🛒 SHOP RELATED ↗</button>
+    </div>`;
+}
+
+function renderNews(articles) {
+  const grid = document.getElementById('news-grid');
+  if(!articles.length){
+    grid.innerHTML='<div class="loading">NO STORIES IN THIS CATEGORY TODAY — CHECK BACK TOMORROW!</div>';
+    return;
+  }
+  grid.innerHTML = articles.map((a,i) => `
+    <div class="card" style="animation-delay:${i*0.04}s">
+      <span class="card-tag ${tc[a.cat]||'tag-ai'}">${tl[a.cat]||a.cat}</span>
+      <p class="card-title">${a.title}</p>
+      <p class="card-sum">${a.sum}</p>
+      <div class="card-footer">
+        <span class="card-source">${a.src} · ${a.age}</span>
+        <div class="card-btns">
+          <button class="card-btn shop" onclick="showPage('shop')">🛒 SHOP</button>
+          <a href="${a.url}" target="_blank" rel="noopener" class="card-btn">READ ↗</a>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function doSearch() {
+  const q = document.getElementById('srch').value.trim().toLowerCase();
+  if(!q) return;
+  const results = ALL_ARTICLES.filter(a => a.title.toLowerCase().includes(q) || a.sum.toLowerCase().includes(q));
+  document.getElementById('sec-label').textContent = `⬡ SEARCH: "${q.toUpperCase()}" — ${results.length} RESULTS`;
+  document.getElementById('featured').innerHTML = '';
+  renderNews(results);
+  document.querySelectorAll('#news-cats .cat').forEach(b=>b.classList.remove('active'));
+}
+document.getElementById('srch').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch();});
+
+function renderArchive(articles) {
+  const section = document.getElementById('archive-section');
+  if(!articles.length){section.innerHTML='<div class="loading">NO ARCHIVED ARTICLES YET</div>';return;}
+  const grouped = {};
+  articles.forEach(a => {
+    const date = a.date || 'Earlier';
+    if(!grouped[date]) grouped[date] = [];
+    grouped[date].push(a);
+  });
+  section.innerHTML = Object.entries(grouped).map(([date, arts]) => `
+    <p class="archive-title">⬡ ${date}</p>
+    <div class="archive-grid">
+      ${arts.map(a => `
+        <div class="archive-card">
+          <p class="archive-card-title">${a.title}</p>
+          <div class="archive-card-meta">
+            <span class="card-tag ${tc[a.cat]||'tag-ai'}" style="font-size:8px;padding:2px 6px;">${tl[a.cat]||a.cat}</span>
+            <span>${a.src}</span>
+          </div>
+        </div>`).join('')}
+    </div>`).join('');
+}
+
+function doArchiveSearch() {
+  const q = document.getElementById('archive-srch').value.trim().toLowerCase();
+  if(!q){renderArchive(ARCHIVE);return;}
+  const results = ARCHIVE.filter(a => a.title.toLowerCase().includes(q) || (a.cat||'').includes(q));
+  renderArchive(results);
+}
+document.getElementById('archive-srch').addEventListener('keydown',e=>{if(e.key==='Enter')doArchiveSearch();});
+
+// SHOP DATA
+const PRODUCTS=[
+  {cat:'robotics',e:'🤖',name:'Unitree G1 Humanoid Robot',desc:'Bipedal home assistant with 43 joints, AI vision, and voice control.',rating:4.7,rev:1240,prices:[{s:'Amazon',p:'$16,999',b:true},{s:'Unitree',p:'$17,500'},{s:'B&H',p:'$17,200'}]},
+  {cat:'gadgets',e:'🥽',name:'Apple Vision Pro 2',desc:'Spatial computing headset with 4K per eye and full hand tracking.',rating:4.5,rev:8900,prices:[{s:'Apple',p:'$2,999',b:true},{s:'Amazon',p:'$3,099'},{s:'Best Buy',p:'$3,049'}]},
+  {cat:'biotech',e:'🩺',name:'Withings Body Scan Scale',desc:'Medical-grade station measuring body composition and heart health.',rating:4.6,rev:3200,prices:[{s:'Withings',p:'$399',b:true},{s:'Amazon',p:'$419'},{s:'Best Buy',p:'$409'}]},
+  {cat:'space',e:'☀️',name:'EcoFlow DELTA Pro 3',desc:'3,600Wh portable power with 2,600W solar input.',rating:4.8,rev:5600,prices:[{s:'EcoFlow',p:'$3,199',b:true},{s:'Amazon',p:'$3,299'},{s:'Costco',p:'$3,150'}]},
+  {cat:'ai',e:'🧠',name:'Rabbit R2 AI Device',desc:'Pocket AI companion with natural language control of any app.',rating:4.2,rev:2100,prices:[{s:'Rabbit',p:'$199',b:true},{s:'Amazon',p:'$219'},{s:'Best Buy',p:'$209'}]},
+  {cat:'gadgets',e:'📡',name:'Starlink Mini Kit',desc:'Portable satellite dish delivering 100Mbps+ anywhere on Earth.',rating:4.9,rev:12000,prices:[{s:'Starlink',p:'$599',b:true},{s:'Amazon',p:'$649'},{s:'REI',p:'$629'}]},
+  {cat:'robotics',e:'🌀',name:'Dyson 360 Vis Nav Robot',desc:'360-degree vision robot vacuum with 2,800Pa suction.',rating:4.5,rev:4400,prices:[{s:'Dyson',p:'$1,199',b:true},{s:'Amazon',p:'$1,249'},{s:'Best Buy',p:'$1,229'}]},
+  {cat:'biotech',e:'💍',name:'Oura Ring Gen 4',desc:'Health ring monitoring sleep, HRV, temperature, and readiness.',rating:4.7,rev:22000,prices:[{s:'Oura',p:'$349',b:true},{s:'Amazon',p:'$359'},{s:'Best Buy',p:'$349'}]},
+  {cat:'ev',e:'⚡',name:'Tesla Model 3 Highland',desc:'The refreshed Model 3 with 358-mile range and new interior.',rating:4.8,rev:15000,prices:[{s:'Tesla',p:'$40,240',b:true},{s:'Carvana',p:'$41,500'},{s:'AutoNation',p:'$42,000'}]},
+  {cat:'smarthome',e:'🏠',name:'Amazon Echo Hub',desc:'Smart home control panel with 8" display and Matter support.',rating:4.4,rev:6700,prices:[{s:'Amazon',p:'$179',b:true},{s:'Best Buy',p:'$189'},{s:'Walmart',p:'$185'}]},
+  {cat:'hair',e:'💈',name:'iRestore Laser Hair Growth System',desc:'FDA-cleared laser helmet stimulating hair follicles with red light therapy.',rating:4.3,rev:8900,prices:[{s:'iRestore',p:'$695',b:true},{s:'Amazon',p:'$749'},{s:'HSN',p:'$695'}]},
+  {cat:'hair',e:'🧴',name:'Hims Minoxidil Foam 5%',desc:'FDA-approved topical treatment clinically proven to regrow hair in men.',rating:4.5,rev:24000,prices:[{s:'Hims',p:'$44/mo',b:true},{s:'Amazon',p:'$29'},{s:'CVS',p:'$32'}]},
+];
+
+function renderShop(cat){
+  const f=cat==='all'?PRODUCTS:PRODUCTS.filter(p=>p.cat===cat);
+  document.getElementById('shop-grid').innerHTML=f.map((p,i)=>`
+    <div class="shop-card" style="animation-delay:${i*0.05}s">
+      <div class="shop-img">${p.e}</div>
+      <div class="shop-body">
+        <span class="card-tag ${tc[p.cat]}">${tl[p.cat]}</span>
+        <p class="shop-name">${p.name}</p>
+        <p class="shop-desc">${p.desc}</p>
+        <div class="shop-rating">
+          <span class="stars">${'★'.repeat(Math.floor(p.rating))}${'☆'.repeat(5-Math.floor(p.rating))}</span>
+          <span style="font-size:12px;font-weight:500;">${p.rating}</span>
+          <span class="r-count">(${p.rev.toLocaleString()})</span>
+        </div>
+        <div class="prices">${p.prices.map(pr=>`<span class="price-tag ${pr.b?'price-best':''}">${pr.s} ${pr.p}${pr.b?' ★':''}</span>`).join('')}</div>
+        <div class="shop-btns">
+          <button class="sbtn primary" onclick="alert('Finding best deal for ${p.name}!')">BEST DEAL ↗</button>
+          <button class="sbtn" onclick="alert('Setup guide coming soon!')">HOW-TO</button>
+          <button class="sbtn" onclick="alert('Video demos coming soon!')">▶ DEMO</button>
+        </div>
+        <div class="shop-extras">
+          <button class="sxbtn" onclick="alert('Comparison coming soon!')">⇄ COMPARE</button>
+          <button class="sxbtn" onclick="alert('Reviews coming soon!')">✦ REVIEWS</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function setShopCat(cat,btn){
+  document.querySelectorAll('#shop-cats .cat').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');renderShop(cat);
+}
+
+function showPage(page){
+  ['news','shop','archive','about'].forEach(p=>{document.getElementById('page-'+p).classList.toggle('hidden',p!==page);});
+  ['news','shop','archive','about'].forEach(p=>{document.getElementById('btn-'+p).classList.toggle('active',p===page);});
+  window.scrollTo(0,0);
+  if(page==='archive') renderArchive(ARCHIVE);
+}
+
+let light=false;
+function toggleTheme(){light=!light;document.body.classList.toggle('light',light);document.getElementById('theme-btn').textContent=light?'◑ DARK':'☀ LIGHT';}
+document.getElementById('tn-time').textContent=new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+
+// SLINKY
+const scg=document.getElementById('scg');
+const N=20,CY=130,COL='#00FFB2';
+let raf=null,ph=0,sp1=0,sp2=0,sp3=0;
+function eio(t){return t<0.5?2*t*t:-1+(4-2*t)*t;}
+function eo(t){return 1-Math.pow(1-t,3);}
+function lr(a,b,t){return a+(b-a)*t;}
+function sop(id,v){document.getElementById(id).setAttribute('opacity',v);}
+function cop(id,v){document.getElementById(id).style.opacity=v;}
+function scirc(v){sop('sc0',v*0.5);sop('sc1',v);sop('sc2',v*0.7);sop('sc3',v);sop('sa1',v*0.5);sop('sa2',v*0.5);sop('sd1',v*0.9);sop('sd2',v*0.9);sop('sd3',v*0.9);sop('sd4',v*0.9);}
+function sdraw(pos,ry,af){
+  scg.innerHTML='';
+  for(let i=0;i<pos.length-1;i++){
+    const x1=pos[i],x2=pos[i+1],cx=(x1+x2)/2,rx=Math.abs(x2-x1)/2;
+    if(rx<1)continue;
+    const a=af(i/N),ib=i%2===1,ns='http://www.w3.org/2000/svg';
+    const eb=document.createElementNS(ns,'ellipse');
+    eb.setAttribute('cx',cx);eb.setAttribute('cy',CY);eb.setAttribute('rx',rx);eb.setAttribute('ry',ry);
+    eb.setAttribute('fill','none');eb.setAttribute('stroke',COL);eb.setAttribute('stroke-width','2');
+    eb.setAttribute('stroke-dasharray',`${Math.PI*rx} ${Math.PI*rx}`);
+    eb.setAttribute('stroke-dashoffset',ib?Math.PI*rx:0);eb.setAttribute('opacity',a*0.25);
+    scg.appendChild(eb);
+    const ef=document.createElementNS(ns,'ellipse');
+    ef.setAttribute('cx',cx);ef.setAttribute('cy',CY);ef.setAttribute('rx',rx);ef.setAttribute('ry',ry);
+    ef.setAttribute('fill','none');ef.setAttribute('stroke',COL);ef.setAttribute('stroke-width','3.5');
+    ef.setAttribute('stroke-dasharray',`${Math.PI*rx} ${Math.PI*rx}`);ef.setAttribute('stroke-dashoffset','0');ef.setAttribute('opacity',a*0.9);
+    scg.appendChild(ef);
+    const d=document.createElementNS(ns,'circle');
+    d.setAttribute('cx',x2);d.setAttribute('cy',CY);d.setAttribute('r','3.5');d.setAttribute('fill',COL);d.setAttribute('opacity',a*0.8);
+    scg.appendChild(d);
+  }
+}
+function slither(prog,dir){
+  const hx=lr(dir===1?60:940,dir===1?940:60,eio(prog));
+  const spread=lr(20,56,Math.sin(prog*Math.PI));
+  const pos=[];
+  for(let i=0;i<=N;i++){
+    const bh=Math.max(0,(i/N)-prog);
+    pos.push(Math.max(50,Math.min(950,hx-dir*(i*spread)+dir*bh*160)));
+  }
+  return pos;
+}
+function coilPos(prog){
+  const pos=[];
+  for(let i=0;i<=N;i++){
+    const f=i/N,angle=f*Math.PI*2*eo(prog),r=lr(56,0,eo(prog)*f);
+    pos.push(500+Math.cos(angle+Math.PI)*lr(56,r,eo(prog)));
+  }
+  return pos;
+}
+function sticker(){
+  const spd=0.006;
+  if(ph===0){sp1=Math.min(1,sp1+spd);sdraw(slither(sp1,1),lr(42,28,sp1),f=>1);scirc(0);cop('st1',0);cop('st2',0);cop('st3',0);if(sp1>=1)ph=1;}
+  else if(ph===1){sp2=Math.min(1,sp2+spd);sdraw(slither(sp2,-1),lr(28,42,sp2),f=>1);scirc(0);cop('st1',0);cop('st2',0);cop('st3',0);if(sp2>=1)ph=2;}
+  else if(ph===2){
+    sp3=Math.min(1,sp3+spd*0.65);
+    sdraw(coilPos(sp3),lr(36,74,eo(sp3)),f=>lr(1,0,eo(sp3)*f));
+    scirc(eo(sp3));
+    cop('st1',sp3>0.6?(sp3-0.6)/0.4:0);
+    cop('st2',sp3>0.72?(sp3-0.72)/0.28:0);
+    cop('st3',sp3>0.85?(sp3-0.85)/0.15:0);
+    if(sp3>=1){scg.innerHTML='';setTimeout(showSite,700);return;}
+  }else return;
+  raf=requestAnimationFrame(sticker);
+}
+function showSite(){
+  document.getElementById('intro').style.display='none';
+  document.getElementById('site').style.display='block';
+  initParticles();animParticles();
+  loadArticles();
+}
+function skipIntro(){if(raf)cancelAnimationFrame(raf);showSite();}
+
+const canvas=document.getElementById('bgc');
+const ctx=canvas.getContext('2d');
+let W,H,particles=[];
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
+function Particle(){this.x=Math.random()*W;this.y=Math.random()*H;this.r=Math.random()*1.2+0.3;this.vx=(Math.random()-0.5)*0.25;this.vy=(Math.random()-0.5)*0.25;this.a=Math.random()*0.4+0.1;}
+function initParticles(){resize();particles=[];for(let i=0;i<80;i++)particles.push(new Particle());}
+function animParticles(){
+  ctx.clearRect(0,0,W,H);
+  particles.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(0,255,178,${p.a})`;ctx.fill();});
+  particles.forEach((p,i)=>{for(let j=i+1;j<particles.length;j++){const dx=p.x-particles[j].x,dy=p.y-particles[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<100){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle=`rgba(0,255,178,${0.05*(1-d/100)})`;ctx.lineWidth=0.5;ctx.stroke();}}});
+  requestAnimationFrame(animParticles);
+}
+window.addEventListener('resize',()=>{if(particles.length)initParticles();});
+
+renderShop('all');
+sticker();
+</script>
+</body>
+</html>
