@@ -2,6 +2,368 @@
   "today": [
     {
       "cat": "ai",
+      "title": "Alibaba's proprietary Qwen3.7-Max can run for 35 hours autonomously and supports external harnesses like Anthropic's Claude Code",
+      "sum": "The AI industry has fully entered the &quot;agent era,&quot; a paradigm where AI models do far more than generate text \u2014 they now actively plan, execute, and course-correct complex tasks over days rat",
+      "src": "venturebeat.com",
+      "age": "3d ago",
+      "url": "https://venturebeat.com/technology/alibabas-proprietary-qwen3-7-max-can-run-for-35-hours-autonomously-and-supports-external-harnesses-like-anthropics-claude-code",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "6 kitchen gadgets that make adulting feel easier",
+      "sum": "From a robot stirring your soup to a bread machine that kneads your dough, here are 6 gadgets that may make you feel like you\u2019ve won adulthood.",
+      "src": "techcrunch.com",
+      "age": "23h ago",
+      "url": "https://techcrunch.com/2026/05/24/6-kitchen-gadgets-that-make-adulting-feel-easier/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "TechCrunch Mobility: Robotaxi reality check",
+      "sum": "Welcome back to TechCrunch Mobility \u2014 your central hub for news and insights on the future of transportation.",
+      "src": "techcrunch.com",
+      "age": "1d ago",
+      "url": "https://techcrunch.com/2026/05/24/techcrunch-mobility-robotaxi-reality-check/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "This simple change stops robot swarms from getting stuck",
+      "sum": "In crowded environments, more robots don\u2019t always mean faster results\u2014in fact, too many can bring everything to a standstill. Harvard researchers discovered a surprising fix: adding a bit of randomnes",
+      "src": "sciencedaily.com",
+      "age": "40d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260414075639.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "DNA robots could deliver drugs and hunt viruses inside your body",
+      "sum": "DNA robots are emerging as tiny programmable machines that could one day deliver drugs, hunt viruses, and build molecular-scale devices. By borrowing ideas from traditional robotics and combining them",
+      "src": "sciencedaily.com",
+      "age": "55d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/03/260331001104.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "AI-powered robot learns how to harvest tomatoes more efficiently",
+      "sum": "A new tomato-picking robot is learning to think before it acts. Instead of simply identifying ripe fruit, it predicts how easy each tomato will be to harvest and adjusts its approach accordingly. This",
+      "src": "sciencedaily.com",
+      "age": "68d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/03/260317064512.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists discover hidden liver switch that cuts harmful cholesterol",
+      "sum": "Scientists at UT Southwestern have uncovered a surprising new \u201cmaster switch\u201d that helps control how much cholesterol the liver sends into the bloodstream. The newly identified protein, HELZ2, works b",
+      "src": "sciencedaily.com",
+      "age": "13h ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260523103947.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists say house cats could help unlock new cancer treatments for humans",
+      "sum": "Scientists have cracked open the \u201cblack box\u201d of feline cancer in a landmark study that genetically analyzed nearly 500 cat tumors from around the world. The research uncovered striking similarities be",
+      "src": "sciencedaily.com",
+      "age": "1d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260523103943.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists discover why some DNA-doubled cells refuse to die",
+      "sum": "Scientists have uncovered a surprising twist in how cells behave when division goes wrong. Sometimes a cell successfully copies its DNA but fails to split into two, leaving it with double the genetic ",
+      "src": "sciencedaily.com",
+      "age": "6h ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260523103908.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists discover simple way to relieve arthritis pain without pills or surgery",
+      "sum": "A surprisingly simple walking tweak may offer new hope for millions living with knee osteoarthritis. In a year-long clinical trial, researchers found that slightly changing the angle of a person\u2019s foo",
+      "src": "sciencedaily.com",
+      "age": "3d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260522031135.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists discover a two-stage aging process that may cause cancer and arthritis",
+      "sum": "A new theory suggests many age-related diseases may actually start decades before symptoms appear. Researchers say early-life damage \u2014 from infections, injuries, or genetic mutations \u2014 can remain hidd",
+      "src": "sciencedaily.com",
+      "age": "3d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260521072420.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "NASA\u2019s Psyche spacecraft captures stunning Mars images during high-speed flyby",
+      "sum": "NASA\u2019s Psyche spacecraft skimmed past Mars in a precision flyby that helped catapult it deeper into space toward its ultimate target: the bizarre metal-rich asteroid Psyche. During the encounter, it s",
+      "src": "sciencedaily.com",
+      "age": "2d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260522023123.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "NASA stunned as strange solar radio burst lasts 19 days",
+      "sum": "NASA scientists were stunned when a strange radio signal from the Sun refused to fade away. Instead of lasting a few hours or days like normal solar radio bursts, this one persisted for an astonishing",
+      "src": "sciencedaily.com",
+      "age": "2d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260522023120.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "Scientists discover towering red auroras reaching deep into space above Japan",
+      "sum": "Mysterious red auroras spotted over Japan were found reaching astonishingly high altitudes, even during space storms considered relatively mild. The discovery suggests hidden solar activity may be str",
+      "src": "sciencedaily.com",
+      "age": "3d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260521072359.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "James Webb discovers a rare giant planet with surprisingly Earth-like temperatures",
+      "sum": "Astronomers using NASA\u2019s James Webb Space Telescope have uncovered a rare world unlike anything in our solar system \u2014 a giant planet about the size of Saturn with surprisingly Earth-like temperatures ",
+      "src": "sciencedaily.com",
+      "age": "3d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260521072355.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "Jupiter\u2019s lightning may be 100x more powerful than Earth\u2019s",
+      "sum": "Jupiter\u2019s storms aren\u2019t just gigantic \u2014 they may unleash lightning far more powerful than anything on Earth. Using NASA\u2019s Juno spacecraft, scientists discovered that some lightning bolts on the gas gi",
+      "src": "sciencedaily.com",
+      "age": "4d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260520093756.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "gadgets",
+      "title": "Apple\u2019s latest MacBook Air is $200 off in both sizes for Memorial Day",
+      "sum": "If you\u2019re looking for a laptop that\u2019ll still perform well several years from now, Apple\u2019s latest MacBook Air is hard to beat. Now, in particular, is a good time to pick one up, as you can currently bu",
+      "src": "theverge.com",
+      "age": "recently",
+      "url": "https://www.theverge.com/gadgets/936610/apple-macbook-air-m5-memorial-day-2026-deal-sale",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "gadgets",
+      "title": "Why Nuro thinks being a robotaxi \u2018second mover\u2019 gives it an advantage",
+      "sum": "Waymo is the undisputed leader in the robotaxi space, operating a fleet of over 3,000 driverless cars in at least 10 cities across the US. A number of companies, including Tesla, Zoox, Avride, and Mot",
+      "src": "theverge.com",
+      "age": "recently",
+      "url": "https://www.theverge.com/transportation/936126/nuro-robotaxi-dave-ferguson-interview-uber-lucid-waymo",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Tesla now calls FSD \u2018Tesla Assisted Driving\u2019 in China \u2013 a more truthful name",
+      "sum": "Tesla has once again changed the name of its \u201cFSD\u201d system in China, using a more truthful name for the system in the world\u2019s largest auto market. \n\n\n\n  more\u2026",
+      "src": "electrek.co",
+      "age": "1d ago",
+      "url": "https://electrek.co/2026/05/23/tesla-now-calls-fsd-tesla-assisted-driving-in-china-a-more-truthful-name/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "New bill could change how e-bikes are labeled and sold",
+      "sum": "A new bill in Delaware could change how electric bikes and other small electric vehicles are marketed and sold, aiming to crack down on what lawmakers see as growing confusion between legal e-bikes an",
+      "src": "electrek.co",
+      "age": "2d ago",
+      "url": "https://electrek.co/2026/05/23/new-bill-could-change-how-e-bikes-are-labeled-and-sold/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Podcast: Tesla Solar, Volvo EX60 unveiled, Xiaomi YU7 GT, and AMG GT",
+      "sum": "In the\u00a0 Electrek Podcast , we discuss the most popular news in the world of sustainable transport and energy. In this week\u2019s episode, we discuss Tesla going back to solar, Volvo EX60 unveiling, Xiaomi",
+      "src": "electrek.co",
+      "age": "2d ago",
+      "url": "https://electrek.co/2026/05/22/podcast-tesla-solar-volvo-ex60-unveiled-xiaomi-yu7-gt-and-amg-gt/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Lucid\u2019s more affordable Cosmos midsize SUV spotted testing next to Tesla Model Y",
+      "sum": "A camouflaged Lucid Cosmos prototype has been spotted testing on public roads near the Lucid factory in Casa Grande, Arizona. The photo shows the midsize SUV right next to a Tesla Model Y, giving us o",
+      "src": "electrek.co",
+      "age": "3d ago",
+      "url": "https://electrek.co/2026/05/22/lucid-lcid-cosmos-midsize-suv-spotted-testing-near-factory/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Tesla Cybercab: hate it or love it, it is the most efficient EV ever",
+      "sum": "Tesla\u2019s Cybercab has been certified at 165 Wh/mi, making it the most efficient electric vehicle ever produced \u2014 by a wide margin. The next most efficient EV on the market, the Lucid Air Pure, consumes",
+      "src": "electrek.co",
+      "age": "3d ago",
+      "url": "https://electrek.co/2026/05/22/tesla-cybercab-most-efficient-ev-ever-165-wh-mi/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Ferrari is using IBM\u2019s AI to create F1 superfans",
+      "sum": "IBM and Scuderia Ferrari HP take TechCrunch inside how they are redefining the fan experience.",
+      "src": "techcrunch.com",
+      "age": "2d ago",
+      "url": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Buterin says Ethereum Foundation will shrink, sell less ETH, and focus on 'CROPS'",
+      "sum": "Buterin's influence in the EF will decrease as the board expands. He framed the EF as \"one node, with a defined purpose,\" not the center of Ethereum.",
+      "src": "coindesk.com",
+      "age": "15m ago",
+      "url": "https://www.coindesk.com/web3/2026/05/25/buterin-says-ethereum-foundation-will-shrink-sell-less-eth-and-focus-on-crops",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "HYPE funds attract millions as investors dump bitcoin and ether ETFs",
+      "sum": "Investors turn to HYPE and XRP funds while dumping bitcoin and ether ETFs.",
+      "src": "coindesk.com",
+      "age": "5h ago",
+      "url": "https://www.coindesk.com/markets/2026/05/25/hype-funds-attract-millions-as-investors-dump-bitcoin-and-ether-etfs",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Bitcoin trades above $77,000 as oil's 5% slide pushes Asian equities higher",
+      "sum": "Oil\u2019s 5% drop on potential Strait of Hormuz reopening boosted Asian equities and supported crypto sentiment.",
+      "src": "coindesk.com",
+      "age": "8h ago",
+      "url": "https://www.coindesk.com/markets/2026/05/25/bitcoin-trades-above-usd77-000-as-oil-s-5-slide-pushes-asian-equities-higher",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Bitcoin options are coming to Nasdaq. Here's what it means for you",
+      "sum": "The new offering, pending CFTC approval, aims to democratize seamless crypto risk management.",
+      "src": "coindesk.com",
+      "age": "10h ago",
+      "url": "https://www.coindesk.com/markets/2026/05/25/bitcoin-options-are-coming-to-nadaq-here-s-what-it-means-for-you",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Scientists just found a faster, cleaner way to extract lithium for EV batteries",
+      "sum": "A breakthrough lithium-extraction method could help solve one of clean energy\u2019s dirtiest problems. Researchers at Columbia Engineering have developed a fast new technique that pulls lithium directly f",
+      "src": "sciencedaily.com",
+      "age": "2d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260522023132.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Scientists discover massive natural hydrogen source beneath Canada",
+      "sum": "Scientists in Canada have discovered that ancient underground rocks are naturally producing hydrogen gas \u2014 and lots of it. Measurements from mine boreholes in Ontario show the gas can flow continuousl",
+      "src": "sciencedaily.com",
+      "age": "5d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260519224317.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Scientists warn that the world\u2019s rivers are running out of oxygen",
+      "sum": "Rivers around the world are quietly running out of oxygen \u2014 and climate change is emerging as the main culprit. A sweeping global analysis of more than 21,000 river systems found that nearly 80% have ",
+      "src": "sciencedaily.com",
+      "age": "8d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260515233327.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Deadly \u201cred sky\u201d solar storm from 800 years ago discovered in ancient trees",
+      "sum": "Researchers in Japan traced a hidden medieval solar storm using ancient tree rings and centuries-old sky observations. The team linked reports of eerie red auroras with spikes of carbon-14 trapped in ",
+      "src": "sciencedaily.com",
+      "age": "11d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260513221818.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Scientists discover the strange way CO2 cools part of Earth\u2019s atmosphere",
+      "sum": "Scientists have finally cracked the mystery behind one of climate change\u2019s strangest fingerprints: while Earth\u2019s surface heats up, the upper atmosphere is rapidly cooling. Researchers at Columbia Univ",
+      "src": "sciencedaily.com",
+      "age": "11d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260513221759.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "A Hacker Group Is Poisoning Open Source Code at an Unprecedented Scale",
+      "sum": "GitHub is just the latest victim of TeamPCP, a gang that has carried out a spree of software supply chain attacks that has impacted hundreds of organizations.",
+      "src": "wired.com",
+      "age": "4d ago",
+      "url": "https://www.wired.com/story/teampcp-software-supply-chain-attack-spree-github/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Cybercriminal Twins Caught After They Forgot to Turn Off Microsoft Teams Recording",
+      "sum": "Plus: Instructure\u2019s Canvas ransomware debacle comes to a close, an alleged dark net market kingpin gets arrested, OpenAI workers fall victim to a supply chain attack, and more.",
+      "src": "wired.com",
+      "age": "9d ago",
+      "url": "https://www.wired.com/story/security-news-this-week-cybercriminal-twins-caught-after-they-forgot-to-turn-off-microsoft-teams-recording/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Your iPhone Gets Stolen. Then the Hacking Begins",
+      "sum": "A bustling underground ecosystem is providing criminals with the tools to unlock iPhones\u2014and wage phishing attacks against their contacts to access bank accounts and more.",
+      "src": "wired.com",
+      "age": "11d ago",
+      "url": "https://www.wired.com/story/your-iphone-gets-stolen-then-the-hacking-begins/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Foxconn Ransomware Attack Shows Nothing Is Safe Forever",
+      "sum": "Famous for helping build Apple\u2019s iPhones, Foxconn just suffered another cyberattack, highlighting the perils of warehousing some of the world\u2019s most valuable data.",
+      "src": "wired.com",
+      "age": "12d ago",
+      "url": "https://www.wired.com/story/foxconn-ransomware-attack-shows-nothing-is-safe-forever/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Hackable Robot Lawn Mower Unlocks a New Nightmare",
+      "sum": "Plus: Meta officially kills encrypted Instagram DMs, the Trump administration targets \u201cviolent left wing extremists,\u201d leaked documents reveal Russia's school for elite hackers, and more.",
+      "src": "wired.com",
+      "age": "16d ago",
+      "url": "https://www.wired.com/story/security-news-this-week-hackable-robot-lawnmower-unlocks-a-new-nightmare/",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "longevity",
+      "title": "\u201cZombie cells\u201d aren\u2019t always bad and that could transform anti-aging medicine",
+      "sum": "Scientists are uncovering a surprising truth about aging cells: some may damage the body, while others help protect it. The discovery is fueling a new wave of precision anti-aging therapies aimed at r",
+      "src": "sciencedaily.com",
+      "age": "3d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260521072402.htm",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "longevity",
+      "title": "Breakthrough drug reverses aging in skin and dramatically speeds healing",
+      "sum": "Scientists have discovered that a topical anti-aging drug called ABT-263 can dramatically improve wound healing in older skin. The treatment works by removing damaged \u201csenescent\u201d cells that accumulate",
+      "src": "sciencedaily.com",
+      "age": "5d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260519003215.htm",
+      "date": "May 25, 2026"
+    }
+  ],
+  "archive": [
+    {
+      "cat": "ai",
       "title": "We tried Google\u2019s AI glasses and they\u2019re almost there",
       "sum": "Google demoed prototype Android XR glasses that overlay Gemini-powered translation, navigation, and other information directly into your field of view.",
       "src": "techcrunch.com",
@@ -377,17 +739,6 @@
       "age": "11d ago",
       "url": "https://www.sciencedaily.com/releases/2026/05/260511213204.htm",
       "date": "May 24, 2026"
-    }
-  ],
-  "archive": [
-    {
-      "cat": "ai",
-      "title": "We tried Google\u2019s AI glasses and they\u2019re almost there",
-      "sum": "Google demoed prototype Android XR glasses that overlay Gemini-powered translation, navigation, and other information directly into your field of view.",
-      "src": "techcrunch.com",
-      "age": "19h ago",
-      "url": "https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/",
-      "date": "May 23, 2026"
     },
     {
       "cat": "ai",
@@ -399,129 +750,12 @@
       "date": "May 23, 2026"
     },
     {
-      "cat": "ai",
-      "title": "Alibaba's proprietary Qwen3.7-Max can run for 35 hours autonomously and supports external harnesses like Anthropic's Claude Code",
-      "sum": "The AI industry has fully entered the &quot;agent era,&quot; a paradigm where AI models do far more than generate text \u2014 they now actively plan, execute, and course-correct complex tasks over days rat",
-      "src": "venturebeat.com",
-      "age": "1d ago",
-      "url": "https://venturebeat.com/technology/alibabas-proprietary-qwen3-7-max-can-run-for-35-hours-autonomously-and-supports-external-harnesses-like-anthropics-claude-code",
-      "date": "May 23, 2026"
-    },
-    {
       "cat": "robotics",
       "title": "Waymo expands pause to four cities as robotaxis keep driving into floods",
       "sum": "Waymo's robotaxi service is now suspended in both Atlanta and San Antonio, as the company works to stop its vehicles from driving into flooded roads.",
       "src": "techcrunch.com",
       "age": "1d ago",
       "url": "https://techcrunch.com/2026/05/21/waymo-pauses-service-in-four-cities-as-robotaxis-keep-driving-into-floods/",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "This simple change stops robot swarms from getting stuck",
-      "sum": "In crowded environments, more robots don\u2019t always mean faster results\u2014in fact, too many can bring everything to a standstill. Harvard researchers discovered a surprising fix: adding a bit of randomnes",
-      "src": "sciencedaily.com",
-      "age": "38d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/04/260414075639.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "DNA robots could deliver drugs and hunt viruses inside your body",
-      "sum": "DNA robots are emerging as tiny programmable machines that could one day deliver drugs, hunt viruses, and build molecular-scale devices. By borrowing ideas from traditional robotics and combining them",
-      "src": "sciencedaily.com",
-      "age": "52d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/03/260331001104.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "AI-powered robot learns how to harvest tomatoes more efficiently",
-      "sum": "A new tomato-picking robot is learning to think before it acts. Instead of simply identifying ripe fruit, it predicts how easy each tomato will be to harvest and adjusts its approach accordingly. This",
-      "src": "sciencedaily.com",
-      "age": "66d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/03/260317064512.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "The breakthrough that makes robot faces feel less creepy",
-      "sum": "Humans pay enormous attention to lips during conversation, and robots have struggled badly to keep up. A new robot developed at Columbia Engineering learned realistic lip movements by watching its own",
-      "src": "sciencedaily.com",
-      "age": "126d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/01/260116035308.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Scientists discover simple way to relieve arthritis pain without pills or surgery",
-      "sum": "A surprisingly simple walking tweak may offer new hope for millions living with knee osteoarthritis. In a year-long clinical trial, researchers found that slightly changing the angle of a person\u2019s foo",
-      "src": "sciencedaily.com",
-      "age": "23h ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260522031135.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Scientists discover a two-stage aging process that may cause cancer and arthritis",
-      "sum": "A new theory suggests many age-related diseases may actually start decades before symptoms appear. Researchers say early-life damage \u2014 from infections, injuries, or genetic mutations \u2014 can remain hidd",
-      "src": "sciencedaily.com",
-      "age": "1d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260521072420.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Surprising study finds beef doesn\u2019t worsen blood sugar or diabetes risk",
-      "sum": "A new clinical trial suggests that eating beef every day may not be as risky for people with prediabetes as many assume. Researchers found that adults who ate 6\u20137 ounces of beef daily for a month show",
-      "src": "sciencedaily.com",
-      "age": "20h ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260521072416.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "MIT scientists discover amino acid that helps the gut heal itself",
-      "sum": "MIT scientists have identified cysteine \u2014 an amino acid found in foods like meat, dairy, beans, and nuts \u2014 as a potent trigger for intestinal repair. In mice, a cysteine-rich diet activated immune cel",
-      "src": "sciencedaily.com",
-      "age": "2d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260520233223.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Scientists discover hidden weakness shared by hundreds of cancer mutations",
-      "sum": "Scientists have unveiled a powerful new tool called PerturbFate that could change how researchers tackle diseases driven by huge numbers of genetic mutations, including cancer and Alzheimer\u2019s. Instead",
-      "src": "sciencedaily.com",
-      "age": "1d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260520093726.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "Scientists discover towering red auroras reaching deep into space above Japan",
-      "sum": "Mysterious red auroras spotted over Japan were found reaching astonishingly high altitudes, even during space storms considered relatively mild. The discovery suggests hidden solar activity may be str",
-      "src": "sciencedaily.com",
-      "age": "1d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260521072359.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "James Webb discovers a rare giant planet with surprisingly Earth-like temperatures",
-      "sum": "Astronomers using NASA\u2019s James Webb Space Telescope have uncovered a rare world unlike anything in our solar system \u2014 a giant planet about the size of Saturn with surprisingly Earth-like temperatures ",
-      "src": "sciencedaily.com",
-      "age": "1d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260521072355.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "Jupiter\u2019s lightning may be 100x more powerful than Earth\u2019s",
-      "sum": "Jupiter\u2019s storms aren\u2019t just gigantic \u2014 they may unleash lightning far more powerful than anything on Earth. Using NASA\u2019s Juno spacecraft, scientists discovered that some lightning bolts on the gas gi",
-      "src": "sciencedaily.com",
-      "age": "2d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260520093756.htm",
       "date": "May 23, 2026"
     },
     {
@@ -543,42 +777,6 @@
       "date": "May 23, 2026"
     },
     {
-      "cat": "gadgets",
-      "title": "Meta\u2019s Forum is part Reddit, part Facebook, and part Google AI Overview",
-      "sum": "Meta's new Forum app for iPhones takes Facebook Groups and moves them to a dedicated app with a dedicated AI chatbot to go with it, like an AI revamp of the ill-fated Groups app Facebook shut down in ",
-      "src": "theverge.com",
-      "age": "recently",
-      "url": "https://www.theverge.com/tech/936290/meta-forum-facebook-groups-app-hands-on",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "ev",
-      "title": "Podcast: Tesla Solar, Volvo EX60 unveiled, Xiaomi YU7 GT, and AMG GT",
-      "sum": "In the\u00a0 Electrek Podcast , we discuss the most popular news in the world of sustainable transport and energy. In this week\u2019s episode, we discuss Tesla going back to solar, Volvo EX60 unveiling, Xiaomi",
-      "src": "electrek.co",
-      "age": "16h ago",
-      "url": "https://electrek.co/2026/05/22/podcast-tesla-solar-volvo-ex60-unveiled-xiaomi-yu7-gt-and-amg-gt/",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "ev",
-      "title": "Lucid\u2019s more affordable Cosmos midsize SUV spotted testing next to Tesla Model Y",
-      "sum": "A camouflaged Lucid Cosmos prototype has been spotted testing on public roads near the Lucid factory in Casa Grande, Arizona. The photo shows the midsize SUV right next to a Tesla Model Y, giving us o",
-      "src": "electrek.co",
-      "age": "19h ago",
-      "url": "https://electrek.co/2026/05/22/lucid-lcid-cosmos-midsize-suv-spotted-testing-near-factory/",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "ev",
-      "title": "Tesla Cybercab: hate it or love it, it is the most efficient EV ever",
-      "sum": "Tesla\u2019s Cybercab has been certified at 165 Wh/mi, making it the most efficient electric vehicle ever produced \u2014 by a wide margin. The next most efficient EV on the market, the Lucid Air Pure, consumes",
-      "src": "electrek.co",
-      "age": "19h ago",
-      "url": "https://electrek.co/2026/05/22/tesla-cybercab-most-efficient-ev-ever-165-wh-mi/",
-      "date": "May 23, 2026"
-    },
-    {
       "cat": "ev",
       "title": "Wheel-E Podcast: Lectric XPress2 launch, Amazon cargo quads, more",
       "sum": "This week on\u00a0 Electrek \u2019s\u00a0Wheel-E podcast, we discuss the most popular news stories from the world of electric bikes and other nontraditional electric vehicles. This time, that includes new e-bike lau",
@@ -594,24 +792,6 @@
       "src": "electrek.co",
       "age": "1d ago",
       "url": "https://electrek.co/2026/05/22/tesla-is-recalling-14575-model-ys-because-they-may-be-missing-a-sticker/",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "Bitcoin tanks to $74,300 as spot ETFs bleed $2.26 billion in two weeks",
-      "sum": "U.S.-listed spot bitcoin exchange-traded funds have seen more than $2.26 billion in outflows over the past two weeks.",
-      "src": "coindesk.com",
-      "age": "41m ago",
-      "url": "https://www.coindesk.com/markets/2026/05/23/bitcoin-tanks-to-usd74-300-as-spot-etfs-bleed-usd2-26-billion-in-two-weeks",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "F2Pool founder who controls 11% of bitcoin's hashrate to lead first SpaceX mission to Mars",
-      "sum": "Chun Wang, the first Mission Commander for SpaceX\u2019s first commercial spaceflight to Mars, is crucial for the future transport of millions of tons of cargo and a million citizens to the Red Planet.",
-      "src": "coindesk.com",
-      "age": "15h ago",
-      "url": "https://www.coindesk.com/business/2026/05/22/f2pool-founder-who-controls-11-of-bitcoin-s-hashrate-to-lead-first-spacex-mission-to-mars",
       "date": "May 23, 2026"
     },
     {
@@ -643,119 +823,11 @@
     },
     {
       "cat": "climate",
-      "title": "Scientists discover massive natural hydrogen source beneath Canada",
-      "sum": "Scientists in Canada have discovered that ancient underground rocks are naturally producing hydrogen gas \u2014 and lots of it. Measurements from mine boreholes in Ontario show the gas can flow continuousl",
-      "src": "sciencedaily.com",
-      "age": "2d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260519224317.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "Scientists warn that the world\u2019s rivers are running out of oxygen",
-      "sum": "Rivers around the world are quietly running out of oxygen \u2014 and climate change is emerging as the main culprit. A sweeping global analysis of more than 21,000 river systems found that nearly 80% have ",
-      "src": "sciencedaily.com",
-      "age": "6d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260515233327.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "Deadly \u201cred sky\u201d solar storm from 800 years ago discovered in ancient trees",
-      "sum": "Researchers in Japan traced a hidden medieval solar storm using ancient tree rings and centuries-old sky observations. The team linked reports of eerie red auroras with spikes of carbon-14 trapped in ",
-      "src": "sciencedaily.com",
-      "age": "9d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260513221818.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "Scientists discover the strange way CO2 cools part of Earth\u2019s atmosphere",
-      "sum": "Scientists have finally cracked the mystery behind one of climate change\u2019s strangest fingerprints: while Earth\u2019s surface heats up, the upper atmosphere is rapidly cooling. Researchers at Columbia Univ",
-      "src": "sciencedaily.com",
-      "age": "9d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260513221759.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "climate",
       "title": "Scientists discover the Southern Ocean is \u201csweating\u201d more as climate change intensifies",
       "sum": "A remote island between Australia and Antarctica is showing signs of a dramatic climate transformation. Scientists found storms over Macquarie Island now unleash much heavier rainfall than they did de",
       "src": "sciencedaily.com",
       "age": "10d ago",
       "url": "https://www.sciencedaily.com/releases/2026/05/260512202337.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "A Hacker Group Is Poisoning Open Source Code at an Unprecedented Scale",
-      "sum": "GitHub is just the latest victim of TeamPCP, a gang that has carried out a spree of software supply chain attacks that has impacted hundreds of organizations.",
-      "src": "wired.com",
-      "age": "2d ago",
-      "url": "https://www.wired.com/story/teampcp-software-supply-chain-attack-spree-github/",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Cybercriminal Twins Caught After They Forgot to Turn Off Microsoft Teams Recording",
-      "sum": "Plus: Instructure\u2019s Canvas ransomware debacle comes to a close, an alleged dark net market kingpin gets arrested, OpenAI workers fall victim to a supply chain attack, and more.",
-      "src": "wired.com",
-      "age": "7d ago",
-      "url": "https://www.wired.com/story/security-news-this-week-cybercriminal-twins-caught-after-they-forgot-to-turn-off-microsoft-teams-recording/",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Your iPhone Gets Stolen. Then the Hacking Begins",
-      "sum": "A bustling underground ecosystem is providing criminals with the tools to unlock iPhones\u2014and wage phishing attacks against their contacts to access bank accounts and more.",
-      "src": "wired.com",
-      "age": "9d ago",
-      "url": "https://www.wired.com/story/your-iphone-gets-stolen-then-the-hacking-begins/",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Foxconn Ransomware Attack Shows Nothing Is Safe Forever",
-      "sum": "Famous for helping build Apple\u2019s iPhones, Foxconn just suffered another cyberattack, highlighting the perils of warehousing some of the world\u2019s most valuable data.",
-      "src": "wired.com",
-      "age": "10d ago",
-      "url": "https://www.wired.com/story/foxconn-ransomware-attack-shows-nothing-is-safe-forever/",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Hackable Robot Lawn Mower Unlocks a New Nightmare",
-      "sum": "Plus: Meta officially kills encrypted Instagram DMs, the Trump administration targets \u201cviolent left wing extremists,\u201d leaked documents reveal Russia's school for elite hackers, and more.",
-      "src": "wired.com",
-      "age": "14d ago",
-      "url": "https://www.wired.com/story/security-news-this-week-hackable-robot-lawnmower-unlocks-a-new-nightmare/",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "longevity",
-      "title": "\u201cZombie cells\u201d aren\u2019t always bad and that could transform anti-aging medicine",
-      "sum": "Scientists are uncovering a surprising truth about aging cells: some may damage the body, while others help protect it. The discovery is fueling a new wave of precision anti-aging therapies aimed at r",
-      "src": "sciencedaily.com",
-      "age": "1d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260521072402.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "longevity",
-      "title": "Breakthrough drug reverses aging in skin and dramatically speeds healing",
-      "sum": "Scientists have discovered that a topical anti-aging drug called ABT-263 can dramatically improve wound healing in older skin. The treatment works by removing damaged \u201csenescent\u201d cells that accumulate",
-      "src": "sciencedaily.com",
-      "age": "3d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260519003215.htm",
-      "date": "May 23, 2026"
-    },
-    {
-      "cat": "longevity",
-      "title": "Scientists make old blood stem cells young again in major anti-aging breakthrough",
-      "sum": "As blood stem cells age, their lysosomes become overactive and damaged, triggering inflammation and weakening the body\u2019s ability to regenerate healthy blood and immune cells. By calming this cellular ",
-      "src": "sciencedaily.com",
-      "age": "10d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260511213204.htm",
       "date": "May 23, 2026"
     },
     {
@@ -1080,15 +1152,6 @@
       "src": "venturebeat.com",
       "age": "18h ago",
       "url": "https://venturebeat.com/infrastructure/aws-nabs-white-hot-gen-ai-media-creation-startup-fal-becoming-its-preferred-cloud-provider",
-      "date": "May 20, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "Scientists create robots smaller than a grain of salt that can think",
-      "sum": "Researchers have created microscopic robots so small they\u2019re barely visible, yet smart enough to sense, decide, and move completely on their own. Powered by light and equipped with tiny computers, the",
-      "src": "sciencedaily.com",
-      "age": "134d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/01/260105165815.htm",
       "date": "May 20, 2026"
     },
     {
@@ -1479,7 +1542,7 @@
       "thumb": "https://img.youtube.com/vi/nepKKz-MzFM/mqdefault.jpg",
       "yt_id": "nepKKz-MzFM",
       "pub": "2026-05-06",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "ai",
@@ -1489,7 +1552,7 @@
       "thumb": "https://img.youtube.com/vi/iKx3gAODybU/mqdefault.jpg",
       "yt_id": "iKx3gAODybU",
       "pub": "2026-04-09",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "ai",
@@ -1499,7 +1562,17 @@
       "thumb": "https://img.youtube.com/vi/vif8NQcjVf0/mqdefault.jpg",
       "yt_id": "vif8NQcjVf0",
       "pub": "2026-03-23",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "School of Football | Can football teach a robot to move? | Boston Dynamics x Hyundai",
+      "channel": "Boston Dynamics",
+      "url": "https://www.youtube.com/watch?v=qaqzZK7ZrZk",
+      "thumb": "https://img.youtube.com/vi/qaqzZK7ZrZk/mqdefault.jpg",
+      "yt_id": "qaqzZK7ZrZk",
+      "pub": "2026-05-25",
+      "date": "May 25, 2026"
     },
     {
       "cat": "robotics",
@@ -1509,7 +1582,7 @@
       "thumb": "https://img.youtube.com/vi/xKK5ze3FukQ/mqdefault.jpg",
       "yt_id": "xKK5ze3FukQ",
       "pub": "2026-05-18",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "robotics",
@@ -1519,17 +1592,7 @@
       "thumb": "https://img.youtube.com/vi/3aQWvdCac9o/mqdefault.jpg",
       "yt_id": "3aQWvdCac9o",
       "pub": "2026-05-18",
-      "date": "May 24, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "Atlas' Balancing Act | Boston Dynamics",
-      "channel": "Boston Dynamics",
-      "url": "https://www.youtube.com/watch?v=UoHfGhLHRkg",
-      "thumb": "https://img.youtube.com/vi/UoHfGhLHRkg/mqdefault.jpg",
-      "yt_id": "UoHfGhLHRkg",
-      "pub": "2026-05-05",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "space",
@@ -1539,7 +1602,7 @@
       "thumb": "https://img.youtube.com/vi/udEBWcciYiY/mqdefault.jpg",
       "yt_id": "udEBWcciYiY",
       "pub": "2026-05-20",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "space",
@@ -1549,7 +1612,7 @@
       "thumb": "https://img.youtube.com/vi/HVKuW-DkE_U/mqdefault.jpg",
       "yt_id": "HVKuW-DkE_U",
       "pub": "2026-05-20",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "space",
@@ -1559,7 +1622,7 @@
       "thumb": "https://img.youtube.com/vi/Nyki6O1oxIg/mqdefault.jpg",
       "yt_id": "Nyki6O1oxIg",
       "pub": "2026-05-19",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "biotech",
@@ -1569,7 +1632,7 @@
       "thumb": "https://img.youtube.com/vi/y894m7joEBc/mqdefault.jpg",
       "yt_id": "y894m7joEBc",
       "pub": "2026-05-08",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "biotech",
@@ -1579,7 +1642,7 @@
       "thumb": "https://img.youtube.com/vi/BUtzl6b0uKU/mqdefault.jpg",
       "yt_id": "BUtzl6b0uKU",
       "pub": "2025-10-11",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "biotech",
@@ -1589,7 +1652,7 @@
       "thumb": "https://img.youtube.com/vi/Ctwc8t5CsQs/mqdefault.jpg",
       "yt_id": "Ctwc8t5CsQs",
       "pub": "2025-10-11",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "gadgets",
@@ -1599,7 +1662,7 @@
       "thumb": "https://img.youtube.com/vi/-YYMyAxUgus/mqdefault.jpg",
       "yt_id": "-YYMyAxUgus",
       "pub": "2024-06-10",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "gadgets",
@@ -1609,7 +1672,7 @@
       "thumb": "https://img.youtube.com/vi/1tYGeT9FdAY/mqdefault.jpg",
       "yt_id": "1tYGeT9FdAY",
       "pub": "2024-04-04",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "gadgets",
@@ -1619,7 +1682,7 @@
       "thumb": "https://img.youtube.com/vi/PZkmNKgoPug/mqdefault.jpg",
       "yt_id": "PZkmNKgoPug",
       "pub": "2024-02-28",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "ev",
@@ -1629,7 +1692,7 @@
       "thumb": "https://img.youtube.com/vi/6xN2s4o1b9Q/mqdefault.jpg",
       "yt_id": "6xN2s4o1b9Q",
       "pub": "2019-02-11",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "ev",
@@ -1639,7 +1702,7 @@
       "thumb": "https://img.youtube.com/vi/n1plrJWNrGM/mqdefault.jpg",
       "yt_id": "n1plrJWNrGM",
       "pub": "2018-06-25",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "ev",
@@ -1649,7 +1712,7 @@
       "thumb": "https://img.youtube.com/vi/B6fygB_HccA/mqdefault.jpg",
       "yt_id": "B6fygB_HccA",
       "pub": "2018-06-11",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "climate",
@@ -1659,7 +1722,7 @@
       "thumb": "https://img.youtube.com/vi/0y6wiBzPMSI/mqdefault.jpg",
       "yt_id": "0y6wiBzPMSI",
       "pub": "2024-12-17",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "climate",
@@ -1669,7 +1732,7 @@
       "thumb": "https://img.youtube.com/vi/o1OsDWT_DUc/mqdefault.jpg",
       "yt_id": "o1OsDWT_DUc",
       "pub": "2024-08-11",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "climate",
@@ -1679,37 +1742,37 @@
       "thumb": "https://img.youtube.com/vi/8HzIlKe--NU/mqdefault.jpg",
       "yt_id": "8HzIlKe--NU",
       "pub": "2023-12-05",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "gaming",
-      "title": "Avatar Legends: The Fighting Game - Official Azula Reveal Trailer",
+      "title": "Top 10 Lego Games (Lego Batman: Legacy of The Dark Knight Update)",
       "channel": "IGN",
-      "url": "https://www.youtube.com/watch?v=0oi0wIveMN8",
-      "thumb": "https://img.youtube.com/vi/0oi0wIveMN8/mqdefault.jpg",
-      "yt_id": "0oi0wIveMN8",
-      "pub": "2026-05-23",
-      "date": "May 24, 2026"
+      "url": "https://www.youtube.com/watch?v=CzX4MejBKLA",
+      "thumb": "https://img.youtube.com/vi/CzX4MejBKLA/mqdefault.jpg",
+      "yt_id": "CzX4MejBKLA",
+      "pub": "2026-05-25",
+      "date": "May 25, 2026"
     },
     {
       "cat": "gaming",
-      "title": "Fatal Fury: City of the Wolves - Official Mr. Karate Character Trailer",
+      "title": "Tekken 8 - Official Yujiro Hanma Announcement Trailer",
       "channel": "IGN",
-      "url": "https://www.youtube.com/watch?v=0W7LMhjQ6H0",
-      "thumb": "https://img.youtube.com/vi/0W7LMhjQ6H0/mqdefault.jpg",
-      "yt_id": "0W7LMhjQ6H0",
-      "pub": "2026-05-23",
-      "date": "May 24, 2026"
+      "url": "https://www.youtube.com/watch?v=eC_BQENT5Tk",
+      "thumb": "https://img.youtube.com/vi/eC_BQENT5Tk/mqdefault.jpg",
+      "yt_id": "eC_BQENT5Tk",
+      "pub": "2026-05-24",
+      "date": "May 25, 2026"
     },
     {
       "cat": "gaming",
-      "title": "Starpath - Official Announcement Trailer",
+      "title": "Rocket League - Official 'A New Era' Teaser Trailer",
       "channel": "IGN",
-      "url": "https://www.youtube.com/watch?v=05ZS0PWzyVs",
-      "thumb": "https://img.youtube.com/vi/05ZS0PWzyVs/mqdefault.jpg",
-      "yt_id": "05ZS0PWzyVs",
-      "pub": "2026-05-23",
-      "date": "May 24, 2026"
+      "url": "https://www.youtube.com/watch?v=TiPNqKDtDXQ",
+      "thumb": "https://img.youtube.com/vi/TiPNqKDtDXQ/mqdefault.jpg",
+      "yt_id": "TiPNqKDtDXQ",
+      "pub": "2026-05-24",
+      "date": "May 25, 2026"
     },
     {
       "cat": "cyber",
@@ -1719,7 +1782,7 @@
       "thumb": "https://img.youtube.com/vi/x4CUAuwoZVk/mqdefault.jpg",
       "yt_id": "x4CUAuwoZVk",
       "pub": "2026-03-04",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "cyber",
@@ -1729,7 +1792,7 @@
       "thumb": "https://img.youtube.com/vi/NT1VCmJF3mU/mqdefault.jpg",
       "yt_id": "NT1VCmJF3mU",
       "pub": "2026-03-01",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "cyber",
@@ -1739,7 +1802,27 @@
       "thumb": "https://img.youtube.com/vi/uXW_1hepfT4/mqdefault.jpg",
       "yt_id": "uXW_1hepfT4",
       "pub": "2026-02-25",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Cheap AI could derail OpenAI and Anthropic's IPOs",
+      "channel": "CNBC",
+      "url": "https://www.youtube.com/watch?v=q6WWY6q2-ac",
+      "thumb": "https://img.youtube.com/vi/q6WWY6q2-ac/mqdefault.jpg",
+      "yt_id": "q6WWY6q2-ac",
+      "pub": "2026-05-25",
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "In Other News: Low Consumer Confidence, Japanese Homebuilders On Buying Spree & Humanoids In China",
+      "channel": "CNBC",
+      "url": "https://www.youtube.com/watch?v=vJWM80i38ZM",
+      "thumb": "https://img.youtube.com/vi/vJWM80i38ZM/mqdefault.jpg",
+      "yt_id": "vJWM80i38ZM",
+      "pub": "2026-05-24",
+      "date": "May 25, 2026"
     },
     {
       "cat": "fintech",
@@ -1749,27 +1832,7 @@
       "thumb": "https://img.youtube.com/vi/g_nYkJXzvCk/mqdefault.jpg",
       "yt_id": "g_nYkJXzvCk",
       "pub": "2026-05-23",
-      "date": "May 24, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "Crypto\u2019s Next Phase Is Bigger Than Bitcoin",
-      "channel": "CNBC",
-      "url": "https://www.youtube.com/watch?v=ib-XMy-d_2I",
-      "thumb": "https://img.youtube.com/vi/ib-XMy-d_2I/mqdefault.jpg",
-      "yt_id": "ib-XMy-d_2I",
-      "pub": "2026-05-22",
-      "date": "May 24, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "How Cheap AI Could Derail OpenAI And Anthropic's IPOs",
-      "channel": "CNBC",
-      "url": "https://www.youtube.com/watch?v=aKNaXGpJ7WM",
-      "thumb": "https://img.youtube.com/vi/aKNaXGpJ7WM/mqdefault.jpg",
-      "yt_id": "aKNaXGpJ7WM",
-      "pub": "2026-05-20",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "smarthome",
@@ -1779,7 +1842,7 @@
       "thumb": "https://img.youtube.com/vi/VKtDHeZPDv0/mqdefault.jpg",
       "yt_id": "VKtDHeZPDv0",
       "pub": "2024-01-31",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "smarthome",
@@ -1789,7 +1852,7 @@
       "thumb": "https://img.youtube.com/vi/iEYRwU_JxSY/mqdefault.jpg",
       "yt_id": "iEYRwU_JxSY",
       "pub": "2023-01-31",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "smarthome",
@@ -1799,7 +1862,17 @@
       "thumb": "https://img.youtube.com/vi/douMfzLC8YE/mqdefault.jpg",
       "yt_id": "douMfzLC8YE",
       "pub": "2022-11-09",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
+    },
+    {
+      "cat": "drones",
+      "title": "Blastoff! China's Shenzhou 23 crew launches to Tiangong space station",
+      "channel": "VideoFromSpace",
+      "url": "https://www.youtube.com/watch?v=raPWsy3W874",
+      "thumb": "https://img.youtube.com/vi/raPWsy3W874/mqdefault.jpg",
+      "yt_id": "raPWsy3W874",
+      "pub": "2026-05-24",
+      "date": "May 25, 2026"
     },
     {
       "cat": "drones",
@@ -1809,7 +1882,7 @@
       "thumb": "https://img.youtube.com/vi/pVMKMVX2sKA/mqdefault.jpg",
       "yt_id": "pVMKMVX2sKA",
       "pub": "2026-05-23",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "drones",
@@ -1819,17 +1892,7 @@
       "thumb": "https://img.youtube.com/vi/JG-3LNesMF8/mqdefault.jpg",
       "yt_id": "JG-3LNesMF8",
       "pub": "2026-05-23",
-      "date": "May 24, 2026"
-    },
-    {
-      "cat": "drones",
-      "title": "Watch live! China's Shenzhou 23 crew launches to Tiangong space station",
-      "channel": "VideoFromSpace",
-      "url": "https://www.youtube.com/watch?v=raPWsy3W874",
-      "thumb": "https://img.youtube.com/vi/raPWsy3W874/mqdefault.jpg",
-      "yt_id": "raPWsy3W874",
-      "pub": "2026-05-23",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "longevity",
@@ -1839,7 +1902,7 @@
       "thumb": "https://img.youtube.com/vi/VQjPKqE39No/mqdefault.jpg",
       "yt_id": "VQjPKqE39No",
       "pub": "2023-08-20",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "longevity",
@@ -1849,7 +1912,7 @@
       "thumb": "https://img.youtube.com/vi/sKouPOhh_9I/mqdefault.jpg",
       "yt_id": "sKouPOhh_9I",
       "pub": "2023-06-10",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "longevity",
@@ -1859,7 +1922,7 @@
       "thumb": "https://img.youtube.com/vi/O0EKaSmtpA0/mqdefault.jpg",
       "yt_id": "O0EKaSmtpA0",
       "pub": "2023-04-10",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "hair",
@@ -1869,7 +1932,7 @@
       "thumb": "https://img.youtube.com/vi/YEdJl1E7gzo/mqdefault.jpg",
       "yt_id": "YEdJl1E7gzo",
       "pub": "2026-05-21",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "hair",
@@ -1879,7 +1942,7 @@
       "thumb": "https://img.youtube.com/vi/IS9bo3cVmYI/mqdefault.jpg",
       "yt_id": "IS9bo3cVmYI",
       "pub": "2026-05-20",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     },
     {
       "cat": "hair",
@@ -1889,8 +1952,8 @@
       "thumb": "https://img.youtube.com/vi/ONSW0a6ihKI/mqdefault.jpg",
       "yt_id": "ONSW0a6ihKI",
       "pub": "2026-05-19",
-      "date": "May 24, 2026"
+      "date": "May 25, 2026"
     }
   ],
-  "updated": "2026-05-24T11:02:08.527308"
+  "updated": "2026-05-25T16:07:26.234026"
 }
