@@ -2,6 +2,386 @@
   "today": [
     {
       "cat": "ai",
+      "title": "Cohere open-sources a coding agent that runs on a single H100",
+      "sum": "Engineering teams building agentic coding pipelines now have a concrete open-source alternative to managed models like  Claude Fable 5  \u2014 one that runs on a single H100. The tradeoff: Cohere&#x27;s No",
+      "src": "venturebeat.com",
+      "age": "20h ago",
+      "url": "https://venturebeat.com/technology/cohere-open-sources-a-coding-agent-that-runs-on-a-single-h100",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "ai",
+      "title": "Anthropic brings Mythos to the masses with Claude Fable 5, its most powerful generally available model ever",
+      "sum": "Anthropic today  launched two new AI models  \u2014 Claude Fable 5 and Claude Mythos 5 \u2014 marking the company\u2019s first broad release of the powerful \u201cMythos-class\u201d AI capabilities it previously made availabl",
+      "src": "venturebeat.com",
+      "age": "1d ago",
+      "url": "https://venturebeat.com/technology/anthropic-brings-mythos-to-the-masses-with-claude-fable-5-its-most-powerful-generally-available-model-ever",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "Waymo says it built a better benchmark for comparing robotaxis to humans",
+      "sum": "Waymo created a new computer model to help it better understand how humans behave in crash scenarios that its robotaxis encounter.",
+      "src": "techcrunch.com",
+      "age": "8h ago",
+      "url": "https://techcrunch.com/2026/06/10/waymo-says-it-built-a-better-benchmark-for-comparing-robotaxis-to-humans/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "This simple change stops robot swarms from getting stuck",
+      "sum": "In crowded environments, more robots don\u2019t always mean faster results\u2014in fact, too many can bring everything to a standstill. Harvard researchers discovered a surprising fix: adding a bit of randomnes",
+      "src": "sciencedaily.com",
+      "age": "56d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260414075639.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "DNA robots could deliver drugs and hunt viruses inside your body",
+      "sum": "DNA robots are emerging as tiny programmable machines that could one day deliver drugs, hunt viruses, and build molecular-scale devices. By borrowing ideas from traditional robotics and combining them",
+      "src": "sciencedaily.com",
+      "age": "71d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/03/260331001104.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "AI-powered robot learns how to harvest tomatoes more efficiently",
+      "sum": "A new tomato-picking robot is learning to think before it acts. Instead of simply identifying ripe fruit, it predicts how easy each tomato will be to harvest and adjusts its approach accordingly. This",
+      "src": "sciencedaily.com",
+      "age": "84d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/03/260317064512.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "robotics",
+      "title": "The breakthrough that makes robot faces feel less creepy",
+      "sum": "Humans pay enormous attention to lips during conversation, and robots have struggled badly to keep up. A new robot developed at Columbia Engineering learned realistic lip movements by watching its own",
+      "src": "sciencedaily.com",
+      "age": "145d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260116035308.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists discover why ozempic may not work for some people",
+      "sum": "Scientists have identified genetic variants that may make some people less responsive to GLP-1 drugs used to treat Type 2 diabetes. Roughly 10% of the population carries these variants, which appear t",
+      "src": "sciencedaily.com",
+      "age": "5d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260605023417.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Ozempic and similar weight-loss drugs linked to 30% lower breast cancer risk",
+      "sum": "A large study found that women taking GLP-1 drugs, the medication class behind Ozempic, Wegovy, Mounjaro, and Zepbound, were about 30% less likely to develop breast cancer. Researchers say the finding",
+      "src": "sciencedaily.com",
+      "age": "4d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260605023400.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "AI-designed universal coronavirus vaccine passes first human trial",
+      "sum": "Scientists have successfully tested an AI-designed universal coronavirus vaccine in humans for the first time, finding it to be safe and well tolerated. The vaccine generated immune responses against ",
+      "src": "sciencedaily.com",
+      "age": "5d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260605023357.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists finally crack an \u201cundruggable\u201d pancreatic cancer target and nearly double survival",
+      "sum": "For decades, pancreatic cancer has been one of the most lethal cancers, with few effective treatment options. A new drug, daraxonrasib, targets the KRAS mutation that fuels most pancreatic tumors\u2014some",
+      "src": "sciencedaily.com",
+      "age": "6d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260604044247.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "biotech",
+      "title": "Scientists discover the master clock that controls biological growth and development",
+      "sum": "A newly discovered genetic clock acts as the master timekeeper for development, orchestrating crucial bursts of gene activity throughout a worm\u2019s growth. When the clock is disrupted, development stops",
+      "src": "sciencedaily.com",
+      "age": "6d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260604044236.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "MIT\u2019s new spacecraft engine could send tiny satellites to Mars",
+      "sum": "MIT researchers have shown that one fuel can power both chemical and electric spacecraft thrusters, potentially transforming what small satellites can do. The approach combines quick bursts of speed w",
+      "src": "sciencedaily.com",
+      "age": "6h ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260610003051.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "Planet nine mystery deepens as new discovery challenges hidden planet theory",
+      "sum": "Astronomers have spent years searching for a possible hidden giant planet far beyond Neptune. Unusual orbits among distant Kuiper Belt objects have fueled the Planet Nine theory, but recent discoverie",
+      "src": "sciencedaily.com",
+      "age": "1d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260608040009.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "NASA updates worsening ISS leak after crew safety alert",
+      "sum": "NASA says a long-running air leak aboard the ISS recently worsened, leading engineers to investigate new suspected crack locations and consider a riskier repair strategy. Astronauts were temporarily m",
+      "src": "sciencedaily.com",
+      "age": "1d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260608040006.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "Tiny X-ray telescope could unlock the Moon's hidden chemistry",
+      "sum": "A lightweight new X-ray telescope could finally give scientists something they\u2019ve never had before: a complete chemical map of the Moon. Researchers used detailed mission simulations to show that a co",
+      "src": "sciencedaily.com",
+      "age": "4d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260606075508.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "NASA just proved spacecraft can switch between multiple satellite networks",
+      "sum": "NASA\u2019s PExT terminal has shown that spacecraft can seamlessly communicate through multiple government and commercial networks, a major step beyond traditional single-network systems. The mission is no",
+      "src": "sciencedaily.com",
+      "age": "4d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260605023405.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "gadgets",
+      "title": "The Apple Watch Series 11 is back to its best price",
+      "sum": "Apple&#8217;s upcoming watchOS 27 update will bring Siri AI and other exciting features to the Apple Watch Series 9 and newer Apple Watch models. If you&#8217;re contemplating an upgrade, all colorway",
+      "src": "theverge.com",
+      "age": "recently",
+      "url": "https://www.theverge.com/gadgets/947773/apple-watch-series-11-beats-studio-buds-plus-deal-sale",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "BYD is deploying 2.4x more charging power per month than Tesla",
+      "sum": "BYD is building a charging network that makes Tesla\u2019s Supercharger look slow \u2014 and it\u2019s deploying it at a pace that could see it surpass Tesla\u2019s global network within two to three years. \n\n\n\n The Chin",
+      "src": "electrek.co",
+      "age": "1h ago",
+      "url": "https://electrek.co/2026/06/10/byd-coming-for-tesla-supercharger-network-1500-kw-flash-charging/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Kia EV2 crushes official range estimate by 105% in the real world, ranking #1 in its class",
+      "sum": "It may be Kia\u2019s smallest electric vehicle, but  the EV2  is a \u201cbig\u201d deal. Kia\u2019s electric SUV beat its official range estimate by 105% in a recent real-world test, outperforming all others in its class",
+      "src": "electrek.co",
+      "age": "1h ago",
+      "url": "https://electrek.co/2026/06/10/kia-ev2-crushes-official-range-estimate-by-105-real-world/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "BYD\u2019s 5-minute EV chargers go live overseas, and they may undercut Tesla Superchargers",
+      "sum": "Ready to go in 5 minutes,  BYD\u2019s  Flash Charging stations are just as quick as filling up at the gas station. After opening the first stations in Europe and the UK, BYD\u2019s new EV chargers may be even c",
+      "src": "electrek.co",
+      "age": "23h ago",
+      "url": "https://electrek.co/2026/06/09/byd-opens-first-5-min-ev-chargers-overseas-cheap/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Tesla \u2018FSD\u2019 approved in Denmark, 4th European country in 2 months",
+      "sum": "Denmark has provisionally approved Tesla\u2019s \u201cFull Self-Driving\u201d (Supervised) system, making it the fourth European country to clear the software in roughly eight weeks. \n\n\n\n The Danish Road Traffic Aut",
+      "src": "electrek.co",
+      "age": "1d ago",
+      "url": "https://electrek.co/2026/06/09/tesla-fsd-approved-denmark-fourth-european-country/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "ev",
+      "title": "Waymo buys Apple\u2019s abandoned self-driving car proving ground for $220M",
+      "sum": "Waymo has acquired a massive 5,500-acre autonomous vehicle proving ground in Wittmann, Arizona, for $220 million \u2014 nearly double the $125 million Apple paid for it in 2021. The facility was the center",
+      "src": "electrek.co",
+      "age": "1d ago",
+      "url": "https://electrek.co/2026/06/09/waymo-buys-apple-project-titan-proving-ground-220-million/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Crypto Long & Short: Who answers the 3am call when DeFi breaks?",
+      "sum": "In this week's Crypto Long & Short, Ben Nadareski writes that to win over big investors, DeFi builders must act like accountable money managers, not just software developers. Then, Stephen Stonberg sa",
+      "src": "coindesk.com",
+      "age": "1h ago",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/06/10/crypto-long-and-short-who-answers-the-3am-call-when-defi-breaks",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Netomi CEO says $5 trillion AI customer experience market could boost stablecoin demand",
+      "sum": "Puneet Mehta, a former high-level Wall Street engineer and data scientist, said the rapid expansion of AI enterprise software will increase demand for stablecoins and blockchain.",
+      "src": "coindesk.com",
+      "age": "1h ago",
+      "url": "https://www.coindesk.com/business/2026/06/10/netomi-ceo-says-usd5-trillion-ai-customer-experience-market-could-boost-stablecoin-demand",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "The quantum clock is ticking: it's Bitcoin's problem, not Ethereum's",
+      "sum": "A recent research note published by Citi analysts reached a conclusion about quantum risk that should give every institutional bitcoin holder pause, Tabar explains.",
+      "src": "coindesk.com",
+      "age": "1h ago",
+      "url": "https://www.coindesk.com/opinion/2026/06/10/the-quantum-clock-is-ticking-it-s-bitcoin-s-problem-not-ethereum-s",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Mastercard prepares for a future where AI agents make payments",
+      "sum": "The company is working with Coinbase, Stripe and other companies to build trusted payment systems for AI-driven commerce.",
+      "src": "coindesk.com",
+      "age": "1h ago",
+      "url": "https://www.coindesk.com/business/2026/06/10/mastercard-prepares-for-a-future-where-ai-agents-make-payments-with-latest-introduction",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "Michael Saylor gets into public debate over claims that Strategy's latest share sale was dilutive",
+      "sum": "Strategy's BTC Yield fell from 13.0% to 12.8% following its latest bitcoin purchase, prompting a debate on X over whether the purchase was dilutive to shareholders.",
+      "src": "coindesk.com",
+      "age": "3h ago",
+      "url": "https://www.coindesk.com/markets/2026/06/10/michael-saylor-in-x-back-and-forth-over-claims-strategy-s-latest-share-sale-was-dilutive",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Scientists sound the alarm as dangerous amoebas spread globally",
+      "sum": "Scientists warn that free-living amoebae may be an underappreciated public health threat, capable of causing deadly infections and shielding other dangerous microbes from water treatment. Climate chan",
+      "src": "sciencedaily.com",
+      "age": "4d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260606015137.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "Rising seas could drown mangroves and release vast stores of carbon",
+      "sum": "Mangroves are famous for trapping vast amounts of carbon, helping slow climate change. However, a new study suggests rising sea levels could eventually reduce that benefit across entire forests. As fl",
+      "src": "sciencedaily.com",
+      "age": "5d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260604044238.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "A hidden pollutant is changing how the world's forests breathe",
+      "sum": "A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem's condition. The results reveal hid",
+      "src": "sciencedaily.com",
+      "age": "8d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "New discovery upends an 80-year-old theory of turbulence",
+      "sum": "Researchers discovered a way to reverse the direction of energy flow in turbulence, challenging a theory that has stood for more than 80 years. The finding could open new possibilities for controlling",
+      "src": "sciencedaily.com",
+      "age": "7d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260602021655.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "climate",
+      "title": "New solar desalination breakthrough makes fresh water without toxic brine",
+      "sum": "Scientists have developed a solar desalination system that turns seawater into drinking water without creating environmentally damaging brine. Special laser-textured metal panels use sunlight to evapo",
+      "src": "sciencedaily.com",
+      "age": "11d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260530053418.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Crypto-Funded Chinese Peptide Labs Are Booming",
+      "sum": "Plus: Hackers use Meta\u2019s AI bots to hack Instagram accounts, Anthropic helps NSA hackers, a decades-long GPS satellite mystery may have been solved, and more.",
+      "src": "wired.com",
+      "age": "4d ago",
+      "url": "https://www.wired.com/story/security-news-this-week-crypto-funded-chinese-peptide-labs-are-booming/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Cybercrime Crew Claims It Hacked Mike Lindell\u2019s MyPillow",
+      "sum": "Plus: A ransomware group is now stealing data in person, BusPatrol wants to hand its license plate surveillance data to the cops, and more.",
+      "src": "wired.com",
+      "age": "11d ago",
+      "url": "https://www.wired.com/story/security-news-this-week-cybercrime-crew-claims-it-hacked-mike-lindells-mypillow/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Scammers Are Using Your Real Hotel Reservations to Trick You With Spear-Phishing Attacks",
+      "sum": "Customer data from more than 350 hotels around the world may have been accessed as part of realistic reservation-hijacking scams.",
+      "src": "wired.com",
+      "age": "13d ago",
+      "url": "https://www.wired.com/story/hundreds-of-hotels-caught-up-in-vacation-booking-scams/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "cyber",
+      "title": "Cybersecurity researchers aren\u2019t happy about the guardrails on Anthropic\u2019s Fable",
+      "sum": "Cybersecurity researchers are complaining that Anthropic's new model Fable has guardrails that are too strict for any cybersecurity work.",
+      "src": "techcrunch.com",
+      "age": "2h ago",
+      "url": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "smarthome",
+      "title": "Amazon\u2019s Echo speakers can now help kids wind down and fall asleep",
+      "sum": "Amazon has launched a new feature for its Echo and Echo Kids smart speakers called Sleep Studio that's designed to make the daily transition to bedtime more enticing for kids and less stressful for pa",
+      "src": "theverge.com",
+      "age": "recently",
+      "url": "https://www.theverge.com/tech/947871/amazon-sleep-studio-echo-kids-smart-speakers-calm-moshi-headspace",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "smarthome",
+      "title": "iOS 27 Feels Like an Empty Update on Older iPhones",
+      "sum": "Commentary: Sure, iOS 27 will be able to run on an iPhone 11, but does that actually matter?",
+      "src": "cnet.com",
+      "age": "33m ago",
+      "url": "https://www.cnet.com/tech/services-and-software/ios-27-feels-like-an-empty-update-on-older-iphones/",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "longevity",
+      "title": "Tea can improve your health and longevity, but the way you drink it matters",
+      "sum": "Tea may help protect against heart disease, diabetes, cancer, cognitive decline, and age related muscle loss, according to a major review. But the way you drink it matters, since bottled and bubble te",
+      "src": "sciencedaily.com",
+      "age": "1d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260609025534.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "longevity",
+      "title": "Popular anti-aging drug combo caused severe brain damage in mice",
+      "sum": "A drug combo widely explored for anti-aging may actually damage the brain, according to new mouse research showing severe loss of myelin and changes linked to \u201cchemo brain.\u201d Surprisingly, the damaged ",
+      "src": "sciencedaily.com",
+      "age": "14d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260526022024.htm",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "hair",
+      "title": "Ancient Chinese medicine could transform hair loss treatment",
+      "sum": "A traditional Chinese medicinal root used for over a thousand years is attracting new scientific attention for its potential to combat hair loss. Studies suggest Polygonum multiflorum can block harmfu",
+      "src": "sciencedaily.com",
+      "age": "3d ago",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260606015144.htm",
+      "date": "June 10, 2026"
+    }
+  ],
+  "archive": [
+    {
+      "cat": "ai",
       "title": "It\u2019s not FAANG anymore. It\u2019s MANGOS.",
       "sum": "With SpaceX, Anthropic, and OpenAI all eyeing massive public debuts, the tech industry may soon have a new class of corporate overlords \u2014 and a new acronym to match. Say goodbye to FAANG and hello to ",
       "src": "techcrunch.com",
@@ -413,9 +793,7 @@
       "age": "2d ago",
       "url": "https://www.sciencedaily.com/releases/2026/06/260606015144.htm",
       "date": "June 09, 2026"
-    }
-  ],
-  "archive": [
+    },
     {
       "cat": "ai",
       "title": "NotebookLM\u2019s new update will help you build source repository from chat",
@@ -453,129 +831,12 @@
       "date": "June 08, 2026"
     },
     {
-      "cat": "ai",
-      "title": "When Claude changed, everything changed: Managing AI blast radius in production",
-      "sum": "Our system did one thing, and it did it well: It turned natural-language questions into API calls.  The users were analysts, account managers, and operations leads. They knew what data they needed, bu",
-      "src": "venturebeat.com",
-      "age": "16h ago",
-      "url": "https://venturebeat.com/orchestration/when-claude-changed-everything-changed-managing-ai-blast-radius-in-production",
-      "date": "June 08, 2026"
-    },
-    {
       "cat": "robotics",
       "title": "Uber, Wayve, and Waymo are headed toward a robotaxi showdown in London",
       "sum": "Uber customers in the U.K. can now join an interest list to increase their chances of being matched with a Wayve robotaxi.",
       "src": "techcrunch.com",
       "age": "6h ago",
       "url": "https://techcrunch.com/2026/06/08/uber-wayve-and-waymo-are-headed-towards-a-robotaxi-showdown-in-london/",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "This simple change stops robot swarms from getting stuck",
-      "sum": "In crowded environments, more robots don\u2019t always mean faster results\u2014in fact, too many can bring everything to a standstill. Harvard researchers discovered a surprising fix: adding a bit of randomnes",
-      "src": "sciencedaily.com",
-      "age": "54d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/04/260414075639.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "DNA robots could deliver drugs and hunt viruses inside your body",
-      "sum": "DNA robots are emerging as tiny programmable machines that could one day deliver drugs, hunt viruses, and build molecular-scale devices. By borrowing ideas from traditional robotics and combining them",
-      "src": "sciencedaily.com",
-      "age": "69d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/03/260331001104.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "AI-powered robot learns how to harvest tomatoes more efficiently",
-      "sum": "A new tomato-picking robot is learning to think before it acts. Instead of simply identifying ripe fruit, it predicts how easy each tomato will be to harvest and adjusts its approach accordingly. This",
-      "src": "sciencedaily.com",
-      "age": "82d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/03/260317064512.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "The breakthrough that makes robot faces feel less creepy",
-      "sum": "Humans pay enormous attention to lips during conversation, and robots have struggled badly to keep up. A new robot developed at Columbia Engineering learned realistic lip movements by watching its own",
-      "src": "sciencedaily.com",
-      "age": "143d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/01/260116035308.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Scientists discover why ozempic may not work for some people",
-      "sum": "Scientists have identified genetic variants that may make some people less responsive to GLP-1 drugs used to treat Type 2 diabetes. Roughly 10% of the population carries these variants, which appear t",
-      "src": "sciencedaily.com",
-      "age": "3d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260605023417.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Ozempic and similar weight-loss drugs linked to 30% lower breast cancer risk",
-      "sum": "A large study found that women taking GLP-1 drugs, the medication class behind Ozempic, Wegovy, Mounjaro, and Zepbound, were about 30% less likely to develop breast cancer. Researchers say the finding",
-      "src": "sciencedaily.com",
-      "age": "2d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260605023400.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "AI-designed universal coronavirus vaccine passes first human trial",
-      "sum": "Scientists have successfully tested an AI-designed universal coronavirus vaccine in humans for the first time, finding it to be safe and well tolerated. The vaccine generated immune responses against ",
-      "src": "sciencedaily.com",
-      "age": "3d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260605023357.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Scientists finally crack an \u201cundruggable\u201d pancreatic cancer target and nearly double survival",
-      "sum": "For decades, pancreatic cancer has been one of the most lethal cancers, with few effective treatment options. A new drug, daraxonrasib, targets the KRAS mutation that fuels most pancreatic tumors\u2014some",
-      "src": "sciencedaily.com",
-      "age": "4d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260604044247.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "biotech",
-      "title": "Scientists discover the master clock that controls biological growth and development",
-      "sum": "A newly discovered genetic clock acts as the master timekeeper for development, orchestrating crucial bursts of gene activity throughout a worm\u2019s growth. When the clock is disrupted, development stops",
-      "src": "sciencedaily.com",
-      "age": "4d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260604044236.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "Tiny X-ray telescope could unlock the Moon's hidden chemistry",
-      "sum": "A lightweight new X-ray telescope could finally give scientists something they\u2019ve never had before: a complete chemical map of the Moon. Researchers used detailed mission simulations to show that a co",
-      "src": "sciencedaily.com",
-      "age": "2d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260606075508.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "NASA just proved spacecraft can switch between multiple satellite networks",
-      "sum": "NASA\u2019s PExT terminal has shown that spacecraft can seamlessly communicate through multiple government and commercial networks, a major step beyond traditional single-network systems. The mission is no",
-      "src": "sciencedaily.com",
-      "age": "2d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260605023405.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "NASA's Webb detects methane and strange chemistry on interstellar comet 3I/ATLAS",
-      "sum": "NASA's James Webb Space Telescope has uncovered unusual chemistry in interstellar comet 3I/ATLAS, including the first direct detection of methane on a visitor from another star system. The comet also ",
-      "src": "sciencedaily.com",
-      "age": "4d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260603023116.htm",
       "date": "June 08, 2026"
     },
     {
@@ -696,111 +957,12 @@
       "date": "June 08, 2026"
     },
     {
-      "cat": "climate",
-      "title": "Scientists sound the alarm as dangerous amoebas spread globally",
-      "sum": "Scientists warn that free-living amoebae may be an underappreciated public health threat, capable of causing deadly infections and shielding other dangerous microbes from water treatment. Climate chan",
-      "src": "sciencedaily.com",
-      "age": "2d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260606015137.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "Rising seas could drown mangroves and release vast stores of carbon",
-      "sum": "Mangroves are famous for trapping vast amounts of carbon, helping slow climate change. However, a new study suggests rising sea levels could eventually reduce that benefit across entire forests. As fl",
-      "src": "sciencedaily.com",
-      "age": "3d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260604044238.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "A hidden pollutant is changing how the world's forests breathe",
-      "sum": "A massive global analysis found that nitrogen pollution can either speed up or dramatically slow the natural \"breathing\" of forest soils, depending on the ecosystem's condition. The results reveal hid",
-      "src": "sciencedaily.com",
-      "age": "6d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260602021659.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "New discovery upends an 80-year-old theory of turbulence",
-      "sum": "Researchers discovered a way to reverse the direction of energy flow in turbulence, challenging a theory that has stood for more than 80 years. The finding could open new possibilities for controlling",
-      "src": "sciencedaily.com",
-      "age": "5d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260602021655.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "climate",
-      "title": "New solar desalination breakthrough makes fresh water without toxic brine",
-      "sum": "Scientists have developed a solar desalination system that turns seawater into drinking water without creating environmentally damaging brine. Special laser-textured metal panels use sunlight to evapo",
-      "src": "sciencedaily.com",
-      "age": "9d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260530053418.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Crypto-Funded Chinese Peptide Labs Are Booming",
-      "sum": "Plus: Hackers use Meta\u2019s AI bots to hack Instagram accounts, Anthropic helps NSA hackers, a decades-long GPS satellite mystery may have been solved, and more.",
-      "src": "wired.com",
-      "age": "2d ago",
-      "url": "https://www.wired.com/story/security-news-this-week-crypto-funded-chinese-peptide-labs-are-booming/",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Cybercrime Crew Claims It Hacked Mike Lindell\u2019s MyPillow",
-      "sum": "Plus: A ransomware group is now stealing data in person, BusPatrol wants to hand its license plate surveillance data to the cops, and more.",
-      "src": "wired.com",
-      "age": "9d ago",
-      "url": "https://www.wired.com/story/security-news-this-week-cybercrime-crew-claims-it-hacked-mike-lindells-mypillow/",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "Scammers Are Using Your Real Hotel Reservations to Trick You With Spear-Phishing Attacks",
-      "sum": "Customer data from more than 350 hotels around the world may have been accessed as part of realistic reservation-hijacking scams.",
-      "src": "wired.com",
-      "age": "11d ago",
-      "url": "https://www.wired.com/story/hundreds-of-hotels-caught-up-in-vacation-booking-scams/",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "cyber",
-      "title": "A Hacker Group Is Poisoning Open Source Code at an Unprecedented Scale",
-      "sum": "GitHub is just the latest victim of TeamPCP, a gang that has carried out a spree of software supply chain attacks that has impacted hundreds of organizations.",
-      "src": "wired.com",
-      "age": "18d ago",
-      "url": "https://www.wired.com/story/teampcp-software-supply-chain-attack-spree-github/",
-      "date": "June 08, 2026"
-    },
-    {
       "cat": "cyber",
       "title": "WhatsApp says it caught new spyware attacks linked to NSO Group in violation of court order",
       "sum": "The messaging giant announced that it disrupted a phishing campaign targeting its users with NSO\u2019s spyware.",
       "src": "techcrunch.com",
       "age": "1h ago",
       "url": "https://techcrunch.com/2026/06/08/whatsapp-says-it-caught-new-spyware-attacks-linked-to-nso-group-in-violation-of-court-order/",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "longevity",
-      "title": "Popular anti-aging drug combo caused severe brain damage in mice",
-      "sum": "A drug combo widely explored for anti-aging may actually damage the brain, according to new mouse research showing severe loss of myelin and changes linked to \u201cchemo brain.\u201d Surprisingly, the damaged ",
-      "src": "sciencedaily.com",
-      "age": "12d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/05/260526022024.htm",
-      "date": "June 08, 2026"
-    },
-    {
-      "cat": "hair",
-      "title": "Ancient Chinese medicine could transform hair loss treatment",
-      "sum": "A traditional Chinese medicinal root used for over a thousand years is attracting new scientific attention for its potential to combat hair loss. Studies suggest Polygonum multiflorum can block harmfu",
-      "src": "sciencedaily.com",
-      "age": "1d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/06/260606015144.htm",
       "date": "June 08, 2026"
     },
     {
@@ -819,15 +981,6 @@
       "src": "venturebeat.com",
       "age": "1d ago",
       "url": "https://venturebeat.com/technology/microsoft-ai-chief-says-company-was-set-free-from-openai-to-pursue-superintelligence",
-      "date": "June 07, 2026"
-    },
-    {
-      "cat": "robotics",
-      "title": "Scientists create robots smaller than a grain of salt that can think",
-      "sum": "Researchers have created microscopic robots so small they\u2019re barely visible, yet smart enough to sense, decide, and move completely on their own. Powered by light and equipped with tiny computers, the",
-      "src": "sciencedaily.com",
-      "age": "151d ago",
-      "url": "https://www.sciencedaily.com/releases/2026/01/260105165815.htm",
       "date": "June 07, 2026"
     },
     {
@@ -3612,7 +3765,7 @@
       "thumb": "https://img.youtube.com/vi/1M3Vdl6DRkU/mqdefault.jpg",
       "yt_id": "1M3Vdl6DRkU",
       "pub": "2026-05-29",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "ai",
@@ -3622,7 +3775,7 @@
       "thumb": "https://img.youtube.com/vi/nepKKz-MzFM/mqdefault.jpg",
       "yt_id": "nepKKz-MzFM",
       "pub": "2026-05-06",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "ai",
@@ -3632,7 +3785,7 @@
       "thumb": "https://img.youtube.com/vi/iKx3gAODybU/mqdefault.jpg",
       "yt_id": "iKx3gAODybU",
       "pub": "2026-04-09",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "robotics",
@@ -3642,7 +3795,7 @@
       "thumb": "https://img.youtube.com/vi/qYy-BwBpxBI/mqdefault.jpg",
       "yt_id": "qYy-BwBpxBI",
       "pub": "2026-06-04",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "robotics",
@@ -3652,7 +3805,7 @@
       "thumb": "https://img.youtube.com/vi/GvByvkp6k5s/mqdefault.jpg",
       "yt_id": "GvByvkp6k5s",
       "pub": "2026-06-02",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "robotics",
@@ -3662,7 +3815,27 @@
       "thumb": "https://img.youtube.com/vi/V1Lxp-Q6Y9g/mqdefault.jpg",
       "yt_id": "V1Lxp-Q6Y9g",
       "pub": "2026-05-29",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "Artemis III Announcement Recap: Crew, Mission Details, and What\u2019s Next",
+      "channel": "NASA",
+      "url": "https://www.youtube.com/watch?v=G-GD8SQ0AvU",
+      "thumb": "https://img.youtube.com/vi/G-GD8SQ0AvU/mqdefault.jpg",
+      "yt_id": "G-GD8SQ0AvU",
+      "pub": "2026-06-10",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "space",
+      "title": "Introducing Artemis III",
+      "channel": "NASA",
+      "url": "https://www.youtube.com/watch?v=QONgJurkigk",
+      "thumb": "https://img.youtube.com/vi/QONgJurkigk/mqdefault.jpg",
+      "yt_id": "QONgJurkigk",
+      "pub": "2026-06-09",
+      "date": "June 10, 2026"
     },
     {
       "cat": "space",
@@ -3671,28 +3844,8 @@
       "url": "https://www.youtube.com/watch?v=0fLROeRhqZM",
       "thumb": "https://img.youtube.com/vi/0fLROeRhqZM/mqdefault.jpg",
       "yt_id": "0fLROeRhqZM",
-      "pub": "2026-06-02",
-      "date": "June 09, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "NASA\u2019s Artemis III Announcement (Official NASA Trailer)",
-      "channel": "NASA",
-      "url": "https://www.youtube.com/watch?v=3Yqi3D4b2RQ",
-      "thumb": "https://img.youtube.com/vi/3Yqi3D4b2RQ/mqdefault.jpg",
-      "yt_id": "3Yqi3D4b2RQ",
-      "pub": "2026-06-07",
-      "date": "June 09, 2026"
-    },
-    {
-      "cat": "space",
-      "title": "Roscosmos Spacewalk 66",
-      "channel": "NASA",
-      "url": "https://www.youtube.com/watch?v=HVKuW-DkE_U",
-      "thumb": "https://img.youtube.com/vi/HVKuW-DkE_U/mqdefault.jpg",
-      "yt_id": "HVKuW-DkE_U",
-      "pub": "2026-05-27",
-      "date": "June 09, 2026"
+      "pub": "2026-06-09",
+      "date": "June 10, 2026"
     },
     {
       "cat": "biotech",
@@ -3702,7 +3855,7 @@
       "thumb": "https://img.youtube.com/vi/y894m7joEBc/mqdefault.jpg",
       "yt_id": "y894m7joEBc",
       "pub": "2026-05-08",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "biotech",
@@ -3712,7 +3865,7 @@
       "thumb": "https://img.youtube.com/vi/BUtzl6b0uKU/mqdefault.jpg",
       "yt_id": "BUtzl6b0uKU",
       "pub": "2025-10-11",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "biotech",
@@ -3722,7 +3875,7 @@
       "thumb": "https://img.youtube.com/vi/Ctwc8t5CsQs/mqdefault.jpg",
       "yt_id": "Ctwc8t5CsQs",
       "pub": "2025-10-11",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "gadgets",
@@ -3732,7 +3885,7 @@
       "thumb": "https://img.youtube.com/vi/-YYMyAxUgus/mqdefault.jpg",
       "yt_id": "-YYMyAxUgus",
       "pub": "2024-06-10",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "gadgets",
@@ -3742,7 +3895,7 @@
       "thumb": "https://img.youtube.com/vi/1tYGeT9FdAY/mqdefault.jpg",
       "yt_id": "1tYGeT9FdAY",
       "pub": "2024-04-04",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "gadgets",
@@ -3752,7 +3905,7 @@
       "thumb": "https://img.youtube.com/vi/PZkmNKgoPug/mqdefault.jpg",
       "yt_id": "PZkmNKgoPug",
       "pub": "2024-02-28",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "ev",
@@ -3762,7 +3915,7 @@
       "thumb": "https://img.youtube.com/vi/6xN2s4o1b9Q/mqdefault.jpg",
       "yt_id": "6xN2s4o1b9Q",
       "pub": "2019-02-11",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "ev",
@@ -3772,7 +3925,7 @@
       "thumb": "https://img.youtube.com/vi/n1plrJWNrGM/mqdefault.jpg",
       "yt_id": "n1plrJWNrGM",
       "pub": "2018-06-25",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "ev",
@@ -3782,7 +3935,7 @@
       "thumb": "https://img.youtube.com/vi/B6fygB_HccA/mqdefault.jpg",
       "yt_id": "B6fygB_HccA",
       "pub": "2018-06-11",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "climate",
@@ -3792,7 +3945,7 @@
       "thumb": "https://img.youtube.com/vi/0y6wiBzPMSI/mqdefault.jpg",
       "yt_id": "0y6wiBzPMSI",
       "pub": "2024-12-17",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "climate",
@@ -3802,7 +3955,7 @@
       "thumb": "https://img.youtube.com/vi/o1OsDWT_DUc/mqdefault.jpg",
       "yt_id": "o1OsDWT_DUc",
       "pub": "2024-08-11",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "climate",
@@ -3812,37 +3965,37 @@
       "thumb": "https://img.youtube.com/vi/8HzIlKe--NU/mqdefault.jpg",
       "yt_id": "8HzIlKe--NU",
       "pub": "2023-12-05",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "gaming",
-      "title": "GigaBash - Official Ultraman Zero DLC Release Date Trailer | Southeast Asian Games Showcase 2026",
+      "title": "Hellmart - Official Major Update Trailer",
       "channel": "IGN",
-      "url": "https://www.youtube.com/watch?v=MGEPll1aDKI",
-      "thumb": "https://img.youtube.com/vi/MGEPll1aDKI/mqdefault.jpg",
-      "yt_id": "MGEPll1aDKI",
-      "pub": "2026-06-09",
-      "date": "June 09, 2026"
+      "url": "https://www.youtube.com/watch?v=keeM2XuqRCQ",
+      "thumb": "https://img.youtube.com/vi/keeM2XuqRCQ/mqdefault.jpg",
+      "yt_id": "keeM2XuqRCQ",
+      "pub": "2026-06-10",
+      "date": "June 10, 2026"
     },
     {
       "cat": "gaming",
-      "title": "Nintendo Direct Watch Party | June 2026",
+      "title": "Resonance: A Plague Tale Legacy - Official Gameplay Trailer",
       "channel": "IGN",
-      "url": "https://www.youtube.com/watch?v=yQFAK8Vh-k8",
-      "thumb": "https://img.youtube.com/vi/yQFAK8Vh-k8/mqdefault.jpg",
-      "yt_id": "yQFAK8Vh-k8",
-      "pub": "2026-06-08",
-      "date": "June 09, 2026"
+      "url": "https://www.youtube.com/watch?v=z1CWk2Ft884",
+      "thumb": "https://img.youtube.com/vi/z1CWk2Ft884/mqdefault.jpg",
+      "yt_id": "z1CWk2Ft884",
+      "pub": "2026-06-10",
+      "date": "June 10, 2026"
     },
     {
       "cat": "gaming",
-      "title": "Run a restaurant with the Straw Hat Crew in One Piece: Grand Gourmet! #onepiece #restaurant #gaming",
+      "title": "Halo: Campaign Evolved - Official 'The Silent Cartographer' 3rd Person Gameplay",
       "channel": "IGN",
-      "url": "https://www.youtube.com/watch?v=I87EiTIJRwI",
-      "thumb": "https://img.youtube.com/vi/I87EiTIJRwI/mqdefault.jpg",
-      "yt_id": "I87EiTIJRwI",
-      "pub": "2026-06-09",
-      "date": "June 09, 2026"
+      "url": "https://www.youtube.com/watch?v=EM1Jf9ECCMM",
+      "thumb": "https://img.youtube.com/vi/EM1Jf9ECCMM/mqdefault.jpg",
+      "yt_id": "EM1Jf9ECCMM",
+      "pub": "2026-06-10",
+      "date": "June 10, 2026"
     },
     {
       "cat": "cyber",
@@ -3852,7 +4005,7 @@
       "thumb": "https://img.youtube.com/vi/x4CUAuwoZVk/mqdefault.jpg",
       "yt_id": "x4CUAuwoZVk",
       "pub": "2026-03-04",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "cyber",
@@ -3862,7 +4015,7 @@
       "thumb": "https://img.youtube.com/vi/NT1VCmJF3mU/mqdefault.jpg",
       "yt_id": "NT1VCmJF3mU",
       "pub": "2026-03-01",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "cyber",
@@ -3872,7 +4025,27 @@
       "thumb": "https://img.youtube.com/vi/uXW_1hepfT4/mqdefault.jpg",
       "yt_id": "uXW_1hepfT4",
       "pub": "2026-02-25",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "How A \u2018Disciplined\u2019 Auto Industry Squeezed Consumers",
+      "channel": "CNBC",
+      "url": "https://www.youtube.com/watch?v=XEveuOEku7Y",
+      "thumb": "https://img.youtube.com/vi/XEveuOEku7Y/mqdefault.jpg",
+      "yt_id": "XEveuOEku7Y",
+      "pub": "2026-06-10",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "fintech",
+      "title": "This Nvidia Challenger Says Its AI Chip Is 10x Faster Than A GPU",
+      "channel": "CNBC",
+      "url": "https://www.youtube.com/watch?v=WNsV-MrXLQY",
+      "thumb": "https://img.youtube.com/vi/WNsV-MrXLQY/mqdefault.jpg",
+      "yt_id": "WNsV-MrXLQY",
+      "pub": "2026-06-09",
+      "date": "June 10, 2026"
     },
     {
       "cat": "fintech",
@@ -3882,27 +4055,7 @@
       "thumb": "https://img.youtube.com/vi/_tiV7TgpGH4/mqdefault.jpg",
       "yt_id": "_tiV7TgpGH4",
       "pub": "2026-06-09",
-      "date": "June 09, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "The AI Rollup Wave Transforming Main Street",
-      "channel": "CNBC",
-      "url": "https://www.youtube.com/watch?v=W4TXUX1d2iY",
-      "thumb": "https://img.youtube.com/vi/W4TXUX1d2iY/mqdefault.jpg",
-      "yt_id": "W4TXUX1d2iY",
-      "pub": "2026-06-08",
-      "date": "June 09, 2026"
-    },
-    {
-      "cat": "fintech",
-      "title": "Can Trump Negotiate A Better Iran Nuclear Deal Than Obama?",
-      "channel": "CNBC",
-      "url": "https://www.youtube.com/watch?v=o0zocbo4KZM",
-      "thumb": "https://img.youtube.com/vi/o0zocbo4KZM/mqdefault.jpg",
-      "yt_id": "o0zocbo4KZM",
-      "pub": "2026-06-08",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "smarthome",
@@ -3912,7 +4065,7 @@
       "thumb": "https://img.youtube.com/vi/VKtDHeZPDv0/mqdefault.jpg",
       "yt_id": "VKtDHeZPDv0",
       "pub": "2024-01-31",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "smarthome",
@@ -3922,7 +4075,7 @@
       "thumb": "https://img.youtube.com/vi/iEYRwU_JxSY/mqdefault.jpg",
       "yt_id": "iEYRwU_JxSY",
       "pub": "2023-01-31",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "smarthome",
@@ -3932,37 +4085,37 @@
       "thumb": "https://img.youtube.com/vi/douMfzLC8YE/mqdefault.jpg",
       "yt_id": "douMfzLC8YE",
       "pub": "2022-11-09",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "drones",
-      "title": "Watch Live! NASA Reveals the Artemis 3 Astronaut Crew + Mission Update",
+      "title": "NASA delivers Artemis 3 mission update during crew reveal event",
       "channel": "VideoFromSpace",
-      "url": "https://www.youtube.com/watch?v=GMqdp7--zZk",
-      "thumb": "https://img.youtube.com/vi/GMqdp7--zZk/mqdefault.jpg",
-      "yt_id": "GMqdp7--zZk",
-      "pub": "2026-06-05",
-      "date": "June 09, 2026"
+      "url": "https://www.youtube.com/watch?v=gYnY1s_uaxY",
+      "thumb": "https://img.youtube.com/vi/gYnY1s_uaxY/mqdefault.jpg",
+      "yt_id": "gYnY1s_uaxY",
+      "pub": "2026-06-10",
+      "date": "June 10, 2026"
     },
     {
       "cat": "drones",
-      "title": "Elon Musk explains how SpaceX could build AI data centers in space",
+      "title": "NASA Artemis 3 astronauts revealed \ud83d\ude80\ud83e\uddd1\u200d\ud83d\ude80 #nasa #artemis3 #crew #astronauts #space #shorts",
       "channel": "VideoFromSpace",
-      "url": "https://www.youtube.com/watch?v=k3Un1TizSNg",
-      "thumb": "https://img.youtube.com/vi/k3Un1TizSNg/mqdefault.jpg",
-      "yt_id": "k3Un1TizSNg",
+      "url": "https://www.youtube.com/watch?v=e4yzG9esQGM",
+      "thumb": "https://img.youtube.com/vi/e4yzG9esQGM/mqdefault.jpg",
+      "yt_id": "e4yzG9esQGM",
       "pub": "2026-06-09",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "drones",
-      "title": "ICYMI: SpaceX Launched Starlink & Starshield Satellites from California, nailed landing",
+      "title": "Artemis 3 crew revealed by NASA at Johnson Space Center",
       "channel": "VideoFromSpace",
-      "url": "https://www.youtube.com/watch?v=IuoReyvTUto",
-      "thumb": "https://img.youtube.com/vi/IuoReyvTUto/mqdefault.jpg",
-      "yt_id": "IuoReyvTUto",
+      "url": "https://www.youtube.com/watch?v=Nbzt5pBdD54",
+      "thumb": "https://img.youtube.com/vi/Nbzt5pBdD54/mqdefault.jpg",
+      "yt_id": "Nbzt5pBdD54",
       "pub": "2026-06-09",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "longevity",
@@ -3972,7 +4125,7 @@
       "thumb": "https://img.youtube.com/vi/VQjPKqE39No/mqdefault.jpg",
       "yt_id": "VQjPKqE39No",
       "pub": "2023-08-20",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "longevity",
@@ -3982,7 +4135,7 @@
       "thumb": "https://img.youtube.com/vi/sKouPOhh_9I/mqdefault.jpg",
       "yt_id": "sKouPOhh_9I",
       "pub": "2023-06-10",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     },
     {
       "cat": "longevity",
@@ -3992,7 +4145,27 @@
       "thumb": "https://img.youtube.com/vi/O0EKaSmtpA0/mqdefault.jpg",
       "yt_id": "O0EKaSmtpA0",
       "pub": "2023-04-10",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "hair",
+      "title": "Rebuilding A Forest? Just Add Termites",
+      "channel": "SciShow",
+      "url": "https://www.youtube.com/watch?v=z-sopGQvF64",
+      "thumb": "https://img.youtube.com/vi/z-sopGQvF64/mqdefault.jpg",
+      "yt_id": "z-sopGQvF64",
+      "pub": "2026-06-10",
+      "date": "June 10, 2026"
+    },
+    {
+      "cat": "hair",
+      "title": "Do These Supplements Work? (Your Questions Answered)",
+      "channel": "SciShow",
+      "url": "https://www.youtube.com/watch?v=g8hbTcARHeE",
+      "thumb": "https://img.youtube.com/vi/g8hbTcARHeE/mqdefault.jpg",
+      "yt_id": "g8hbTcARHeE",
+      "pub": "2026-06-09",
+      "date": "June 10, 2026"
     },
     {
       "cat": "hair",
@@ -4002,28 +4175,8 @@
       "thumb": "https://img.youtube.com/vi/HoYY9J2w75E/mqdefault.jpg",
       "yt_id": "HoYY9J2w75E",
       "pub": "2026-06-08",
-      "date": "June 09, 2026"
-    },
-    {
-      "cat": "hair",
-      "title": "Where Did The Moon Come From?",
-      "channel": "SciShow",
-      "url": "https://www.youtube.com/watch?v=wlqA8W5yhqo",
-      "thumb": "https://img.youtube.com/vi/wlqA8W5yhqo/mqdefault.jpg",
-      "yt_id": "wlqA8W5yhqo",
-      "pub": "2026-06-04",
-      "date": "June 09, 2026"
-    },
-    {
-      "cat": "hair",
-      "title": "Zoom Calls Are So Much Worse For Us Than You Think",
-      "channel": "SciShow",
-      "url": "https://www.youtube.com/watch?v=Ccn-Kkm1e_Y",
-      "thumb": "https://img.youtube.com/vi/Ccn-Kkm1e_Y/mqdefault.jpg",
-      "yt_id": "Ccn-Kkm1e_Y",
-      "pub": "2026-06-03",
-      "date": "June 09, 2026"
+      "date": "June 10, 2026"
     }
   ],
-  "updated": "2026-06-09T16:19:49.703496"
+  "updated": "2026-06-10T17:44:27.239858"
 }
